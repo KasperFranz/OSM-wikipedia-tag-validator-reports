@@ -13,7 +13,7 @@ This page was generated using data obtained on 2024-01-08. Please, <a href="http
 			Remember to check whether edits make sense! All reports are on this page because these tasks require human judgment to verify whether the proposed edit makes sense. Some proposed edits will be wrong, in such case they should be not done and problem reported
 			</br>
 			<hr>
-<ul><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to an object that exists outside physical reality">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to an object that exists outside physical reality</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a software">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a software</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a sports competition">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a sports competition</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikidata tag to an object that exists outside physical reality">should use a secondary wikipedia tag - linking from wikidata tag to an object that exists outside physical reality</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikidata tag to a food">should use a secondary wikipedia tag - linking from wikidata tag to a food</a></li><li><a href="#wikipedia wikidata mismatch">wikipedia wikidata mismatch</a></li><li><a href="#wikipedia wikidata mismatch - for operator prefixed tags">wikipedia wikidata mismatch - for operator prefixed tags</a></li></ul>			</br>
+<ul><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to an object that exists outside physical reality">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to an object that exists outside physical reality</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a software">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a software</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a sports competition">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a sports competition</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikidata tag to an object that exists outside physical reality">should use a secondary wikipedia tag - linking from wikidata tag to an object that exists outside physical reality</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikidata tag to a food">should use a secondary wikipedia tag - linking from wikidata tag to a food</a></li><li><a href="#wikipedia wikidata mismatch - for operator prefixed tags">wikipedia wikidata mismatch - for operator prefixed tags</a></li></ul>			</br>
 			<a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to an object that exists outside physical reality"><h2 id="should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to an object that exists outside physical reality">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to an object that exists outside physical reality</h2></a>
 				</br>
 				linked wikidata entry (Q28052459) is about an object that exists outside physical reality, so it is very unlikely to be correct <br />        subject:wikipedia=*  tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
@@ -446,30 +446,6 @@ way(629776387)['wikidata'='Q19899485'];
 (
 way(1185367762)['wikidata'='Q120006396'];
 ); (._;>;); out meta qt;//['should use a secondary wikipedia tag - linking from wikidata tag to a food']</blockquote>
-			</br>
-			<hr>
-			</br>
-			<a href="#wikipedia wikidata mismatch"><h2 id="wikipedia wikidata mismatch">wikipedia wikidata mismatch</h2></a>
-				</br>
-				wikidata and wikipedia tags link to a different objects (Q25818870 vs Q8037025 wikidata id assigned to linked Wikipedia article)
-				</br>
-				<a href="https://openstreetmap.org/relation/12889489" target="_new">Worshipful Company of Drapers - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				wikidata and wikipedia tags link to a different objects (Q77242291 vs Q1961890 wikidata id assigned to linked Wikipedia article) Note that this OSM object has wikipedia tag that links redirect (&#x27;N M Rothschild &amp; Sons&#x27; to &#x27;Rothschild &amp; Co&#x27;).
-				</br>
-				<a href="https://openstreetmap.org/way/174647018" target="_new">N M Rothschild & Sons - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-			</br>
-			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
-			</br>
-			<blockquote>[out:xml][timeout:3600];
-(
-relation(12889489)['wikidata'='Q25818870']['wikipedia'='en:Worshipful Company of Drapers'];
-way(174647018)['wikidata'='Q77242291']['wikipedia'='en:N M Rothschild & Sons'];
-); (._;>;); out meta qt;//['wikipedia wikidata mismatch']</blockquote>
 			</br>
 			<hr>
 			</br>
