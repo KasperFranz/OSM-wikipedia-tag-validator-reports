@@ -4,7 +4,7 @@
 	</head>
 <body>
 	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
-This page was generated using data obtained on 2024-01-09. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+This page was generated using data obtained on 2024-01-10. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
 <br />
 <br />
 			</br>
@@ -13,7 +13,39 @@ This page was generated using data obtained on 2024-01-09. Please, <a href="http
 			Proposed edits at this page are so obvious that automatic edit makes sense.
 			</br>
 			<hr>
-<ul><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikipedia from wikidata tag">wikipedia from wikidata tag</a></li><li><a href="#wikipedia from wikidata tag, unexpected language">wikipedia from wikidata tag, unexpected language</a></li><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li><li><a href="#wikipedia tag in an outdated form for removal">wikipedia tag in an outdated form for removal</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for name:etymology prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for name:etymology prefixed tags</a></li></ul>			</br>
+<ul><li><a href="#wikipedia tag unexpected language">wikipedia tag unexpected language</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikipedia from wikidata tag">wikipedia from wikidata tag</a></li><li><a href="#wikipedia from wikidata tag, unexpected language">wikipedia from wikidata tag, unexpected language</a></li><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li><li><a href="#wikipedia tag in an outdated form for removal">wikipedia tag in an outdated form for removal</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for subject prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for subject prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for name:etymology prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for name:etymology prefixed tags</a></li></ul>			</br>
+			<a href="#wikipedia tag unexpected language"><h2 id="wikipedia tag unexpected language">wikipedia tag unexpected language</h2></a>
+				</br>
+				wikipedia page in unexpected language - da was expected:
+				</br>
+				<a href="https://openstreetmap.org/node/1029459058" target="_new">Det Europæiske Miljøagentur - an affected OSM element that may be improved</a>
+				</br>
+				en:European Environment Agency -> da:Det Europæiske Miljøagentur
+				</br>
+				Det Europ&#230;iske Milj&#248;agentur
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - da was expected:
+				</br>
+				<a href="https://openstreetmap.org/way/799441265" target="_new">Østre Landsret - an affected OSM element that may be improved</a>
+				</br>
+				en:Østre Landsret -> da:Østre Landsret
+				</br>
+				&#216;stre Landsret
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(1029459058)['wikidata'='Q632988']['wikipedia'='en:European Environment Agency'];
+way(799441265)['wikidata'='Q3428539']['wikipedia'='en:&#216;stre Landsret'];
+); (._;>;); out meta qt;//['wikipedia tag unexpected language']</blockquote>
+			</br>
+			<hr>
+			</br>
 			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</h2></a>
 			</br>
 			wikidata and wikipedia tags link to a different objects, because wikipedia tag points to a redirect that should be followed
@@ -2921,6 +2953,12 @@ relation(14316162)['wikidata'!~'.*']['wikipedia'='da:Christians&#248;farten'];
 				</br>
 				<hr>
 				</br>
+				wikipedia tag in outdated form ([&#x27;wikipedia:no&#x27;]), with wikipedia and wikidata tag present and may be safely removed
+				</br>
+				<a href="https://openstreetmap.org/relation/2097968" target="_new">Læsø Kommune - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				wikipedia tag in outdated form ([&#x27;wikipedia:en&#x27;]), with wikipedia and wikidata tag present and may be safely removed
 				</br>
 				<a href="https://openstreetmap.org/relation/50046" target="_new">Danmark - an affected OSM element that may be improved</a>
@@ -2945,10 +2983,30 @@ relation(14316162)['wikidata'!~'.*']['wikipedia'='da:Christians&#248;farten'];
 (
 node(11210217932)['wikidata'!~'.*']['wikipedia'='da:Flygtningelejren i Oksb&#248;l']['wikipedia:de'='Fl&#252;chtlingslager Oksb&#248;l']['wikipedia:en'='Oksb&#248;l Refugee Camp'];
 node(11210262011)['wikidata'!~'.*']['wikipedia'='da:Flygtningelejren i Oksb&#248;l']['wikipedia:de'='Fl&#252;chtlingslager Oksb&#248;l']['wikipedia:en'='Oksb&#248;l Refugee Camp'];
+relation(2097968)['wikidata'='Q498457']['wikipedia'='da:L&#230;s&#248; Kommune']['wikipedia:no'='L&#230;s&#248; kommune'];
 relation(50046)['wikidata'='Q35']['wikipedia'='da:Danmark']['wikipedia:en'='en:Denmark'];
 way(143718414)['wikidata'='Q19794127']['wikipedia'='da:R&#229;dhusparken']['wikipedia:en'='R&#229;dhusparken'];
 way(191708622)['wikidata'!~'.*']['wikipedia'='da:Flygtningelejren i Oksb&#248;l']['wikipedia:de'='Fl&#252;chtlingslager Oksb&#248;l']['wikipedia:en'='Oksb&#248;l Refugee Camp'];
 ); (._;>;); out meta qt;//['wikipedia tag in an outdated form for removal']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for subject prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect - for subject prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for subject prefixed tags</h2></a>
+			</br>
+			subject:wikidata and subject:wikipedia tags link to a different objects, because subject:wikipedia tag points to a redirect that should be followed
+				</br>
+				Q117822869 vs (missing) article redirects from da:I.P. Nielsen to da:J.P. Nielsen
+				</br>
+				<a href="https://openstreetmap.org/node/10831950836" target="_new">I.P. Nielsen - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(10831950836)['subject:wikidata'='Q117822869']['subject:wikipedia'='da:I.P. Nielsen'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect - for subject prefixed tags']</blockquote>
 			</br>
 			<hr>
 			</br>
