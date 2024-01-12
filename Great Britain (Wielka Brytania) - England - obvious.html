@@ -4,7 +4,7 @@
 	</head>
 <body>
 	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
-This page was generated using data obtained on -data-was-not-downloaded-for-now-. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+This page was generated using data obtained on 2024-01-12. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
 <br />
 <br />
 			</br>
@@ -13,7 +13,299 @@ This page was generated using data obtained on -data-was-not-downloaded-for-now-
 			Proposed edits at this page are so obvious that automatic edit makes sense.
 			</br>
 			<hr>
-<ul></ul><h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
+<ul><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikipedia from wikidata tag">wikipedia from wikidata tag</a></li><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li><li><a href="#wikipedia tag in an outdated form for removal">wikipedia tag in an outdated form for removal</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</a></li></ul>			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</h2></a>
+			</br>
+			wikidata and wikipedia tags link to a different objects, because wikipedia tag points to a redirect that should be followed
+				</br>
+				Q1431081 vs (missing) article redirects from en:St. Paul&#x27;s tube station to en:St Paul&#x27;s tube station
+				</br>
+				<a href="https://openstreetmap.org/node/1637578467" target="_new">St. Paul's - an affected OSM element that may be improved</a>
+				</br>
+				en:St. Paul's tube station -> en:St Paul's tube station
+				</br>
+				St Paul's tube station
+				</br>
+				<hr>
+				</br>
+				Q17675790 vs (missing) article redirects from en:Amphitheatre (Guildhall Art Gallery complex) to en:Amphitheatre (London)
+				</br>
+				<a href="https://openstreetmap.org/node/2006318145" target="_new">Amphitheatre (in basement) - an affected OSM element that may be improved</a>
+				</br>
+				en:Amphitheatre (Guildhall Art Gallery complex) -> en:Amphitheatre (London)
+				</br>
+				Amphitheatre (London)
+				</br>
+				<hr>
+				</br>
+				Q83235 vs (missing) article redirects from en:Horatio Nelson to en:Horatio Nelson, 1st Viscount Nelson
+				</br>
+				<a href="https://openstreetmap.org/node/3574336415" target="_new">Horatio Nelson - an affected OSM element that may be improved</a>
+				</br>
+				en:Horatio Nelson -> en:Horatio Nelson, 1st Viscount Nelson
+				</br>
+				Horatio Nelson, 1st Viscount Nelson
+				</br>
+				<hr>
+				</br>
+				Q16932293 vs (missing) article redirects from en:Roman house at Billingsgate to en:Billingsgate Roman House and Baths
+				</br>
+				<a href="https://openstreetmap.org/node/4783739209" target="_new">Billingsgate Roman House & Baths - an affected OSM element that may be improved</a>
+				</br>
+				en:Roman house at Billingsgate -> en:Billingsgate Roman House and Baths
+				</br>
+				Billingsgate Roman House and Baths
+				</br>
+				<hr>
+				</br>
+				Q1431081 vs (missing) article redirects from en:St. Paul&#x27;s tube station to en:St Paul&#x27;s tube station
+				</br>
+				<a href="https://openstreetmap.org/node/5475675298" target="_new">St. Paul's - an affected OSM element that may be improved</a>
+				</br>
+				en:St. Paul's tube station -> en:St Paul's tube station
+				</br>
+				St Paul's tube station
+				</br>
+				<hr>
+				</br>
+				Q22313013 vs (missing) article redirects from en:Sir John Cass&#x27;s Foundation Primary School to en:The Aldgate School
+				</br>
+				<a href="https://openstreetmap.org/way/116465152" target="_new">The Aldgate School - an affected OSM element that may be improved</a>
+				</br>
+				en:Sir John Cass's Foundation Primary School -> en:The Aldgate School
+				</br>
+				The Aldgate School
+				</br>
+				<hr>
+				</br>
+				Q2688896 vs (missing) article redirects from en:St Olave Hart Street to en:St Olave&#x27;s Church, Hart Street
+				</br>
+				<a href="https://openstreetmap.org/way/142196708" target="_new">St Olave Hart Street - an affected OSM element that may be improved</a>
+				</br>
+				en:St Olave Hart Street -> en:St Olave's Church, Hart Street
+				</br>
+				St Olave's Church, Hart Street
+				</br>
+				<hr>
+				</br>
+				Q15263739 vs (missing) article redirects from en:Old Billingsgate Market to en:Old Billingsgate
+				</br>
+				<a href="https://openstreetmap.org/way/145631775" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				en:Old Billingsgate Market -> en:Old Billingsgate
+				</br>
+				Old Billingsgate
+				</br>
+				<hr>
+				</br>
+				Q15979550 vs (missing) article redirects from en:The Blackfriar (pub) to en:The Black Friar, Blackfriars
+				</br>
+				<a href="https://openstreetmap.org/way/166320158" target="_new">The Blackfriar - an affected OSM element that may be improved</a>
+				</br>
+				en:The Blackfriar (pub) -> en:The Black Friar, Blackfriars
+				</br>
+				The Black Friar, Blackfriars
+				</br>
+				<hr>
+				</br>
+				Q7588299 vs (missing) article redirects from en:St. Helen&#x27;s (skyscraper) to en:St Helen&#x27;s (skyscraper)
+				</br>
+				<a href="https://openstreetmap.org/way/166431068" target="_new">St. Helen's - an affected OSM element that may be improved</a>
+				</br>
+				en:St. Helen's (skyscraper) -> en:St Helen's (skyscraper)
+				</br>
+				St Helen's (skyscraper)
+				</br>
+				<hr>
+				</br>
+				Q1167115 vs (missing) article redirects from en:The Maughan Library to en:Maughan Library
+				</br>
+				<a href="https://openstreetmap.org/way/174793675" target="_new">Maughan Library (King's College London) - an affected OSM element that may be improved</a>
+				</br>
+				en:The Maughan Library -> en:Maughan Library
+				</br>
+				Maughan Library
+				</br>
+				<hr>
+				</br>
+				Q191161 vs (missing) article redirects from en:30 St Mary Axe to en:The Gherkin
+				</br>
+				<a href="https://openstreetmap.org/way/4959489" target="_new">30 St Mary Axe - an affected OSM element that may be improved</a>
+				</br>
+				en:30 St Mary Axe -> en:The Gherkin
+				</br>
+				The Gherkin
+				</br>
+				<hr>
+				</br>
+				Q7594995 vs (missing) article redirects from en:St Olave Silver Street to en:St Olave&#x27;s Church, Silver Street
+				</br>
+				<a href="https://openstreetmap.org/way/519691439" target="_new">St Olave Silver Street - an affected OSM element that may be improved</a>
+				</br>
+				en:St Olave Silver Street -> en:St Olave's Church, Silver Street
+				</br>
+				St Olave's Church, Silver Street
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(1637578467)['wikidata'='Q1431081']['wikipedia'='en:St. Paul\'s tube station'];
+node(2006318145)['wikidata'='Q17675790']['wikipedia'='en:Amphitheatre (Guildhall Art Gallery complex)'];
+node(3574336415)['wikidata'='Q83235']['wikipedia'='en:Horatio Nelson'];
+node(4783739209)['wikidata'='Q16932293']['wikipedia'='en:Roman house at Billingsgate'];
+node(5475675298)['wikidata'='Q1431081']['wikipedia'='en:St. Paul\'s tube station'];
+way(116465152)['wikidata'='Q22313013']['wikipedia'='en:Sir John Cass\'s Foundation Primary School'];
+way(142196708)['wikidata'='Q2688896']['wikipedia'='en:St Olave Hart Street'];
+way(145631775)['wikidata'='Q15263739']['wikipedia'='en:Old Billingsgate Market'];
+way(166320158)['wikidata'='Q15979550']['wikipedia'='en:The Blackfriar (pub)'];
+way(166431068)['wikidata'='Q7588299']['wikipedia'='en:St. Helen\'s (skyscraper)'];
+way(174793675)['wikidata'='Q1167115']['wikipedia'='en:The Maughan Library'];
+way(4959489)['wikidata'='Q191161']['wikipedia'='en:30 St Mary Axe'];
+way(519691439)['wikidata'='Q7594995']['wikipedia'='en:St Olave Silver Street'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia from wikidata tag"><h2 id="wikipedia from wikidata tag">wikipedia from wikidata tag</h2></a>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/node/4030635565" target="_new">New London Architecture - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'en:New London Architecture'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'en:New London Architecture'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/relation/3045928" target="_new">London Congestion Charge - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'en:London congestion charge'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'en:London congestion charge'}}]
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(4030635565)['wikidata'='Q21716357']['wikipedia'!~'.*'];
+relation(3045928)['wikidata'='Q371759']['wikipedia'!~'.*'];
+); (._;>;); out meta qt;//['wikipedia from wikidata tag']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikidata from wikipedia tag"><h2 id="wikidata from wikipedia tag">wikidata from wikipedia tag</h2></a>
+				</br>
+				Q321273 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/142658103" target="_new">Northern and Shell - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q4969454 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/523281447" target="_new">BACB - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q321273 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/717305094" target="_new">Northern and Shell - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q1891246 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/98979968" target="_new">Marine Stewardship Council - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(142658103)['wikidata'!~'.*']['wikipedia'='en:Northern & Shell'];
+way(523281447)['wikidata'!~'.*']['wikipedia'='en:British Arab Commercial Bank'];
+way(717305094)['wikidata'!~'.*']['wikipedia'='en:Northern & Shell'];
+way(98979968)['wikidata'!~'.*']['wikipedia'='en:Marine Stewardship Council'];
+); (._;>;); out meta qt;//['wikidata from wikipedia tag']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia tag in an outdated form for removal"><h2 id="wikipedia tag in an outdated form for removal">wikipedia tag in an outdated form for removal</h2></a>
+				</br>
+				wikipedia tag in outdated form ([&#x27;wikipedia:pl&#x27;]), with wikipedia and wikidata tag present and may be safely removed
+				</br>
+				<a href="https://openstreetmap.org/relation/51800" target="_new">City of London - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia tag in outdated form ([&#x27;wikipedia:de&#x27;]), with wikipedia and wikidata tag present and may be safely removed
+				</br>
+				<a href="https://openstreetmap.org/way/996089825" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+relation(51800)['wikidata'='Q23311']['wikipedia'='en:City of London']['wikipedia:pl'='pl:City of London'];
+way(996089825)['wikidata'='Q1194829']['wikipedia'='en:Old Bailey']['wikipedia:de'='Old Bailey'];
+); (._;>;); out meta qt;//['wikipedia tag in an outdated form for removal']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</h2></a>
+			</br>
+			network:wikidata and network:wikipedia tags link to a different objects, because network:wikipedia tag points to a redirect that should be followed
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/11346066" target="_new">National Express 075: London Victoria Coach Station => Parkside, Cambridge - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/11346067" target="_new">National Express 075: Parkside, Cambridge => London Victoria Coach Station Arrivals - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/11587673" target="_new">National Express 075: London Victoria Coach Station => Parkside, Cambridge - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/11587674" target="_new">National Express 075: London Victoria Coach Station => Parkside, Cambridge - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/11587675" target="_new">National Express 075: Parkside, Cambridge => London Victoria Coach Station Arrivals - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+relation(11346066)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(11346067)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(11587673)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(11587674)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(11587675)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags']</blockquote>
+			</br>
+			<hr>
+<h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
 <p class="small">Note to self: online version hosted at <a href="https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports">https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports</a>, files are stored at <a href="https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports">https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports</a>.		</div>
 	</body>
 </html>
