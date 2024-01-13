@@ -13,7 +13,7 @@ This page was generated using data obtained on 2024-01-13. Please, <a href="http
 			Remember to check whether edits make sense! All reports are on this page because these tasks require human judgment to verify whether the proposed edit makes sense. Some proposed edits will be wrong, in such case they should be not done and problem reported
 			</br>
 			<hr>
-<ul><li><a href="#wikipedia tag links to 404">wikipedia tag links to 404</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikidata tag to a public transport network">should use a secondary wikipedia tag - linking from wikidata tag to a public transport network</a></li><li><a href="#wikipedia wikidata mismatch">wikipedia wikidata mismatch</a></li><li><a href="#wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not">wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not</a></li><li><a href="#wikipedia/wikidata type tag that is incorrect according to not:* tag">wikipedia/wikidata type tag that is incorrect according to not:* tag</a></li></ul>			</br>
+<ul><li><a href="#wikipedia tag links to 404">wikipedia tag links to 404</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikidata tag to a public transport network">should use a secondary wikipedia tag - linking from wikidata tag to a public transport network</a></li><li><a href="#wikipedia wikidata mismatch">wikipedia wikidata mismatch</a></li><li><a href="#wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not">wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not</a></li></ul>			</br>
 			<a href="#wikipedia tag links to 404"><h2 id="wikipedia tag links to 404">wikipedia tag links to 404</h2></a>
 			</br>
 			Wikipedia article linked from OSM object using wikipedia tag is missing.<br />Often article was moved without leaving redirect and wikipedia tag should be edited to point to the new one.<br />Article may be deleted and no longer existing, or link was never valid. In such cases wikipedia tag should be deleted.
@@ -111,30 +111,6 @@ relation(6898756)['wikidata'='Q5604247']['wikipedia'='en:Greenlands'];
 (
 node(258668011)['wikidata'='Q3127988']['wikipedia'='en:Hartwell'];
 ); (._;>;); out meta qt;//['wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not']</blockquote>
-			</br>
-			<hr>
-			</br>
-			<a href="#wikipedia/wikidata type tag that is incorrect according to not:* tag"><h2 id="wikipedia/wikidata type tag that is incorrect according to not:* tag">wikipedia/wikidata type tag that is incorrect according to not:* tag</h2></a>
-				</br>
-				operator:wikidata=Q638098 is present despite that not:operator:wikidata=Q638098 is also present - at least one of them is wrong
-				</br>
-				<a href="https://openstreetmap.org/node/9241615467" target="_new">an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				operator:wikidata=Q43080530 is present despite that not:operator:wikidata=Q43080530 is also present - at least one of them is wrong
-				</br>
-				<a href="https://openstreetmap.org/way/559856261" target="_new">an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-			</br>
-			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
-			</br>
-			<blockquote>[out:xml][timeout:3600];
-(
-node(9241615467)['not:operator:wikidata'='Q638098']['operator:wikidata'='Q638098'];
-way(559856261)['not:operator:wikidata'='Q43080530']['operator:wikidata'='Q43080530'];
-); (._;>;); out meta qt;//['wikipedia/wikidata type tag that is incorrect according to not:* tag']</blockquote>
 			</br>
 			<hr>
 <h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
