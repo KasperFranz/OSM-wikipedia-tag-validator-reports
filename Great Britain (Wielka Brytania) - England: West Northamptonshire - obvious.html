@@ -13,81 +13,8 @@ This page was generated using data obtained on 2024-01-14. Please, <a href="http
 			Proposed edits at this page are so obvious that automatic edit makes sense.
 			</br>
 			<hr>
-<ul><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</a></li></ul>			</br>
-			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</h2></a>
-			</br>
-			wikidata and wikipedia tags link to a different objects, because wikipedia tag points to a redirect that should be followed
-				</br>
-				Q6411116 vs (missing) article redirects from en:Kings Sutton to en:King&#x27;s Sutton
-				</br>
-				<a href="https://openstreetmap.org/node/31425332" target="_new">Kings Sutton - an affected OSM element that may be improved</a>
-				</br>
-				en:Kings Sutton -> en:King's Sutton
-				</br>
-				King's Sutton
-				</br>
-				<hr>
-				</br>
-				Q5049988 vs (missing) article redirects from en:Castle Ashby Manor to en:Castle Ashby House
-				</br>
-				<a href="https://openstreetmap.org/relation/1715889" target="_new">Castle Ashby House - an affected OSM element that may be improved</a>
-				</br>
-				en:Castle Ashby Manor -> en:Castle Ashby House
-				</br>
-				Castle Ashby House
-				</br>
-				<hr>
-				</br>
-				Q19709 vs (missing) article redirects from en:River Avon (Warwickshire) to en:River Avon, Warwickshire
-				</br>
-				<a href="https://openstreetmap.org/relation/2795096" target="_new">River Avon - an affected OSM element that may be improved</a>
-				</br>
-				en:River Avon (Warwickshire) -> en:River Avon, Warwickshire
-				</br>
-				River Avon, Warwickshire
-				</br>
-				<hr>
-				</br>
-				Q7555507 vs (missing) article redirects from en:Sol Central Northampton to en:Sol Northampton
-				</br>
-				<a href="https://openstreetmap.org/way/28755181" target="_new">Sol Central - an affected OSM element that may be improved</a>
-				</br>
-				en:Sol Central Northampton -> en:Sol Northampton
-				</br>
-				Sol Northampton
-				</br>
-				<hr>
-				</br>
-				Q7057618 vs (missing) article redirects from en:Northampton High School, Northamptonshire to en:Northampton High School, England
-				</br>
-				<a href="https://openstreetmap.org/way/392521234" target="_new">Northampton High School - an affected OSM element that may be improved</a>
-				</br>
-				en:Northampton High School, Northamptonshire -> en:Northampton High School, England
-				</br>
-				Northampton High School, England
-				</br>
-				<hr>
-			</br>
-			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
-			</br>
-			<blockquote>[out:xml][timeout:3600];
-(
-node(31425332)['wikidata'='Q6411116']['wikipedia'='en:Kings Sutton'];
-relation(1715889)['wikidata'='Q5049988']['wikipedia'='en:Castle Ashby Manor'];
-relation(2795096)['wikidata'='Q19709']['wikipedia'='en:River Avon (Warwickshire)'];
-way(28755181)['wikidata'='Q7555507']['wikipedia'='en:Sol Central Northampton'];
-way(392521234)['wikidata'='Q7057618']['wikipedia'='en:Northampton High School, Northamptonshire'];
-); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect']</blockquote>
-			</br>
-			<hr>
-			</br>
+<ul><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</a></li></ul>			</br>
 			<a href="#wikidata from wikipedia tag"><h2 id="wikidata from wikipedia tag">wikidata from wikipedia tag</h2></a>
-				</br>
-				Q6991605 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/relation/85093" target="_new">Nene Way - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
 				</br>
 				Q2820574 may be added as wikidata tag based on wikipedia tag
 				</br>
@@ -143,12 +70,6 @@ way(392521234)['wikidata'='Q7057618']['wikipedia'='en:Northampton High School, N
 				</br>
 				<hr>
 				</br>
-				Q4648884 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/way/184482874" target="_new">an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
 				Q4649445 may be added as wikidata tag based on wikipedia tag
 				</br>
 				<a href="https://openstreetmap.org/way/239699236" target="_new">an affected OSM element that may be improved</a>
@@ -188,12 +109,6 @@ way(392521234)['wikidata'='Q7057618']['wikipedia'='en:Northampton High School, N
 				Q4648884 may be added as wikidata tag based on wikipedia tag
 				</br>
 				<a href="https://openstreetmap.org/way/4187446" target="_new">an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q4648884 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/way/4187447" target="_new">an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -261,7 +176,6 @@ way(392521234)['wikidata'='Q7057618']['wikipedia'='en:Northampton High School, N
 			</br>
 			<blockquote>[out:xml][timeout:3600];
 (
-relation(85093)['wikidata'!~'.*']['wikipedia'='en:Nene Way'];
 way(105411744)['wikidata'!~'.*']['wikipedia'='en:Delapr&#233; Abbey'];
 way(1089646414)['wikidata'!~'.*']['wikipedia'='en:A508 road'];
 way(1089646415)['wikidata'!~'.*']['wikipedia'='en:A508 road'];
@@ -271,7 +185,6 @@ way(1106714191)['wikidata'!~'.*']['wikipedia'='en:A508 road'];
 way(111743964)['wikidata'!~'.*']['wikipedia'='en:A5199 road'];
 way(136628206)['wikidata'!~'.*']['wikipedia'='en:A14 road (England)'];
 way(184482865)['wikidata'!~'.*']['wikipedia'='en:A14 road (England)'];
-way(184482874)['wikidata'!~'.*']['wikipedia'='en:A14 road (England)'];
 way(239699236)['wikidata'!~'.*']['wikipedia'='en:A5199 road'];
 way(239699238)['wikidata'!~'.*']['wikipedia'='en:A5199 road'];
 way(270203565)['wikidata'!~'.*']['wikipedia'='en:A508 road'];
@@ -279,7 +192,6 @@ way(31199382)['wikidata'!~'.*']['wikipedia'='en:A508 road'];
 way(31199383)['wikidata'!~'.*']['wikipedia'='en:A508 road'];
 way(4187083)['wikidata'!~'.*']['wikipedia'='en:A14 road (England)'];
 way(4187446)['wikidata'!~'.*']['wikipedia'='en:A14 road (England)'];
-way(4187447)['wikidata'!~'.*']['wikipedia'='en:A14 road (England)'];
 way(4187448)['wikidata'!~'.*']['wikipedia'='en:A14 road (England)'];
 way(4268078)['wikidata'!~'.*']['wikipedia'='en:A508 road'];
 way(4288758)['wikidata'!~'.*']['wikipedia'='en:A5199 road'];
