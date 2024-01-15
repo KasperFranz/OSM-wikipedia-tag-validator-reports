@@ -1,0 +1,190 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://mapsaregreat.com/style.css" /> <!-- GPLv3 licensed -->
+	</head>
+<body>
+	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
+This page was generated using data obtained on 2024-01-15. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+<br />
+<br />
+			</br>
+			<hr>
+			</br>
+			Proposed edits at this page are so obvious that automatic edit makes sense.
+			</br>
+			<hr>
+<ul><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</a></li></ul>			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</h2></a>
+			</br>
+			wikidata and wikipedia tags link to a different objects, because wikipedia tag points to a redirect that should be followed
+				</br>
+				Q4876130 vs (missing) article redirects from en:Beale Park to en:Beale Wildlife Park
+				</br>
+				<a href="https://openstreetmap.org/way/57719018" target="_new">Beale Park - an affected OSM element that may be improved</a>
+				</br>
+				en:Beale Park -> en:Beale Wildlife Park
+				</br>
+				Beale Wildlife Park
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(57719018)['wikidata'='Q4876130']['wikipedia'='en:Beale Park'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikidata from wikipedia tag"><h2 id="wikidata from wikipedia tag">wikidata from wikipedia tag</h2></a>
+				</br>
+				Q1412795 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/relation/8345184" target="_new">Kennet and Avon Canal trail - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q1210426 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/1221972639" target="_new">Didcot, Newbury and Southampton Railway - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q1210426 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/375901986" target="_new">Didcot, Newbury and Southampton Railway - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q1210426 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/629510120" target="_new">Didcot, Newbury and Southampton Railway - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q1210426 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/629510121" target="_new">Didcot, Newbury and Southampton Railway - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q1210426 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/77249560" target="_new">Didcot, Newbury and Southampton Railway - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q1210426 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/77249565" target="_new">Didcot, Newbury and Southampton Railway - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+relation(8345184)['wikidata'!~'.*']['wikipedia'='en:Kennet and Avon Canal'];
+way(1221972639)['wikidata'!~'.*']['wikipedia'='en:Didcot, Newbury and Southampton Railway'];
+way(375901986)['wikidata'!~'.*']['wikipedia'='en:Didcot, Newbury and Southampton Railway'];
+way(629510120)['wikidata'!~'.*']['wikipedia'='en:Didcot, Newbury and Southampton Railway'];
+way(629510121)['wikidata'!~'.*']['wikipedia'='en:Didcot, Newbury and Southampton Railway'];
+way(77249560)['wikidata'!~'.*']['wikipedia'='en:Didcot, Newbury and Southampton Railway'];
+way(77249565)['wikidata'!~'.*']['wikipedia'='en:Didcot, Newbury and Southampton Railway'];
+); (._;>;); out meta qt;//['wikidata from wikipedia tag']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</h2></a>
+			</br>
+			network:wikidata and network:wikipedia tags link to a different objects, because network:wikipedia tag points to a redirect that should be followed
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/2105098" target="_new">National Express 508: London Victoria → Haverfordwest - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/2111605" target="_new">National Express 202: London Heathrow → Swansea - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/2111606" target="_new">National Express 201: Brighton → Swansea - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/2129287" target="_new">National Express 200 Airport - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/9420425" target="_new">National Express 507: London Victoria → Llanelli - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/9420426" target="_new">National Express 507: Llanelli → London Victoria - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/9420430" target="_new">National Express 508: Haverfordwest → London Victoria - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/9420432" target="_new">National Express 202: Swansea → London Heathrow - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/9420433" target="_new">National Express 201: Swansea → Brighton - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/9421847" target="_new">National Express 509: London Victoria → Cardiff - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/9421848" target="_new">National Express 509: Cardiff → London Victoria - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+relation(2105098)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(2111605)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(2111606)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(2129287)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(9420425)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(9420426)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(9420430)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(9420432)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(9420433)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(9421847)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(9421848)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags']</blockquote>
+			</br>
+			<hr>
+<h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
+<p class="small">Note to self: online version hosted at <a href="https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports">https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports</a>, files are stored at <a href="https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports">https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports</a>.		</div>
+	</body>
+</html>

@@ -1,0 +1,970 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://mapsaregreat.com/style.css" /> <!-- GPLv3 licensed -->
+	</head>
+<body>
+	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
+This page was generated using data obtained on 2024-01-15. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+<br />
+<br />
+			</br>
+			<hr>
+			</br>
+			Proposed edits at this page are so obvious that automatic edit makes sense.
+			</br>
+			<hr>
+<ul><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li><li><a href="#wikipedia tag in an outdated form for removal">wikipedia tag in an outdated form for removal</a></li><li><a href="#wikipedia wikidata mismatch - follow wikidata redirect">wikipedia wikidata mismatch - follow wikidata redirect</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</a></li></ul>			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</h2></a>
+			</br>
+			wikidata and wikipedia tags link to a different objects, because wikipedia tag points to a redirect that should be followed
+				</br>
+				Q4362276 vs (missing) article redirects from en:Thors Cave to en:Thor&#x27;s Cave
+				</br>
+				<a href="https://openstreetmap.org/node/671305170" target="_new">Thor's Cave - an affected OSM element that may be improved</a>
+				</br>
+				en:Thors Cave -> en:Thor's Cave
+				</br>
+				Thor's Cave
+				</br>
+				<hr>
+				</br>
+				Q5184842 vs (missing) article redirects from en:Crewe to Derby Line to en:Crewe&#8211;Derby line
+				</br>
+				<a href="https://openstreetmap.org/relation/1075201" target="_new">North Staffordshire Line - an affected OSM element that may be improved</a>
+				</br>
+				en:Crewe to Derby Line -> en:Crewe–Derby line
+				</br>
+				Crewe&#8211;Derby line
+				</br>
+				<hr>
+				</br>
+				Q5477131 vs (missing) article redirects from en:Foxfield Light Railway to en:Foxfield Railway
+				</br>
+				<a href="https://openstreetmap.org/relation/167925" target="_new">Foxfield Light Railway - an affected OSM element that may be improved</a>
+				</br>
+				en:Foxfield Light Railway -> en:Foxfield Railway
+				</br>
+				Foxfield Railway
+				</br>
+				<hr>
+				</br>
+				Q8030437 vs (missing) article redirects from en:Wolstanton High School to en:The Orme Academy
+				</br>
+				<a href="https://openstreetmap.org/relation/919710" target="_new">Wolstanton High School - an affected OSM element that may be improved</a>
+				</br>
+				en:Wolstanton High School -> en:The Orme Academy
+				</br>
+				The Orme Academy
+				</br>
+				<hr>
+				</br>
+				Q7596631 vs (missing) article redirects from en:Stafford Hospital to en:County Hospital, Stafford
+				</br>
+				<a href="https://openstreetmap.org/way/127104349" target="_new">County Hospital - an affected OSM element that may be improved</a>
+				</br>
+				en:Stafford Hospital -> en:County Hospital, Stafford
+				</br>
+				County Hospital, Stafford
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(671305170)['wikidata'='Q4362276']['wikipedia'='en:Thors Cave'];
+relation(1075201)['wikidata'='Q5184842']['wikipedia'='en:Crewe to Derby Line'];
+relation(167925)['wikidata'='Q5477131']['wikipedia'='en:Foxfield Light Railway'];
+relation(919710)['wikidata'='Q8030437']['wikipedia'='en:Wolstanton High School'];
+way(127104349)['wikidata'='Q7596631']['wikipedia'='en:Stafford Hospital'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikidata from wikipedia tag"><h2 id="wikidata from wikipedia tag">wikidata from wikipedia tag</h2></a>
+				</br>
+				Q10384502 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/relation/3863508" target="_new">Trentham Gardens - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7596650 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/127091727" target="_new">Stafford Railway Building Society - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q6694278 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/127110194" target="_new">Loxley Hall School - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7739247 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/138567170" target="_new">The Heath House - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/162588257" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/162588260" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/164787834" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/164787838" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/251407342" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/251407345" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/251407346" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/251407347" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/251407348" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/251407350" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/251407352" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/251407355" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/251407358" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/254038066" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/254038094" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/254038100" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/254038106" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/254038122" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/254038130" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/254038135" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/254038146" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/254038147" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/254038148" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/254046736" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/254046737" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/254046740" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/254046741" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/254046744" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/254046746" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/254047565" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7209482 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/261736993" target="_new">Police Mutual Assurance Society - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5765362 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/264770655" target="_new">Himley Park - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/278695924" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/278695927" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/28084968" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/28084969" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/28084970" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/28084971" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311271991" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311271995" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311271997" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311271999" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272007" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272008" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272009" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272010" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272011" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272012" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272013" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272015" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272016" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272017" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272018" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272019" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272021" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272022" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272023" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272024" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272025" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272027" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272028" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272029" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272030" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272031" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272032" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272033" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272034" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272036" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272037" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/311272038" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/398541625" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/4008652" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/40146333" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/40146334" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/40146335" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/40146336" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/40146354" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/41340004" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/41340005" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/41340006" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/41340007" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5050244 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/4447678" target="_new">Castle Ring - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/492190781" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/51830082" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/51830084" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/51830085" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/51835197" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q17021900 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/528050544" target="_new">Speedwell Castle - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/554563755" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/67416647" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q1737734 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/728225498" target="_new">Keele University - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/771764224" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/771764233" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/771764241" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/771764243" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/771764247" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/771764249" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/771764255" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/771764260" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/783066107" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/783066108" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/783066109" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/783066110" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/922432584" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5087157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/922432585" target="_new">Chase Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5765362 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/94454481" target="_new">Himley Park - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+relation(3863508)['wikidata'!~'.*']['wikipedia'='en:Trentham Estate'];
+way(127091727)['wikidata'!~'.*']['wikipedia'='en:Stafford Railway Building Society'];
+way(127110194)['wikidata'!~'.*']['wikipedia'='en:Loxley Hall'];
+way(138567170)['wikidata'!~'.*']['wikipedia'='en:The Heath House'];
+way(162588257)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(162588260)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(164787834)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(164787838)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(251407342)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(251407345)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(251407346)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(251407347)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(251407348)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(251407350)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(251407352)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(251407355)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(251407358)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(254038066)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(254038094)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(254038100)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(254038106)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(254038122)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(254038130)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(254038135)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(254038146)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(254038147)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(254038148)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(254046736)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(254046737)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(254046740)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(254046741)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(254046744)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(254046746)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(254047565)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(261736993)['wikidata'!~'.*']['wikipedia'='en:Police Mutual'];
+way(264770655)['wikidata'!~'.*']['wikipedia'='en:Himley Hall'];
+way(278695924)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(278695927)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(28084968)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(28084969)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(28084970)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(28084971)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311271991)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311271995)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311271997)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311271999)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272007)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272008)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272009)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272010)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272011)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272012)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272013)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272015)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272016)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272017)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272018)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272019)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272021)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272022)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272023)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272024)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272025)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272027)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272028)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272029)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272030)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272031)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272032)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272033)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272034)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272036)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272037)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(311272038)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(398541625)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(4008652)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(40146333)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(40146334)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(40146335)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(40146336)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(40146354)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(41340004)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(41340005)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(41340006)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(41340007)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(4447678)['wikidata'!~'.*']['wikipedia'='en:Castle Ring'];
+way(492190781)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(51830082)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(51830084)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(51830085)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(51835197)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(528050544)['wikidata'!~'.*']['wikipedia'='en:Speedwell Castle'];
+way(554563755)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(67416647)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(728225498)['wikidata'!~'.*']['wikipedia'='en:Keele University'];
+way(771764224)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(771764233)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(771764241)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(771764243)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(771764247)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(771764249)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(771764255)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(771764260)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(783066107)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(783066108)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(783066109)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(783066110)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(922432584)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(922432585)['wikidata'!~'.*']['wikipedia'='en:Chase Line'];
+way(94454481)['wikidata'!~'.*']['wikipedia'='en:Himley Hall'];
+); (._;>;); out meta qt;//['wikidata from wikipedia tag']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia tag in an outdated form for removal"><h2 id="wikipedia tag in an outdated form for removal">wikipedia tag in an outdated form for removal</h2></a>
+				</br>
+				wikipedia tag in outdated form ([&#x27;wikipedia:ru&#x27;]), with wikipedia and wikidata tag present and may be safely removed
+				</br>
+				<a href="https://openstreetmap.org/node/21141572" target="_new">Tamworth - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia tag in outdated form ([&#x27;wikipedia:ru&#x27;]), with wikipedia and wikidata tag present and may be safely removed
+				</br>
+				<a href="https://openstreetmap.org/node/2395889476" target="_new">Stafford - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia tag in outdated form ([&#x27;wikipedia:ru&#x27;]), with wikipedia and wikidata tag present and may be safely removed
+				</br>
+				<a href="https://openstreetmap.org/node/29813785" target="_new">Newcastle-under-Lyme - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(21141572)['wikidata'='Q704864']['wikipedia'='en:Tamworth, Staffordshire']['wikipedia:ru'='&#1058;&#1072;&#1084;&#1091;&#1101;&#1088;&#1090;_(&#1042;&#1077;&#1083;&#1080;&#1082;&#1086;&#1073;&#1088;&#1080;&#1090;&#1072;&#1085;&#1080;&#1103;)'];
+node(2395889476)['wikidata'='Q826782']['wikipedia'='en:Stafford']['wikipedia:ru'='&#1057;&#1090;&#1072;&#1092;&#1092;&#1086;&#1088;&#1076;'];
+node(29813785)['wikidata'='Q868642']['wikipedia'='en:Newcastle-under-Lyme']['wikipedia:ru'='&#1053;&#1100;&#1102;&#1082;&#1072;&#1089;&#1083;-&#1072;&#1085;&#1076;&#1077;&#1088;-&#1051;&#1072;&#1081;&#1084;'];
+); (._;>;); out meta qt;//['wikipedia tag in an outdated form for removal']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikidata redirect"><h2 id="wikipedia wikidata mismatch - follow wikidata redirect">wikipedia wikidata mismatch - follow wikidata redirect</h2></a>
+			</br>
+			wikidata and wikipedia tags link to a different objects, because wikidata tag points to a redirect that should be followed
+				</br>
+				Q105453121 vs Q97357988
+				</br>
+				<a href="https://openstreetmap.org/node/10126889269" target="_new">Redhurst Crossing - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(10126889269)['wikidata'='Q105453121']['wikipedia'='en:Redhurst Crossing railway station'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikidata redirect']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</h2></a>
+			</br>
+			network:wikidata and network:wikipedia tags link to a different objects, because network:wikipedia tag points to a redirect that should be followed
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/11734399" target="_new">National Express Bus 422: Victoria Coach Station (Departures) => Manchester Central Coach Station - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/11734400" target="_new">National Express Bus 422: Manchester Central Coach Station => Victoria Coach Station Arrivals - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/11734401" target="_new">National Express Bus 422: Victoria Coach Station (Departures) => Manchester Central Coach Station - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/11734402" target="_new">National Express Bus 422: Manchester Central Coach Station => Victoria Coach Station Arrivals - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/8356712" target="_new">National Express 409: Aberystwyth → London - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/8507326" target="_new">National Express 409: London → Aberystwyth - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+relation(11734399)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(11734400)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(11734401)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(11734402)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(8356712)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(8507326)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags']</blockquote>
+			</br>
+			<hr>
+<h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
+<p class="small">Note to self: online version hosted at <a href="https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports">https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports</a>, files are stored at <a href="https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports">https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports</a>.		</div>
+	</body>
+</html>
