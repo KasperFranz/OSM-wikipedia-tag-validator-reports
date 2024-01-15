@@ -44,19 +44,12 @@ way(29320057)['wikidata'='Q7244851']['wikipedia'='en:Princess Theatre, Torquay']
 				<a href="https://openstreetmap.org/node/29272140" target="_new">Torquay - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
-				</br>
-				Q20712379 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/relation/3720599" target="_new">Orange Way - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
 			</br>
 			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
 			</br>
 			<blockquote>[out:xml][timeout:3600];
 (
 node(29272140)['wikidata'!~'.*']['wikipedia'='en:Torquay railway station'];
-relation(3720599)['wikidata'!~'.*']['wikipedia'='en:Orange Way'];
 ); (._;>;); out meta qt;//['wikidata from wikipedia tag']</blockquote>
 			</br>
 			<hr>

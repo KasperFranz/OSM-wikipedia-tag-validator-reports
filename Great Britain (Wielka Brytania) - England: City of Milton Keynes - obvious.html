@@ -13,7 +13,7 @@ This page was generated using data obtained on 2024-01-15. Please, <a href="http
 			Proposed edits at this page are so obvious that automatic edit makes sense.
 			</br>
 			<hr>
-<ul><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li><li><a href="#wikipedia wikidata mismatch - follow wikidata redirect">wikipedia wikidata mismatch - follow wikidata redirect</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</a></li></ul>			</br>
+<ul><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li><li><a href="#wikipedia wikidata mismatch - follow wikidata redirect">wikipedia wikidata mismatch - follow wikidata redirect</a></li></ul>			</br>
 			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</h2></a>
 			</br>
 			wikidata and wikipedia tags link to a different objects, because wikipedia tag points to a redirect that should be followed
@@ -77,102 +77,6 @@ way(347916801)['wikidata'!~'.*']['wikipedia'='en:Chicheley Hall'];
 (
 way(42826821)['wikidata'='Q96414910']['wikipedia'='en:Willen Lake'];
 ); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikidata redirect']</blockquote>
-			</br>
-			<hr>
-			</br>
-			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</h2></a>
-			</br>
-			network:wikidata and network:wikipedia tags link to a different objects, because network:wikipedia tag points to a redirect that should be followed
-				</br>
-				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
-				</br>
-				<a href="https://openstreetmap.org/relation/11331249" target="_new">National Express 905: Newcastle-upon-Tyne => London - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
-				</br>
-				<a href="https://openstreetmap.org/relation/11350127" target="_new">National Express 737: Parkside, Cambridge => Gloucester Green Bus Station, Oxford - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
-				</br>
-				<a href="https://openstreetmap.org/relation/11350128" target="_new">National Express 737: Gloucester Green Bus Station, Oxford => Parkside, Cambridge - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
-				</br>
-				<a href="https://openstreetmap.org/relation/11369737" target="_new">National Express 737: Gloucester Green Bus Station, Oxford => Stanstead Airport Coach Station - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
-				</br>
-				<a href="https://openstreetmap.org/relation/11734399" target="_new">National Express Bus 422: Victoria Coach Station (Departures) => Manchester Central Coach Station - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
-				</br>
-				<a href="https://openstreetmap.org/relation/11734400" target="_new">National Express Bus 422: Manchester Central Coach Station => Victoria Coach Station Arrivals - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
-				</br>
-				<a href="https://openstreetmap.org/relation/11734401" target="_new">National Express Bus 422: Victoria Coach Station (Departures) => Manchester Central Coach Station - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
-				</br>
-				<a href="https://openstreetmap.org/relation/11734402" target="_new">National Express Bus 422: Manchester Central Coach Station => Victoria Coach Station Arrivals - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
-				</br>
-				<a href="https://openstreetmap.org/relation/9622109" target="_new">National Express 436: South Shields to London - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
-				</br>
-				<a href="https://openstreetmap.org/relation/9624899" target="_new">National Express 426: South Shields to London via Leeds - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
-				</br>
-				<a href="https://openstreetmap.org/relation/9625042" target="_new">National Express 426: Sunderland to London via Thirsk - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
-				</br>
-				<a href="https://openstreetmap.org/relation/9625043" target="_new">National Express 426: South Shields to London via Leeds (Fast) - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-			</br>
-			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
-			</br>
-			<blockquote>[out:xml][timeout:3600];
-(
-relation(11331249)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
-relation(11350127)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
-relation(11350128)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
-relation(11369737)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
-relation(11734399)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
-relation(11734400)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
-relation(11734401)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
-relation(11734402)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
-relation(9622109)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
-relation(9624899)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
-relation(9625042)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
-relation(9625043)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
-); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags']</blockquote>
 			</br>
 			<hr>
 <h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />

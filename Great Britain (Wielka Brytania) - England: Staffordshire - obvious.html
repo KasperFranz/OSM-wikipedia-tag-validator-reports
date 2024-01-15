@@ -13,7 +13,7 @@ This page was generated using data obtained on 2024-01-15. Please, <a href="http
 			Proposed edits at this page are so obvious that automatic edit makes sense.
 			</br>
 			<hr>
-<ul><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li><li><a href="#wikipedia tag in an outdated form for removal">wikipedia tag in an outdated form for removal</a></li><li><a href="#wikipedia wikidata mismatch - follow wikidata redirect">wikipedia wikidata mismatch - follow wikidata redirect</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</a></li></ul>			</br>
+<ul><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li><li><a href="#wikipedia tag in an outdated form for removal">wikipedia tag in an outdated form for removal</a></li><li><a href="#wikipedia wikidata mismatch - follow wikidata redirect">wikipedia wikidata mismatch - follow wikidata redirect</a></li></ul>			</br>
 			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</h2></a>
 			</br>
 			wikidata and wikipedia tags link to a different objects, because wikipedia tag points to a redirect that should be followed
@@ -25,16 +25,6 @@ This page was generated using data obtained on 2024-01-15. Please, <a href="http
 				en:Thors Cave -> en:Thor's Cave
 				</br>
 				Thor's Cave
-				</br>
-				<hr>
-				</br>
-				Q5184842 vs (missing) article redirects from en:Crewe to Derby Line to en:Crewe&#8211;Derby line
-				</br>
-				<a href="https://openstreetmap.org/relation/1075201" target="_new">North Staffordshire Line - an affected OSM element that may be improved</a>
-				</br>
-				en:Crewe to Derby Line -> en:Crewe–Derby line
-				</br>
-				Crewe&#8211;Derby line
 				</br>
 				<hr>
 				</br>
@@ -73,7 +63,6 @@ This page was generated using data obtained on 2024-01-15. Please, <a href="http
 			<blockquote>[out:xml][timeout:3600];
 (
 node(671305170)['wikidata'='Q4362276']['wikipedia'='en:Thors Cave'];
-relation(1075201)['wikidata'='Q5184842']['wikipedia'='en:Crewe to Derby Line'];
 relation(167925)['wikidata'='Q5477131']['wikipedia'='en:Foxfield Light Railway'];
 relation(919710)['wikidata'='Q8030437']['wikipedia'='en:Wolstanton High School'];
 way(127104349)['wikidata'='Q7596631']['wikipedia'='en:Stafford Hospital'];
@@ -908,46 +897,6 @@ node(29813785)['wikidata'='Q868642']['wikipedia'='en:Newcastle-under-Lyme']['wik
 (
 node(10126889269)['wikidata'='Q105453121']['wikipedia'='en:Redhurst Crossing railway station'];
 ); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikidata redirect']</blockquote>
-			</br>
-			<hr>
-			</br>
-			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</h2></a>
-			</br>
-			network:wikidata and network:wikipedia tags link to a different objects, because network:wikipedia tag points to a redirect that should be followed
-				</br>
-				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
-				</br>
-				<a href="https://openstreetmap.org/relation/11734399" target="_new">National Express Bus 422: Victoria Coach Station (Departures) => Manchester Central Coach Station - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
-				</br>
-				<a href="https://openstreetmap.org/relation/11734400" target="_new">National Express Bus 422: Manchester Central Coach Station => Victoria Coach Station Arrivals - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
-				</br>
-				<a href="https://openstreetmap.org/relation/11734401" target="_new">National Express Bus 422: Victoria Coach Station (Departures) => Manchester Central Coach Station - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
-				</br>
-				<a href="https://openstreetmap.org/relation/11734402" target="_new">National Express Bus 422: Manchester Central Coach Station => Victoria Coach Station Arrivals - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-			</br>
-			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
-			</br>
-			<blockquote>[out:xml][timeout:3600];
-(
-relation(11734399)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
-relation(11734400)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
-relation(11734401)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
-relation(11734402)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
-); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags']</blockquote>
 			</br>
 			<hr>
 <h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
