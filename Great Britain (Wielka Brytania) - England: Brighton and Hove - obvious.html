@@ -13,7 +13,7 @@ This page was generated using data obtained on 2024-01-16. Please, <a href="http
 			Proposed edits at this page are so obvious that automatic edit makes sense.
 			</br>
 			<hr>
-<ul><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li></ul>			</br>
+<ul><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li></ul>			</br>
 			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</h2></a>
 			</br>
 			wikidata and wikipedia tags link to a different objects, because wikipedia tag points to a redirect that should be followed
@@ -78,23 +78,6 @@ way(237087421)['wikidata'='Q5917016']['wikipedia'='en:Hove Museum and Art Galler
 way(3451897)['wikidata'='Q2745160']['wikipedia'='en:Brighton Pier'];
 way(96348961)['wikidata'='Q5118224']['wikipedia'='en:Churchill Square (Brighton and Hove)'];
 ); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect']</blockquote>
-			</br>
-			<hr>
-			</br>
-			<a href="#wikidata from wikipedia tag"><h2 id="wikidata from wikipedia tag">wikidata from wikipedia tag</h2></a>
-				</br>
-				Q1277792 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/relation/9967819" target="_new">East Coastway Line - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-			</br>
-			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
-			</br>
-			<blockquote>[out:xml][timeout:3600];
-(
-relation(9967819)['wikidata'!~'.*']['wikipedia'='en:East Coastway line'];
-); (._;>;); out meta qt;//['wikidata from wikipedia tag']</blockquote>
 			</br>
 			<hr>
 <h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
