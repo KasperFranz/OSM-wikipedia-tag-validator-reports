@@ -13,7 +13,7 @@ This page was generated using data obtained on 2024-01-16. Please, <a href="http
 			Proposed edits at this page are so obvious that automatic edit makes sense.
 			</br>
 			<hr>
-<ul><li><a href="#wikipedia tag from wikipedia tag in an outdated form">wikipedia tag from wikipedia tag in an outdated form</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</a></li></ul>			</br>
+<ul><li><a href="#wikipedia tag from wikipedia tag in an outdated form">wikipedia tag from wikipedia tag in an outdated form</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li></ul>			</br>
 			<a href="#wikipedia tag from wikipedia tag in an outdated form"><h2 id="wikipedia tag from wikipedia tag in an outdated form">wikipedia tag from wikipedia tag in an outdated form</h2></a>
 				</br>
 				wikipedia tag in outdated form ([&#x27;wikipedia:en&#x27;]), wikipedia tag may be added
@@ -427,18 +427,6 @@ way(512377558)['wikidata'='Q5904123']['wikipedia'='en:Hornby Castle, Yorkshire']
 				</br>
 				<hr>
 				</br>
-				Q5397986 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/relation/7532463" target="_new">Esk Valley Line NR05: Middlesbrough => Whitby - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q5397986 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/relation/7589234" target="_new">Esk Valley Line NR05: Whitby => Middlesbrough - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
 				Q5327482 may be added as wikidata tag based on wikipedia tag
 				</br>
 				<a href="https://openstreetmap.org/way/102153551" target="_new">Easby Moor - an affected OSM element that may be improved</a>
@@ -663,8 +651,6 @@ node(5230839509)['wikidata'!~'.*']['wikipedia'='en:Malham'];
 node(55441860)['wikidata'!~'.*']['wikipedia'='en:Scagglethorpe'];
 node(6881251526)['wikidata'!~'.*']['wikipedia'='en:Stainforth, North Yorkshire'];
 relation(16190862)['wikidata'!~'.*']['wikipedia'='en:Bent Rigg radar station'];
-relation(7532463)['wikidata'!~'.*']['wikipedia'='en:Esk Valley line'];
-relation(7589234)['wikidata'!~'.*']['wikipedia'='en:Esk Valley line'];
 way(102153551)['wikidata'!~'.*']['wikipedia'='en:Easby Moor'];
 way(1213726099)['wikidata'!~'.*']['wikipedia'='en:Dishforth Airfield'];
 way(124971466)['wikidata'!~'.*']['wikipedia'='en:Cawthorne Camp'];
@@ -697,32 +683,6 @@ way(846150444)['wikidata'!~'.*']['wikipedia'='en:Ellerby, North Yorkshire'];
 way(846150445)['wikidata'!~'.*']['wikipedia'='en:Ellerby, North Yorkshire'];
 way(93580020)['wikidata'!~'.*']['wikipedia'='en:Greenhow'];
 ); (._;>;); out meta qt;//['wikidata from wikipedia tag']</blockquote>
-			</br>
-			<hr>
-			</br>
-			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</h2></a>
-			</br>
-			network:wikidata and network:wikipedia tags link to a different objects, because network:wikipedia tag points to a redirect that should be followed
-				</br>
-				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
-				</br>
-				<a href="https://openstreetmap.org/relation/9622109" target="_new">National Express 436: South Shields to London - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
-				</br>
-				<a href="https://openstreetmap.org/relation/9625042" target="_new">National Express 426: Sunderland to London via Thirsk - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-			</br>
-			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
-			</br>
-			<blockquote>[out:xml][timeout:3600];
-(
-relation(9622109)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
-relation(9625042)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
-); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags']</blockquote>
 			</br>
 			<hr>
 <h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />

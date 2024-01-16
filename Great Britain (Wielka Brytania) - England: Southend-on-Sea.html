@@ -38,19 +38,12 @@ way(49884545)['wikidata'='Q5027013'];
 				<a href="https://openstreetmap.org/node/1266022852" target="_new">Southend-on-Sea - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
-				</br>
-				wikidata and wikipedia tags link to a different objects (Q24993630 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has wikipedia tag that links redirect (&#x27;MoD Shoeburyness&#x27; to &#x27;MOD Shoeburyness&#x27;).
-				</br>
-				<a href="https://openstreetmap.org/way/157262444" target="_new">MoD Shoeburyness - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
 			</br>
 			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
 			</br>
 			<blockquote>[out:xml][timeout:3600];
 (
 node(1266022852)['wikidata'='Q21487155']['wikipedia'='en:Southend-on-Sea'];
-way(157262444)['wikidata'='Q24993630']['wikipedia'='en:MoD Shoeburyness'];
 ); (._;>;); out meta qt;//['wikipedia wikidata mismatch']</blockquote>
 			</br>
 			<hr>

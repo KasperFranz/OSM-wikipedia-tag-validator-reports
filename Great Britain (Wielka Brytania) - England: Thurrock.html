@@ -13,38 +13,7 @@ This page was generated using data obtained on 2024-01-16. Please, <a href="http
 			Remember to check whether edits make sense! All reports are on this page because these tasks require human judgment to verify whether the proposed edit makes sense. Some proposed edits will be wrong, in such case they should be not done and problem reported
 			</br>
 			<hr>
-<ul><li><a href="#wikipedia wikidata mismatch">wikipedia wikidata mismatch</a></li><li><a href="#wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not">wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not</a></li></ul>			</br>
-			<a href="#wikipedia wikidata mismatch"><h2 id="wikipedia wikidata mismatch">wikipedia wikidata mismatch</h2></a>
-				</br>
-				wikidata and wikipedia tags link to a different objects (Q107425357 vs Q1166794 wikidata id assigned to linked Wikipedia article)
-				</br>
-				<a href="https://openstreetmap.org/way/1881115" target="_new">Canterbury Way - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				wikidata and wikipedia tags link to a different objects (Q179481 vs Q1166794 wikidata id assigned to linked Wikipedia article)
-				</br>
-				<a href="https://openstreetmap.org/way/20003982" target="_new">Canterbury Way - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				wikidata and wikipedia tags link to a different objects (Q107425239 vs Q1166794 wikidata id assigned to linked Wikipedia article)
-				</br>
-				<a href="https://openstreetmap.org/way/23185690" target="_new">Canterbury Way - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-			</br>
-			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
-			</br>
-			<blockquote>[out:xml][timeout:3600];
-(
-way(1881115)['wikidata'='Q107425357']['wikipedia'='en:Dartford Crossing'];
-way(20003982)['wikidata'='Q179481']['wikipedia'='en:Dartford Crossing'];
-way(23185690)['wikidata'='Q107425239']['wikipedia'='en:Dartford Crossing'];
-); (._;>;); out meta qt;//['wikipedia wikidata mismatch']</blockquote>
-			</br>
-			<hr>
-			</br>
+<ul><li><a href="#wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not">wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not</a></li></ul>			</br>
 			<a href="#wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not"><h2 id="wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not">wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not</h2></a>
 			</br>
 			wikidata and wikipedia tags link to a different objects, because wikidata tag points to a redirect that should be followed
