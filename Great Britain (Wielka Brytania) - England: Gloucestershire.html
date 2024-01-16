@@ -1,0 +1,148 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://mapsaregreat.com/style.css" /> <!-- GPLv3 licensed -->
+	</head>
+<body>
+	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
+This page was generated using data obtained on 2024-01-16. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+<br />
+<br />
+			</br>
+			<hr>
+			</br>
+			Remember to check whether edits make sense! All reports are on this page because these tasks require human judgment to verify whether the proposed edit makes sense. Some proposed edits will be wrong, in such case they should be not done and problem reported
+			</br>
+			<hr>
+<ul><li><a href="#wikipedia tag links to 404">wikipedia tag links to 404</a></li><li><a href="#wikidata tag links to 404">wikidata tag links to 404</a></li><li><a href="#wikipedia wikidata mismatch">wikipedia wikidata mismatch</a></li><li><a href="#information board with wikipedia tag, not subject:wikipedia">information board with wikipedia tag, not subject:wikipedia</a></li><li><a href="#wikipedia/wikidata type tag that is incorrect according to not:* tag">wikipedia/wikidata type tag that is incorrect according to not:* tag</a></li></ul>			</br>
+			<a href="#wikipedia tag links to 404"><h2 id="wikipedia tag links to 404">wikipedia tag links to 404</h2></a>
+			</br>
+			Wikipedia article linked from OSM object using wikipedia tag is missing.<br />Often article was moved without leaving redirect and wikipedia tag should be edited to point to the new one.<br />Article may be deleted and no longer existing, or link was never valid. In such cases wikipedia tag should be deleted.
+				</br>
+				
+				</br>
+				<a href="https://openstreetmap.org/relation/417631" target="_new">Forest of Dean - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+relation(417631)['wikipedia'='de:Forest of Dean (District)'];
+); (._;>;); out meta qt;//['wikipedia tag links to 404']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikidata tag links to 404"><h2 id="wikidata tag links to 404">wikidata tag links to 404</h2></a>
+				</br>
+				wikidata tag present on element points to not existing element (https://www.wikidata.org/wiki/Q17525702;Q17640891)
+				</br>
+				<a href="https://openstreetmap.org/way/1208624410" target="_new">St John Baptist Hospital - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata tag present on element points to not existing element (https://www.wikidata.org/wiki/Q5121868;Q17536791)
+				</br>
+				<a href="https://openstreetmap.org/way/519264783" target="_new">Cirencester House - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(1208624410)['wikidata'='Q17525702;Q17640891'];
+way(519264783)['wikidata'='Q5121868;Q17536791'];
+); (._;>;); out meta qt;//['wikidata tag links to 404']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch"><h2 id="wikipedia wikidata mismatch">wikipedia wikidata mismatch</h2></a>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q4907026 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has wikipedia tag that links redirect (&#x27;Bigsweir&#x27; to &#x27;Bigsweir Bridge&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/node/358331953" target="_new">Bigsweir - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q17105519 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has wikipedia tag that links redirect (&#x27;Four shire stone&#x27; to &#x27;Four Shire Stone&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/node/4080505022" target="_new">Four Shire Stone - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q22910040 vs Q5302664 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/561286603" target="_new">Upper Dowdeswell - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q21694733 vs Q23165 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/relation/85103" target="_new">Gloucestershire - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q26672830 vs Q7808499 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/way/1106825252" target="_new">Tintern Rail Bridge - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q17535595 vs Q7591287 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/way/166265419" target="_new">Saint Paul's - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(358331953)['wikidata'='Q4907026']['wikipedia'='en:Bigsweir'];
+node(4080505022)['wikidata'='Q17105519']['wikipedia'='en:Four shire stone'];
+node(561286603)['wikidata'='Q22910040']['wikipedia'='en:Dowdeswell'];
+relation(85103)['wikidata'='Q21694733']['wikipedia'='en:Gloucestershire'];
+way(1106825252)['wikidata'='Q26672830']['wikipedia'='en:Tintern Wireworks Branch'];
+way(166265419)['wikidata'='Q17535595']['wikipedia'='en:St. Pauls, Cheltenham'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#information board with wikipedia tag, not subject:wikipedia"><h2 id="information board with wikipedia tag, not subject:wikipedia">information board with wikipedia tag, not subject:wikipedia</h2></a>
+				</br>
+				information board topic must be tagged with subject:wikipedia tag - not with wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/4944870251" target="_new">Church House - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(4944870251)['information'='board']['wikipedia'='en:The Church House, Tetbury'];
+); (._;>;); out meta qt;//['information board with wikipedia tag, not subject:wikipedia']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia/wikidata type tag that is incorrect according to not:* tag"><h2 id="wikipedia/wikidata type tag that is incorrect according to not:* tag">wikipedia/wikidata type tag that is incorrect according to not:* tag</h2></a>
+				</br>
+				brand:wikidata=Q5236716 is present despite that not:brand:wikidata=Q5236716 is also present - at least one of them is wrong
+				</br>
+				<a href="https://openstreetmap.org/way/57884973" target="_new">David Lloyd Clubs - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(57884973)['brand:wikidata'='Q5236716']['not:brand:wikidata'='Q5236716'];
+); (._;>;); out meta qt;//['wikipedia/wikidata type tag that is incorrect according to not:* tag']</blockquote>
+			</br>
+			<hr>
+<h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
+<p class="small">Note to self: online version hosted at <a href="https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports">https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports</a>, files are stored at <a href="https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports">https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports</a>.		</div>
+	</body>
+</html>

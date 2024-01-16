@@ -4,7 +4,7 @@
 	</head>
 <body>
 	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
-This page was generated using data obtained on 2024-01-15. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+This page was generated using data obtained on 2024-01-16. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
 <br />
 <br />
 			</br>
@@ -13,30 +13,7 @@ This page was generated using data obtained on 2024-01-15. Please, <a href="http
 			Proposed edits at this page are so obvious that automatic edit makes sense.
 			</br>
 			<hr>
-<ul><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li></ul>			</br>
-			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</h2></a>
-			</br>
-			wikidata and wikipedia tags link to a different objects, because wikipedia tag points to a redirect that should be followed
-				</br>
-				Q7244851 vs (missing) article redirects from en:Princess Theatre, Torquay to en:Princess Theatre (Torquay)
-				</br>
-				<a href="https://openstreetmap.org/way/29320057" target="_new">Princess Theatre - an affected OSM element that may be improved</a>
-				</br>
-				en:Princess Theatre, Torquay -> en:Princess Theatre (Torquay)
-				</br>
-				Princess Theatre (Torquay)
-				</br>
-				<hr>
-			</br>
-			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
-			</br>
-			<blockquote>[out:xml][timeout:3600];
-(
-way(29320057)['wikidata'='Q7244851']['wikipedia'='en:Princess Theatre, Torquay'];
-); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect']</blockquote>
-			</br>
-			<hr>
-			</br>
+<ul><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li></ul>			</br>
 			<a href="#wikidata from wikipedia tag"><h2 id="wikidata from wikipedia tag">wikidata from wikipedia tag</h2></a>
 				</br>
 				Q763074 may be added as wikidata tag based on wikipedia tag

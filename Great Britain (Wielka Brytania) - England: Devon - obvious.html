@@ -4,7 +4,7 @@
 	</head>
 <body>
 	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
-This page was generated using data obtained on 2024-01-15. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+This page was generated using data obtained on 2024-01-16. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
 <br />
 <br />
 			</br>
@@ -13,52 +13,7 @@ This page was generated using data obtained on 2024-01-15. Please, <a href="http
 			Proposed edits at this page are so obvious that automatic edit makes sense.
 			</br>
 			<hr>
-<ul><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</a></li></ul>			</br>
-			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</h2></a>
-			</br>
-			wikidata and wikipedia tags link to a different objects, because wikipedia tag points to a redirect that should be followed
-				</br>
-				Q977068 vs (missing) article redirects from en:Widecombe-in-the-Moor to en:Widecombe in the Moor
-				</br>
-				<a href="https://openstreetmap.org/node/1592873159" target="_new">Widecombe in the Moor - an affected OSM element that may be improved</a>
-				</br>
-				en:Widecombe-in-the-Moor -> en:Widecombe in the Moor
-				</br>
-				Widecombe in the Moor
-				</br>
-				<hr>
-				</br>
-				Q7374450 vs (missing) article redirects from en:Royal Marines Base Chivenor to en:RM Chivenor
-				</br>
-				<a href="https://openstreetmap.org/way/20909615" target="_new">Royal Marines Base Chivenor - an affected OSM element that may be improved</a>
-				</br>
-				en:Royal Marines Base Chivenor -> en:RM Chivenor
-				</br>
-				RM Chivenor
-				</br>
-				<hr>
-				</br>
-				Q7402316 vs (missing) article redirects from en:Saint Winifred&#x27;s Church, Branscombe, Devon to en:St Winifred&#x27;s Church, Branscombe
-				</br>
-				<a href="https://openstreetmap.org/way/532961376" target="_new">St Winifred - an affected OSM element that may be improved</a>
-				</br>
-				en:Saint Winifred's Church, Branscombe, Devon -> en:St Winifred's Church, Branscombe
-				</br>
-				St Winifred's Church, Branscombe
-				</br>
-				<hr>
-			</br>
-			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
-			</br>
-			<blockquote>[out:xml][timeout:3600];
-(
-node(1592873159)['wikidata'='Q977068']['wikipedia'='en:Widecombe-in-the-Moor'];
-way(20909615)['wikidata'='Q7374450']['wikipedia'='en:Royal Marines Base Chivenor'];
-way(532961376)['wikidata'='Q7402316']['wikipedia'='en:Saint Winifred\'s Church, Branscombe, Devon'];
-); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect']</blockquote>
-			</br>
-			<hr>
-			</br>
+<ul><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</a></li></ul>			</br>
 			<a href="#wikidata from wikipedia tag"><h2 id="wikidata from wikipedia tag">wikidata from wikipedia tag</h2></a>
 				</br>
 				Q2781536 may be added as wikidata tag based on wikipedia tag

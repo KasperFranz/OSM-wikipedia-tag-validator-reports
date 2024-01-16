@@ -1,0 +1,318 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://mapsaregreat.com/style.css" /> <!-- GPLv3 licensed -->
+	</head>
+<body>
+	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
+This page was generated using data obtained on 2024-01-16. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+<br />
+<br />
+			</br>
+			<hr>
+			</br>
+			Proposed edits at this page are so obvious that automatic edit makes sense.
+			</br>
+			<hr>
+<ul><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li></ul>			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</h2></a>
+			</br>
+			wikidata and wikipedia tags link to a different objects, because wikipedia tag points to a redirect that should be followed
+				</br>
+				Q7534477 vs (missing) article redirects from en:Skellingthorpe railway station to en:Skellingthorpe railway station (Lancashire, Derbyshire and East Coast Railway)
+				</br>
+				<a href="https://openstreetmap.org/node/8594640697" target="_new">Skellingthorpe - an affected OSM element that may be improved</a>
+				</br>
+				en:Skellingthorpe railway station -> en:Skellingthorpe railway station (Lancashire, Derbyshire and East Coast Railway)
+				</br>
+				Skellingthorpe railway station (Lancashire, Derbyshire and East Coast Railway)
+				</br>
+				<hr>
+				</br>
+				Q12062061 vs (missing) article redirects from en:Morton by Gainsborough to en:Morton, West Lindsey
+				</br>
+				<a href="https://openstreetmap.org/relation/1281832" target="_new">Morton CP - an affected OSM element that may be improved</a>
+				</br>
+				en:Morton by Gainsborough -> en:Morton, West Lindsey
+				</br>
+				Morton, West Lindsey
+				</br>
+				<hr>
+				</br>
+				Q5188700 vs (missing) article redirects from en:Crosskeys Bridge to en:Cross Keys Bridge
+				</br>
+				<a href="https://openstreetmap.org/relation/9193399" target="_new">Crosskeys Bridge - an affected OSM element that may be improved</a>
+				</br>
+				en:Crosskeys Bridge -> en:Cross Keys Bridge
+				</br>
+				Cross Keys Bridge
+				</br>
+				<hr>
+				</br>
+				Q7590501 vs (missing) article redirects from en:St. Mary Magdalene, Bailgate, Lincoln to en:St Mary Magdalene, Bailgate, Lincoln
+				</br>
+				<a href="https://openstreetmap.org/way/241448959" target="_new">Saint Mary Magdalene - an affected OSM element that may be improved</a>
+				</br>
+				en:St. Mary Magdalene, Bailgate, Lincoln -> en:St Mary Magdalene, Bailgate, Lincoln
+				</br>
+				St Mary Magdalene, Bailgate, Lincoln
+				</br>
+				<hr>
+				</br>
+				Q5188700 vs (missing) article redirects from en:Crosskeys Bridge to en:Cross Keys Bridge
+				</br>
+				<a href="https://openstreetmap.org/way/426380841" target="_new">Cross Keys Bridge - an affected OSM element that may be improved</a>
+				</br>
+				en:Crosskeys Bridge -> en:Cross Keys Bridge
+				</br>
+				Cross Keys Bridge
+				</br>
+				<hr>
+				</br>
+				Q16934441 vs (missing) article redirects from en:The Thomas Cowley High School to en:Cowley Academy
+				</br>
+				<a href="https://openstreetmap.org/way/455547379" target="_new">Cowley Academy - an affected OSM element that may be improved</a>
+				</br>
+				en:The Thomas Cowley High School -> en:Cowley Academy
+				</br>
+				Cowley Academy
+				</br>
+				<hr>
+				</br>
+				Q17526634 vs (missing) article redirects from en:St. Mary&#x27;s Guildhall, Lincoln to en:St Mary&#x27;s Guildhall, Lincoln
+				</br>
+				<a href="https://openstreetmap.org/way/610240193" target="_new">St. Mary's Guildhall - an affected OSM element that may be improved</a>
+				</br>
+				en:St. Mary's Guildhall, Lincoln -> en:St Mary's Guildhall, Lincoln
+				</br>
+				St Mary's Guildhall, Lincoln
+				</br>
+				<hr>
+				</br>
+				Q5188700 vs (missing) article redirects from en:Crosskeys Bridge to en:Cross Keys Bridge
+				</br>
+				<a href="https://openstreetmap.org/way/9703290" target="_new">Cross Keys Bridge - an affected OSM element that may be improved</a>
+				</br>
+				en:Crosskeys Bridge -> en:Cross Keys Bridge
+				</br>
+				Cross Keys Bridge
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(8594640697)['wikidata'='Q7534477']['wikipedia'='en:Skellingthorpe railway station'];
+relation(1281832)['wikidata'='Q12062061']['wikipedia'='en:Morton by Gainsborough'];
+relation(9193399)['wikidata'='Q5188700']['wikipedia'='en:Crosskeys Bridge'];
+way(241448959)['wikidata'='Q7590501']['wikipedia'='en:St. Mary Magdalene, Bailgate, Lincoln'];
+way(426380841)['wikidata'='Q5188700']['wikipedia'='en:Crosskeys Bridge'];
+way(455547379)['wikidata'='Q16934441']['wikipedia'='en:The Thomas Cowley High School'];
+way(610240193)['wikidata'='Q17526634']['wikipedia'='en:St. Mary\'s Guildhall, Lincoln'];
+way(9703290)['wikidata'='Q5188700']['wikipedia'='en:Crosskeys Bridge'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikidata from wikipedia tag"><h2 id="wikidata from wikipedia tag">wikidata from wikipedia tag</h2></a>
+				</br>
+				Q991481 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/10671908" target="_new">Waddington - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5315274 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/11016604320" target="_new">Dunholme - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2186387 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/20471338" target="_new">Skegness - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2031838 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/20471718" target="_new">Wainfleet - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7507280 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/291724976" target="_new">Sibsey Trader Mill - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q1882468 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/29458653" target="_new">Ruskington - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2585652 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/31508612" target="_new">Frampton - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q1876378 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/31511020" target="_new">Alford - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q15203997 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/3911612450" target="_new">Bourne Castle - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q6698691 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/7246648370" target="_new">Ludborough - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5501432 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/7414683996" target="_new">Freiston Shore - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q4722155 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/8043412818" target="_new">Alford Windmill - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q9337822 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/82512115" target="_new">Skellingthorpe - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q112041114 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/9743082575" target="_new">Lady Thatcher of Kesteven - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7056998 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/9833425407" target="_new">North Thoresby - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7605903 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/relation/11048758" target="_new">Steep Hill - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7055701 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/relation/3540916" target="_new">North Ings Farm Railway - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8032694 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/112180908" target="_new">National Golf Centre - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q27963279 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/148991843" target="_new">Highall Wood - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7275157 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/183642608" target="_new">RAF Barkston Heath - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7605903 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/202063520" target="_new">Steep Hill - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7605903 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/24760111" target="_new">Steep Hill - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7980528 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/318985100" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2415840 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/371302008" target="_new">Belton Park - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7754385 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/39256141" target="_new">The Gainsborough Martin & Co Arena - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q27963278 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/443241866" target="_new">Haltham Coppice - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7605903 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/54185311" target="_new">Steep Hill - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(10671908)['wikidata'!~'.*']['wikipedia'='en:Waddington, Lincolnshire'];
+node(11016604320)['wikidata'!~'.*']['wikipedia'='en:Dunholme'];
+node(20471338)['wikidata'!~'.*']['wikipedia'='en:Skegness railway station'];
+node(20471718)['wikidata'!~'.*']['wikipedia'='en:Wainfleet railway station'];
+node(291724976)['wikidata'!~'.*']['wikipedia'='en:Sibsey Trader Mill'];
+node(29458653)['wikidata'!~'.*']['wikipedia'='en:Ruskington'];
+node(31508612)['wikidata'!~'.*']['wikipedia'='en:Frampton, Lincolnshire'];
+node(31511020)['wikidata'!~'.*']['wikipedia'='en:Alford, Lincolnshire'];
+node(3911612450)['wikidata'!~'.*']['wikipedia'='en:Bourne Castle'];
+node(7246648370)['wikidata'!~'.*']['wikipedia'='en:Ludborough railway station'];
+node(7414683996)['wikidata'!~'.*']['wikipedia'='en:Freiston Shore'];
+node(8043412818)['wikidata'!~'.*']['wikipedia'='en:Alford Windmill'];
+node(82512115)['wikidata'!~'.*']['wikipedia'='en:Skellingthorpe'];
+node(9743082575)['wikidata'!~'.*']['wikipedia'='en:Statue of Margaret Thatcher (Grantham)'];
+node(9833425407)['wikidata'!~'.*']['wikipedia'='en:North_Thoresby_railway_station'];
+relation(11048758)['wikidata'!~'.*']['wikipedia'='en:Steep Hill'];
+relation(3540916)['wikidata'!~'.*']['wikipedia'='en:North Ings Farm Museum'];
+way(112180908)['wikidata'!~'.*']['wikipedia'='en:Woodhall Spa Golf Club'];
+way(148991843)['wikidata'!~'.*']['wikipedia'='en:Highall Wood'];
+way(183642608)['wikidata'!~'.*']['wikipedia'='en:RAF Barkston Heath'];
+way(202063520)['wikidata'!~'.*']['wikipedia'='en:Steep Hill'];
+way(24760111)['wikidata'!~'.*']['wikipedia'='en:Steep Hill'];
+way(318985100)['wikidata'!~'.*']['wikipedia'='en:Welbourn'];
+way(371302008)['wikidata'!~'.*']['wikipedia'='en:Belton House'];
+way(39256141)['wikidata'!~'.*']['wikipedia'='en:The Northolme'];
+way(443241866)['wikidata'!~'.*']['wikipedia'='en:Haltham Coppice'];
+way(54185311)['wikidata'!~'.*']['wikipedia'='en:Steep Hill'];
+); (._;>;); out meta qt;//['wikidata from wikipedia tag']</blockquote>
+			</br>
+			<hr>
+<h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
+<p class="small">Note to self: online version hosted at <a href="https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports">https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports</a>, files are stored at <a href="https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports">https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports</a>.		</div>
+	</body>
+</html>

@@ -1,0 +1,225 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://mapsaregreat.com/style.css" /> <!-- GPLv3 licensed -->
+	</head>
+<body>
+	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
+This page was generated using data obtained on 2024-01-16. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+<br />
+<br />
+			</br>
+			<hr>
+			</br>
+			Proposed edits at this page are so obvious that automatic edit makes sense.
+			</br>
+			<hr>
+<ul><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li><li><a href="#wikipedia wikidata mismatch - follow wikidata redirect">wikipedia wikidata mismatch - follow wikidata redirect</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</a></li></ul>			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</h2></a>
+			</br>
+			wikidata and wikipedia tags link to a different objects, because wikipedia tag points to a redirect that should be followed
+				</br>
+				Q7594935 vs (missing) article redirects from en:St Nicholas&#x27; Church, West Itchenor to en:St Nicholas Church, West Itchenor
+				</br>
+				<a href="https://openstreetmap.org/node/10933592223" target="_new">St Nicholas - an affected OSM element that may be improved</a>
+				</br>
+				en:St Nicholas' Church, West Itchenor -> en:St Nicholas Church, West Itchenor
+				</br>
+				St Nicholas Church, West Itchenor
+				</br>
+				<hr>
+				</br>
+				Q7847949 vs (missing) article redirects from en:Trundle (hill fort) to en:The Trundle
+				</br>
+				<a href="https://openstreetmap.org/node/29269186" target="_new">The Trundle - an affected OSM element that may be improved</a>
+				</br>
+				en:Trundle (hill fort) -> en:The Trundle
+				</br>
+				The Trundle
+				</br>
+				<hr>
+				</br>
+				Q7200801 vs (missing) article redirects from en:Plaistow and Ifold to en:Plaistow, West Sussex
+				</br>
+				<a href="https://openstreetmap.org/relation/2996103" target="_new">Plaistow - an affected OSM element that may be improved</a>
+				</br>
+				en:Plaistow and Ifold -> en:Plaistow, West Sussex
+				</br>
+				Plaistow, West Sussex
+				</br>
+				<hr>
+				</br>
+				Q2961285 vs (missing) article redirects from en:St. Hugh&#x27;s Charterhouse, Parkminster to en:St Hugh&#x27;s Charterhouse
+				</br>
+				<a href="https://openstreetmap.org/relation/5438233" target="_new">St. Hugh's Charterhouse - an affected OSM element that may be improved</a>
+				</br>
+				en:St. Hugh's Charterhouse, Parkminster -> en:St Hugh's Charterhouse
+				</br>
+				St Hugh's Charterhouse
+				</br>
+				<hr>
+				</br>
+				Q2553215 vs (missing) article redirects from en:Weald and Downland Open Air Museum to en:Weald and Downland Living Museum
+				</br>
+				<a href="https://openstreetmap.org/way/322758602" target="_new">Weald & Downland Open Air Museum - an affected OSM element that may be improved</a>
+				</br>
+				en:Weald and Downland Open Air Museum -> en:Weald and Downland Living Museum
+				</br>
+				Weald and Downland Living Museum
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(10933592223)['wikidata'='Q7594935']['wikipedia'='en:St Nicholas\' Church, West Itchenor'];
+node(29269186)['wikidata'='Q7847949']['wikipedia'='en:Trundle (hill fort)'];
+relation(2996103)['wikidata'='Q7200801']['wikipedia'='en:Plaistow and Ifold'];
+relation(5438233)['wikidata'='Q2961285']['wikipedia'='en:St. Hugh\'s Charterhouse, Parkminster'];
+way(322758602)['wikidata'='Q2553215']['wikipedia'='en:Weald and Downland Open Air Museum'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikidata from wikipedia tag"><h2 id="wikidata from wikipedia tag">wikidata from wikipedia tag</h2></a>
+				</br>
+				Q2200801 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/2337466243" target="_new">Loxwood - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2082624 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/29269161" target="_new">West Dean - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q1277792 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/relation/9967819" target="_new">East Coastway Line - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7990274 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/157367406" target="_new">Wey and Arun Junction Canal - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7990274 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/158746701" target="_new">Wey and Arun Junction Canal - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q962567 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/163365403" target="_new">West Barnham - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q1537630 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/25523627" target="_new">Goodwood House - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7277424 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/341595776" target="_new">ROTOR - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7076537 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/615637030" target="_new">Ockenden Manor Hotel & Spa - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7374637 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/659923455" target="_new">Cuckfield Nuclear Bunker / Royal Observer Corps Post - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7076537 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/666339373" target="_new">Ockenden Manor Hotel & Spa - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(2337466243)['wikidata'!~'.*']['wikipedia'='en:Loxwood'];
+node(29269161)['wikidata'!~'.*']['wikipedia'='en:West Dean, West Sussex'];
+relation(9967819)['wikidata'!~'.*']['wikipedia'='en:East Coastway line'];
+way(157367406)['wikidata'!~'.*']['wikipedia'='en:Wey and Arun Canal'];
+way(158746701)['wikidata'!~'.*']['wikipedia'='en:Wey and Arun Canal'];
+way(163365403)['wikidata'!~'.*']['wikipedia'='en:Barnham, West Sussex'];
+way(25523627)['wikidata'!~'.*']['wikipedia'='en:Goodwood House'];
+way(341595776)['wikidata'!~'.*']['wikipedia'='en:ROTOR'];
+way(615637030)['wikidata'!~'.*']['wikipedia'='en:Ockenden Manor'];
+way(659923455)['wikidata'!~'.*']['wikipedia'='en:Royal Observer Corps'];
+way(666339373)['wikidata'!~'.*']['wikipedia'='en:Ockenden Manor'];
+); (._;>;); out meta qt;//['wikidata from wikipedia tag']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikidata redirect"><h2 id="wikipedia wikidata mismatch - follow wikidata redirect">wikipedia wikidata mismatch - follow wikidata redirect</h2></a>
+			</br>
+			wikidata and wikipedia tags link to a different objects, because wikidata tag points to a redirect that should be followed
+				</br>
+				Q109649327 vs Q38251053
+				</br>
+				<a href="https://openstreetmap.org/way/328625081" target="_new">Our Lady of Consolation - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(328625081)['wikidata'='Q109649327']['wikipedia'='en:Shrine of Our Lady of Consolation'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikidata redirect']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</h2></a>
+			</br>
+			network:wikidata and network:wikipedia tags link to a different objects, because network:wikipedia tag points to a redirect that should be followed
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/2111606" target="_new">National Express 201: Brighton → Swansea - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/2129287" target="_new">National Express 200 Airport - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/9420433" target="_new">National Express 201: Swansea → Brighton - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+relation(2111606)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(2129287)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+relation(9420433)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags']</blockquote>
+			</br>
+			<hr>
+<h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
+<p class="small">Note to self: online version hosted at <a href="https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports">https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports</a>, files are stored at <a href="https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports">https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports</a>.		</div>
+	</body>
+</html>

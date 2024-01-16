@@ -1,0 +1,578 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://mapsaregreat.com/style.css" /> <!-- GPLv3 licensed -->
+	</head>
+<body>
+	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
+This page was generated using data obtained on 2024-01-16. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+<br />
+<br />
+			</br>
+			<hr>
+			</br>
+			Proposed edits at this page are so obvious that automatic edit makes sense.
+			</br>
+			<hr>
+<ul><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li><li><a href="#wikipedia tag in an outdated form for removal">wikipedia tag in an outdated form for removal</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</a></li></ul>			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</h2></a>
+			</br>
+			wikidata and wikipedia tags link to a different objects, because wikipedia tag points to a redirect that should be followed
+				</br>
+				Q2289192 vs (missing) article redirects from en:Singing Ringing Tree (Panopticons) to en:Singing Ringing Tree (sculpture)
+				</br>
+				<a href="https://openstreetmap.org/node/1098457168" target="_new">The Singing Ringing Tree - an affected OSM element that may be improved</a>
+				</br>
+				en:Singing Ringing Tree (Panopticons) -> en:Singing Ringing Tree (sculpture)
+				</br>
+				Singing Ringing Tree (sculpture)
+				</br>
+				<hr>
+				</br>
+				Q220081 vs (missing) article redirects from en:Beach Lighthouse (Fleetwood) to en:Beach Lighthouse, Fleetwood
+				</br>
+				<a href="https://openstreetmap.org/node/2774167170" target="_new">Beach Lighthouse - an affected OSM element that may be improved</a>
+				</br>
+				en:Beach Lighthouse (Fleetwood) -> en:Beach Lighthouse, Fleetwood
+				</br>
+				Beach Lighthouse, Fleetwood
+				</br>
+				<hr>
+				</br>
+				Q1518513 vs (missing) article redirects from en:Pharos Lighthouse (Fleetwood) to en:Pharos Lighthouse, Fleetwood
+				</br>
+				<a href="https://openstreetmap.org/node/475564875" target="_new">Pharos Lighthouse - an affected OSM element that may be improved</a>
+				</br>
+				en:Pharos Lighthouse (Fleetwood) -> en:Pharos Lighthouse, Fleetwood
+				</br>
+				Pharos Lighthouse, Fleetwood
+				</br>
+				<hr>
+				</br>
+				Q1594932 vs (missing) article redirects from en:Sunderland Point to en:Sunderland, Lancashire
+				</br>
+				<a href="https://openstreetmap.org/node/6503631967" target="_new">Sunderland - an affected OSM element that may be improved</a>
+				</br>
+				en:Sunderland Point -> en:Sunderland, Lancashire
+				</br>
+				Sunderland, Lancashire
+				</br>
+				<hr>
+				</br>
+				Q4764963 vs (missing) article redirects from en:Pinfold to en:Animal pound
+				</br>
+				<a href="https://openstreetmap.org/node/739849727" target="_new">The Pinfold - an affected OSM element that may be improved</a>
+				</br>
+				en:Pinfold -> en:Animal pound
+				</br>
+				Animal pound
+				</br>
+				<hr>
+				</br>
+				Q6911223 vs (missing) article redirects from en:Morecambe High School to en:Morecambe Bay Academy
+				</br>
+				<a href="https://openstreetmap.org/way/23449489" target="_new">Morecambe Bay Academy - an affected OSM element that may be improved</a>
+				</br>
+				en:Morecambe High School -> en:Morecambe Bay Academy
+				</br>
+				Morecambe Bay Academy
+				</br>
+				<hr>
+				</br>
+				Q7592487 vs (missing) article redirects from en:St Anne&#x27;s Pier to en:St Annes Pier
+				</br>
+				<a href="https://openstreetmap.org/way/43083660" target="_new">St Anne's Pier - an affected OSM element that may be improved</a>
+				</br>
+				en:St Anne's Pier -> en:St Annes Pier
+				</br>
+				St Annes Pier
+				</br>
+				<hr>
+				</br>
+				Q7593602 vs (missing) article redirects from en:St John&#x27;s Minster, Preston to en:Preston Minster
+				</br>
+				<a href="https://openstreetmap.org/way/73584829" target="_new">St John's Minster - an affected OSM element that may be improved</a>
+				</br>
+				en:St John's Minster, Preston -> en:Preston Minster
+				</br>
+				Preston Minster
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(1098457168)['wikidata'='Q2289192']['wikipedia'='en:Singing Ringing Tree (Panopticons)'];
+node(2774167170)['wikidata'='Q220081']['wikipedia'='en:Beach Lighthouse (Fleetwood)'];
+node(475564875)['wikidata'='Q1518513']['wikipedia'='en:Pharos Lighthouse (Fleetwood)'];
+node(6503631967)['wikidata'='Q1594932']['wikipedia'='en:Sunderland Point'];
+node(739849727)['wikidata'='Q4764963']['wikipedia'='en:Pinfold'];
+way(23449489)['wikidata'='Q6911223']['wikipedia'='en:Morecambe High School'];
+way(43083660)['wikidata'='Q7592487']['wikipedia'='en:St Anne\'s Pier'];
+way(73584829)['wikidata'='Q7593602']['wikipedia'='en:St John\'s Minster, Preston'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikidata from wikipedia tag"><h2 id="wikidata from wikipedia tag">wikidata from wikipedia tag</h2></a>
+				</br>
+				Q2519968 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/21664753" target="_new">Langho - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q3983378 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/2185022486" target="_new">Ramsgreave and Wilpshire - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q4664068 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/29020281" target="_new">Abbey Village - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8028210 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/29065137" target="_new">Withnell Fold - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5130191 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/29136828" target="_new">Clayton Brook - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5086571 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/29383055" target="_new">Charnock Richard - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2369308 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/29390839" target="_new">Croston - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5745701 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/29399814" target="_new">Hesketh Bank - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q4799401 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/29490739" target="_new">Silverdale - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q3961715 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/29554054" target="_new">Euxton Balshaw Lane - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2664533 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/29768942" target="_new">Burnley Central - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2180048 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/29768945" target="_new">Burnley Barracks - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q4367050 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/29768959" target="_new">Brierfield - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q523025 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/29768962" target="_new">Brierfield - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q1964347 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/30691980" target="_new">Heysham Port - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2197139 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/31390026" target="_new">Priest Hutton - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2870083 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/3711617680" target="_new">Bamber Bridge - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q1811969 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/3715250477" target="_new">Accrington - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q4539321 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/3715250480" target="_new">Burnley Manchester Road - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2191313 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/3715250482" target="_new">Church and Oswaldtwistle - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2211158 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/3715250486" target="_new">Hapton - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2023601 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/3715250492" target="_new">Huncoat - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2286734 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/3715250500" target="_new">Rishton - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q4032363 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/3773093432" target="_new">Aughton Park - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2049676 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/4799813688" target="_new">Coppull - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2308921 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/4978846066" target="_new">Lostock Hall - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2238694 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/50166239" target="_new">Squires Gate - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q516260 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/7149987543" target="_new">Ormskirk - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2653620 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/7209348825" target="_new">Rufford - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q4940175 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/7275471288" target="_new">Bolton Green - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5102135 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/node/7369315412" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q6483047 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/1098353067" target="_new">Boars Head to Adlington Branch - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q6483047 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/1098353068" target="_new">Boars Head to Adlington Branch - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q4861861 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/143823952" target="_new">Barnoldswick Railway - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q4861861 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/143823973" target="_new">Barnoldswick Railway - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q619024 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/160320378" target="_new">Highbury Stadium - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q1141958 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/193207310" target="_new">Deepdale Stadium - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q4861861 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/226720183" target="_new">Barnoldswick Railway - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q620815 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/35155939" target="_new">Crown Ground - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q18309 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/366510876" target="_new">Sir Tom Finney Stadium - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q4969830 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/367005537" target="_new">British Commercial Vehicle Museum - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q1872684 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/402074295" target="_new">Gressingham Bridge - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q4672879 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/405728509" target="_new">Accrington and Rossendale College - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q4861861 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/45885637" target="_new">Barnoldswick Railway - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q4861861 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/45885638" target="_new">Barnoldswick Railway - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q456312 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/4627782" target="_new">River Yarrow - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q5595137 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/49219547" target="_new">Grand Theatre - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q1943735 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/498616748" target="_new">Nelson Interchange - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7736956 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/536588223" target="_new">The Goit - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7736956 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/536588224" target="_new">The Goit - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q2292017 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/556758289" target="_new">Skerton Bridge - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q1698906 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/557009631" target="_new">Lune Millenium Bridge - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7736956 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/6896294" target="_new">The Goit - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7736956 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/699682875" target="_new">The Goit - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q4855921 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/817215526" target="_new">Bank Hall - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q104862437 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/858076462" target="_new">Cross Bay Walk - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q104862437 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/858076463" target="_new">Cross Bay Walk - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q104862437 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/858076464" target="_new">Cross Bay Walk - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7736956 may be added as wikidata tag based on wikipedia tag
+				</br>
+				<a href="https://openstreetmap.org/way/891311704" target="_new">The Goit - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(21664753)['wikidata'!~'.*']['wikipedia'='en:Langho railway station'];
+node(2185022486)['wikidata'!~'.*']['wikipedia'='en:Ramsgreave and Wilpshire railway station'];
+node(29020281)['wikidata'!~'.*']['wikipedia'='en:Abbey Village'];
+node(29065137)['wikidata'!~'.*']['wikipedia'='en:Withnell Fold'];
+node(29136828)['wikidata'!~'.*']['wikipedia'='en:Clayton Brook'];
+node(29383055)['wikidata'!~'.*']['wikipedia'='en:Charnock Richard'];
+node(29390839)['wikidata'!~'.*']['wikipedia'='en:Croston railway station'];
+node(29399814)['wikidata'!~'.*']['wikipedia'='en:Hesketh Bank'];
+node(29490739)['wikidata'!~'.*']['wikipedia'='en:Silverdale railway station'];
+node(29554054)['wikidata'!~'.*']['wikipedia'='en:Euxton Balshaw Lane railway station'];
+node(29768942)['wikidata'!~'.*']['wikipedia'='en:Burnley Central railway station'];
+node(29768945)['wikidata'!~'.*']['wikipedia'='en:Burnley Barracks railway station'];
+node(29768959)['wikidata'!~'.*']['wikipedia'='en:Brierfield railway station'];
+node(29768962)['wikidata'!~'.*']['wikipedia'='en:Brierfield, Lancashire'];
+node(30691980)['wikidata'!~'.*']['wikipedia'='en:Heysham Port railway station'];
+node(31390026)['wikidata'!~'.*']['wikipedia'='en:Priest Hutton'];
+node(3711617680)['wikidata'!~'.*']['wikipedia'='en:Bamber Bridge railway station'];
+node(3715250477)['wikidata'!~'.*']['wikipedia'='en:Accrington railway station'];
+node(3715250480)['wikidata'!~'.*']['wikipedia'='en:Burnley Manchester Road railway station'];
+node(3715250482)['wikidata'!~'.*']['wikipedia'='en:Church & Oswaldtwistle railway station'];
+node(3715250486)['wikidata'!~'.*']['wikipedia'='en:Hapton railway station'];
+node(3715250492)['wikidata'!~'.*']['wikipedia'='en:Huncoat railway station'];
+node(3715250500)['wikidata'!~'.*']['wikipedia'='en:Rishton railway station'];
+node(3773093432)['wikidata'!~'.*']['wikipedia'='en:Aughton Park railway station'];
+node(4799813688)['wikidata'!~'.*']['wikipedia'='en:Coppull'];
+node(4978846066)['wikidata'!~'.*']['wikipedia'='en:Lostock Hall railway station'];
+node(50166239)['wikidata'!~'.*']['wikipedia'='en:Squires Gate railway station'];
+node(7149987543)['wikidata'!~'.*']['wikipedia'='en:Ormskirk railway station'];
+node(7209348825)['wikidata'!~'.*']['wikipedia'='en:Rufford railway station'];
+node(7275471288)['wikidata'!~'.*']['wikipedia'='en:Bolton Green'];
+node(7369315412)['wikidata'!~'.*']['wikipedia'='en:Chisnall Hall Colliery'];
+way(1098353067)['wikidata'!~'.*']['wikipedia'='en:Lancashire Union Railway'];
+way(1098353068)['wikidata'!~'.*']['wikipedia'='en:Lancashire Union Railway'];
+way(143823952)['wikidata'!~'.*']['wikipedia'='en:Barnoldswick Railway'];
+way(143823973)['wikidata'!~'.*']['wikipedia'='en:Barnoldswick Railway'];
+way(160320378)['wikidata'!~'.*']['wikipedia'='en:Highbury Stadium (Fleetwood)'];
+way(193207310)['wikidata'!~'.*']['wikipedia'='en:Deepdale'];
+way(226720183)['wikidata'!~'.*']['wikipedia'='en:Barnoldswick Railway'];
+way(35155939)['wikidata'!~'.*']['wikipedia'='en:Crown Ground'];
+way(366510876)['wikidata'!~'.*']['wikipedia'='en:Bamber Bridge F.C.'];
+way(367005537)['wikidata'!~'.*']['wikipedia'='en:British Commercial Vehicle Museum'];
+way(402074295)['wikidata'!~'.*']['wikipedia'='en:Loyn Bridge'];
+way(405728509)['wikidata'!~'.*']['wikipedia'='en:Accrington and Rossendale College'];
+way(45885637)['wikidata'!~'.*']['wikipedia'='en:Barnoldswick Railway'];
+way(45885638)['wikidata'!~'.*']['wikipedia'='en:Barnoldswick Railway'];
+way(4627782)['wikidata'!~'.*']['wikipedia'='en:River Yarrow (Lancashire)'];
+way(49219547)['wikidata'!~'.*']['wikipedia'='en:Grand Theatre, Lancaster'];
+way(498616748)['wikidata'!~'.*']['wikipedia'='en:Nelson railway station'];
+way(536588223)['wikidata'!~'.*']['wikipedia'='en:The Goit'];
+way(536588224)['wikidata'!~'.*']['wikipedia'='en:The Goit'];
+way(556758289)['wikidata'!~'.*']['wikipedia'='en:Skerton Bridge'];
+way(557009631)['wikidata'!~'.*']['wikipedia'='en:Lune Millennium Bridge'];
+way(6896294)['wikidata'!~'.*']['wikipedia'='en:The Goit'];
+way(699682875)['wikidata'!~'.*']['wikipedia'='en:The Goit'];
+way(817215526)['wikidata'!~'.*']['wikipedia'='en:Bank Hall'];
+way(858076462)['wikidata'!~'.*']['wikipedia'='en:Cross Bay Walk'];
+way(858076463)['wikidata'!~'.*']['wikipedia'='en:Cross Bay Walk'];
+way(858076464)['wikidata'!~'.*']['wikipedia'='en:Cross Bay Walk'];
+way(891311704)['wikidata'!~'.*']['wikipedia'='en:The Goit'];
+); (._;>;); out meta qt;//['wikidata from wikipedia tag']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia tag in an outdated form for removal"><h2 id="wikipedia tag in an outdated form for removal">wikipedia tag in an outdated form for removal</h2></a>
+				</br>
+				wikipedia tag in outdated form ([&#x27;wikipedia:fi&#x27;]), with wikipedia and wikidata tag present and may be safely removed
+				</br>
+				<a href="https://openstreetmap.org/way/653034259" target="_new">Irish Sea - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(653034259)['wikidata'='Q41735']['wikipedia'='en:Irish Sea']['wikipedia:fi'='Irlanninmeri'];
+); (._;>;); out meta qt;//['wikipedia tag in an outdated form for removal']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</h2></a>
+			</br>
+			network:wikidata and network:wikipedia tags link to a different objects, because network:wikipedia tag points to a redirect that should be followed
+				</br>
+				Q60188 vs (missing) article redirects from en:National Express to en:Mobico Group
+				</br>
+				<a href="https://openstreetmap.org/relation/8623406" target="_new">Bus 336 Plymouth => Edinburgh - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+relation(8623406)['network:wikidata'='Q60188']['network:wikipedia'='en:National Express'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags']</blockquote>
+			</br>
+			<hr>
+<h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
+<p class="small">Note to self: online version hosted at <a href="https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports">https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports</a>, files are stored at <a href="https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports">https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports</a>.		</div>
+	</body>
+</html>
