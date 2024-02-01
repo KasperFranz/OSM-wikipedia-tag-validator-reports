@@ -4,7 +4,7 @@
 	</head>
 <body>
 	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
-This page was generated using data obtained on various dates including 2024-01-27, 2024-01-28. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+This page was generated using data obtained on various dates including 2024-01-31. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
 <br />
 <br />
 			</br>
@@ -542,16 +542,6 @@ node(3009667200)['wikidata'!~'.*']['wikipedia'!~'.*']['wikipedia:pl'='Karwowo-Po
 			</br>
 			wikidata and wikipedia tags link to a different objects, because wikipedia tag points to a redirect that should be followed
 				</br>
-				Q11810809 vs (missing) article redirects from pl:Parafia &#347;w. Tr&#243;jcy w Latowiczu to pl:Parafia &#346;wi&#281;tej Tr&#243;jcy w Latowiczu
-				</br>
-				<a href="https://openstreetmap.org/relation/15013466" target="_new">Parafia Świętej Trójcy w Latowiczu - an affected OSM element that may be improved</a>
-				</br>
-				pl:Parafia św. Trójcy w Latowiczu -> pl:Parafia Świętej Trójcy w Latowiczu
-				</br>
-				Parafia &#346;wi&#281;tej Tr&#243;jcy w Latowiczu
-				</br>
-				<hr>
-				</br>
 				Q5739598 vs (missing) article redirects from pl:Stawiszcze (gmina Czeremcha) to pl:Stawiszcze (wojew&#243;dztwo podlaskie)
 				</br>
 				<a href="https://openstreetmap.org/relation/6775508" target="_new">Stawiszcze - an affected OSM element that may be improved</a>
@@ -561,24 +551,12 @@ node(3009667200)['wikidata'!~'.*']['wikipedia'!~'.*']['wikipedia:pl'='Karwowo-Po
 				Stawiszcze (wojew&#243;dztwo podlaskie)
 				</br>
 				<hr>
-				</br>
-				Q72053266 vs (missing) article redirects from pl:Ko&#347;ci&#243;&#322; pw. Naj&#347;wi&#281;tszego Serca Pana Jezusa w Ma&#322;ej Nieszawce to pl:Ko&#347;ci&#243;&#322; Naj&#347;wi&#281;tszego Serca Pana Jezusa w Ma&#322;ej Nieszawce
-				</br>
-				<a href="https://openstreetmap.org/way/426035802" target="_new">Kościół pw. Najświętszego Serca Pana Jezusa - an affected OSM element that may be improved</a>
-				</br>
-				pl:Kościół pw. Najświętszego Serca Pana Jezusa w Małej Nieszawce -> pl:Kościół Najświętszego Serca Pana Jezusa w Małej Nieszawce
-				</br>
-				Ko&#347;ci&#243;&#322; Naj&#347;wi&#281;tszego Serca Pana Jezusa w Ma&#322;ej Nieszawce
-				</br>
-				<hr>
 			</br>
 			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
 			</br>
 			<blockquote>[out:xml][timeout:3600];
 (
-relation(15013466)['wikidata'='Q11810809']['wikipedia'='pl:Parafia &#347;w. Tr&#243;jcy w Latowiczu'];
 relation(6775508)['wikidata'='Q5739598']['wikipedia'='pl:Stawiszcze (gmina Czeremcha)'];
-way(426035802)['wikidata'='Q72053266']['wikipedia'='pl:Ko&#347;ci&#243;&#322; pw. Naj&#347;wi&#281;tszego Serca Pana Jezusa w Ma&#322;ej Nieszawce'];
 ); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect']</blockquote>
 			</br>
 			<hr>
@@ -630,6 +608,14 @@ way(426035802)['wikidata'='Q72053266']['wikipedia'='pl:Ko&#347;ci&#243;&#322; pw
 				<a href="https://openstreetmap.org/node/4010086837" target="_new">Javorina - an affected OSM element that may be improved</a>
 				</br>
 				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Jaworzyna (1052 m)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Jaworzyna (1052 m)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/node/5182375006" target="_new">Solnik - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Solnik'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Solnik'}}]
 				</br>
 				<hr>
 				</br>
@@ -699,25 +685,57 @@ way(426035802)['wikidata'='Q72053266']['wikipedia'='pl:Ko&#347;ci&#243;&#322; pw
 				</br>
 				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
 				</br>
-				<a href="https://openstreetmap.org/way/194525992" target="_new">Kościół pw. Św. Wojciecha - an affected OSM element that may be improved</a>
+				<a href="https://openstreetmap.org/relation/9479955" target="_new">Sanka - an affected OSM element that may be improved</a>
 				</br>
-				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Kościół św. Wojciecha w Międzyrzeczu'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Kościół św. Wojciecha w Międzyrzeczu'}}]
-				</br>
-				<hr>
-				</br>
-				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
-				</br>
-				<a href="https://openstreetmap.org/way/215461950" target="_new">Sąd Rejonowy - an affected OSM element that may be improved</a>
-				</br>
-				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Budynek sądu w Raciborzu'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Budynek sądu w Raciborzu'}}]
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
 				</br>
 				<hr>
 				</br>
 				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
 				</br>
-				<a href="https://openstreetmap.org/way/239046414" target="_new">Muzeum Alyem - an affected OSM element that may be improved</a>
+				<a href="https://openstreetmap.org/way/1109151163" target="_new">Malinówka - an affected OSM element that may be improved</a>
 				</br>
-				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Kościół poewangelicki w Sztumie'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Kościół poewangelicki w Sztumie'}}]
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Malinówka (potok)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Malinówka (potok)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/1245019692" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Cmentarz żydowski w Russocicach'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Cmentarz żydowski w Russocicach'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/142009476" target="_new">Szkoła Podstawowa nr 3 im. Mikołaja Kopernika - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Szkoła Podstawowa nr 3 im. Mikołaja Kopernika w Wieliczce'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Szkoła Podstawowa nr 3 im. Mikołaja Kopernika w Wieliczce'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/209181368" target="_new">Kościół pw. Świętej Marii Magdaleny - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Kościół św. Marii Magdaleny w Szczucinie'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Kościół św. Marii Magdaleny w Szczucinie'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/231866589" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/232081849" target="_new">Kościół pw. Matki Bożej Nieustającej Pomocy - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Kościół Matki Bożej Nieustającej Pomocy w Krakowie (ul. Księcia Józefa)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Kościół Matki Bożej Nieustającej Pomocy w Krakowie (ul. Księcia Józefa)'}}]
 				</br>
 				<hr>
 				</br>
@@ -731,17 +749,129 @@ way(426035802)['wikidata'='Q72053266']['wikipedia'='pl:Ko&#347;ci&#243;&#322; pw
 				</br>
 				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
 				</br>
-				<a href="https://openstreetmap.org/way/263213641" target="_new">Kościół pw. Świętego Antoniego z Padwy - an affected OSM element that may be improved</a>
+				<a href="https://openstreetmap.org/way/26249071" target="_new">Park Aleksandry - an affected OSM element that may be improved</a>
 				</br>
-				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Kościół św. Antoniego w Braniewie'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Kościół św. Antoniego w Braniewie'}}]
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Park Aleksandry w Krakowie'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Park Aleksandry w Krakowie'}}]
 				</br>
 				<hr>
 				</br>
 				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
 				</br>
-				<a href="https://openstreetmap.org/way/332311304" target="_new">Międzynarodowe Centrum Kongresowe - an affected OSM element that may be improved</a>
+				<a href="https://openstreetmap.org/way/30056478" target="_new">Sanka - an affected OSM element that may be improved</a>
 				</br>
-				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Międzynarodowe Centrum Kongresowe w Katowicach'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Międzynarodowe Centrum Kongresowe w Katowicach'}}]
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/321913767" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/321913769" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/321913770" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/321913772" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/321913773" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/321913775" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/397103248" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/397103288" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/397103291" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/397103297" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/397103303" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/397103304" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/397103314" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/397103324" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
 				</br>
 				<hr>
 				</br>
@@ -750,6 +880,350 @@ way(426035802)['wikidata'='Q72053266']['wikipedia'='pl:Ko&#347;ci&#243;&#322; pw
 				<a href="https://openstreetmap.org/way/404372678" target="_new">Oldřišský potok - an affected OSM element that may be improved</a>
 				</br>
 				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Czerwona Woda (dopływ Nysy Łużyckiej)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Czerwona Woda (dopływ Nysy Łużyckiej)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/407173943" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/422066472" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/55694847" target="_new">Zamkowa - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Ulica Zamkowa w Wieliczce'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Ulica Zamkowa w Wieliczce'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/575036802" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417242" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417243" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417244" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417245" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417246" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417247" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417249" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417251" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417256" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417257" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417259" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417265" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417266" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417267" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417268" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417269" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417270" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417271" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417277" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417278" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417279" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417280" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417282" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417284" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417287" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683417288" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683455488" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683455489" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683455490" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683455491" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683455492" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683455493" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683455495" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683455496" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683455497" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/683455498" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/822265628" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/822265629" target="_new">Sanka - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Sanka (dopływ Wisły)'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Sanka (dopływ Wisły)'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article, article language is not surprising
+				</br>
+				<a href="https://openstreetmap.org/way/95559058" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'pl:Cmentarz Komunalny w Wieliczce'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'pl:Cmentarz Komunalny w Wieliczce'}}]
 				</br>
 				<hr>
 			</br>
@@ -763,24 +1237,83 @@ node(2822718472)['wikidata'='Q11829585']['wikipedia'!~'.*'];
 node(3202862530)['wikidata'='Q2573489']['wikipedia'!~'.*'];
 node(3984638116)['wikidata'='Q9265896']['wikipedia'!~'.*'];
 node(4010086837)['wikidata'='Q11723460']['wikipedia'!~'.*'];
+node(5182375006)['wikidata'='Q9339378']['wikipedia'!~'.*'];
 relation(14381936)['wikidata'='Q1595261']['wikipedia'!~'.*'];
 relation(16357211)['wikidata'='Q8032604']['wikipedia'!~'.*'];
-relation(16357211)['wikidata'='Q8032604']['wikipedia'!~'.*'];
-relation(16394659)['wikidata'='Q1471285']['wikipedia'!~'.*'];
 relation(16394659)['wikidata'='Q1471285']['wikipedia'!~'.*'];
 relation(16394661)['wikidata'='Q1997420']['wikipedia'!~'.*'];
-relation(16394662)['wikidata'='Q1997432']['wikipedia'!~'.*'];
 relation(16394662)['wikidata'='Q1997432']['wikipedia'!~'.*'];
 relation(16609533)['wikidata'='Q860440']['wikipedia'!~'.*'];
 relation(1934513)['wikidata'='Q9325579']['wikipedia'!~'.*'];
 relation(6536761)['wikidata'='Q105110743']['wikipedia'!~'.*'];
-way(194525992)['wikidata'='Q30105717']['wikipedia'!~'.*'];
-way(215461950)['wikidata'='Q30066477']['wikipedia'!~'.*'];
-way(239046414)['wikidata'='Q18430875']['wikipedia'!~'.*'];
+relation(9479955)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(1109151163)['wikidata'='Q11766843']['wikipedia'!~'.*'];
+way(1245019692)['wikidata'='Q11691127']['wikipedia'!~'.*'];
+way(142009476)['wikidata'='Q116372659']['wikipedia'!~'.*'];
+way(209181368)['wikidata'='Q24578020']['wikipedia'!~'.*'];
+way(231866589)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(232081849)['wikidata'='Q56528297']['wikipedia'!~'.*'];
 way(25826015)['wikidata'='Q31926687']['wikipedia'!~'.*'];
-way(263213641)['wikidata'='Q24578128']['wikipedia'!~'.*'];
-way(332311304)['wikidata'='Q20032692']['wikipedia'!~'.*'];
+way(26249071)['wikidata'='Q11811295']['wikipedia'!~'.*'];
+way(30056478)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(321913767)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(321913769)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(321913770)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(321913772)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(321913773)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(321913775)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(397103248)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(397103288)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(397103291)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(397103297)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(397103303)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(397103304)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(397103314)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(397103324)['wikidata'='Q9333588']['wikipedia'!~'.*'];
 way(404372678)['wikidata'='Q1595261']['wikipedia'!~'.*'];
+way(407173943)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(422066472)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(55694847)['wikidata'='Q9366293']['wikipedia'!~'.*'];
+way(575036802)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417242)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417243)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417244)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417245)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417246)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417247)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417249)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417251)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417256)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417257)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417259)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417265)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417266)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417267)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417268)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417269)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417270)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417271)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417277)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417278)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417279)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417280)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417282)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417284)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417287)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683417288)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683455488)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683455489)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683455490)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683455491)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683455492)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683455493)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683455495)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683455496)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683455497)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(683455498)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(822265628)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(822265629)['wikidata'='Q9333588']['wikipedia'!~'.*'];
+way(95559058)['wikidata'='Q116372675']['wikipedia'!~'.*'];
 ); (._;>;); out meta qt;//['wikipedia from wikidata tag']</blockquote>
 			</br>
 			<hr>
@@ -2301,7 +2834,6 @@ relation(2766981)['wikidata'='Q3060533']['wikipedia'!~'.*'];
 relation(3173063)['wikidata'='Q124051738']['wikipedia'!~'.*'];
 relation(3187751)['wikidata'='Q63253342']['wikipedia'!~'.*'];
 relation(3224874)['wikidata'='Q25482025']['wikipedia'!~'.*'];
-relation(3224874)['wikidata'='Q25482025']['wikipedia'!~'.*'];
 relation(3756332)['wikidata'='Q25482025']['wikipedia'!~'.*'];
 relation(965023)['wikidata'='Q25482025']['wikipedia'!~'.*'];
 way(1008218359)['wikidata'='Q18622371']['wikipedia'!~'.*'];
@@ -2409,21 +2941,9 @@ way(988954369)['wikidata'='Q37777818']['wikipedia'!~'.*'];
 			</br>
 			<a href="#wikidata from wikipedia tag"><h2 id="wikidata from wikipedia tag">wikidata from wikipedia tag</h2></a>
 				</br>
-				Q9193821 may be added as wikidata tag based on wikipedia tag
+				Q28674521 may be added as wikidata tag based on wikipedia tag
 				</br>
-				<a href="https://openstreetmap.org/node/11515017064" target="_new">Cmentarz żydowski - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q11757484 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/relation/1173461" target="_new">Linia kolejowa nr 98 Sucha Beskidzka - Chabówka - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q110389465 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/relation/13158272" target="_new">Linia kolejowa nr 906: Chotyłów - Mętraki - an affected OSM element that may be improved</a>
+				<a href="https://openstreetmap.org/node/11564240128" target="_new">Dąb Kotwicza - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -2433,87 +2953,15 @@ way(988954369)['wikidata'='Q37777818']['wikipedia'!~'.*'];
 				</br>
 				<hr>
 				</br>
-				Q6369057 may be added as wikidata tag based on wikipedia tag
+				Q9363827 may be added as wikidata tag based on wikipedia tag
 				</br>
-				<a href="https://openstreetmap.org/relation/17047948" target="_new">Karczmy - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q6757334 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/relation/17065754" target="_new">Marcinów - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q5105296 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/relation/17065755" target="_new">Chorzenice - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q79016663 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/relation/4783985" target="_new">Tor łączący nr 913 Narewka - Planta - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q110386862 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/relation/5200508" target="_new">Łącznica nr 699 Oświęcim OwC - Oświęcim OwC1 - an affected OSM element that may be improved</a>
+				<a href="https://openstreetmap.org/relation/17131713" target="_new">Tążyna - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
 				Q11757229 may be added as wikidata tag based on wikipedia tag
 				</br>
 				<a href="https://openstreetmap.org/relation/5651117" target="_new">Linia kolejowa nr 217 Wielkie Wieżno - Braniewo - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q4946455 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/relation/5695150" target="_new">Borowiec - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q11781115 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/relation/5728822" target="_new">Miksztal - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q6154684 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/relation/5730487" target="_new">Janiszew - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q7511233 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/relation/5730490" target="_new">Sieraków - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q7310554 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/relation/5730703" target="_new">Rejmontów - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q7099315 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/relation/5732403" target="_new">Oraczew - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q7511223 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/relation/6226748" target="_new">Sieraków - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q30100693 may be added as wikidata tag based on wikipedia tag
-				</br>
-				<a href="https://openstreetmap.org/way/218428370" target="_new">Cmentarz żołnierzy 1915-1918 - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -2527,24 +2975,10 @@ way(988954369)['wikidata'='Q37777818']['wikipedia'!~'.*'];
 			</br>
 			<blockquote>[out:xml][timeout:3600];
 (
-node(11515017064)['wikidata'!~'.*']['wikipedia'='pl:Cmentarz &#380;ydowski w Ciechocinku'];
-relation(1173461)['wikidata'!~'.*']['wikipedia'='pl:Linia kolejowa nr 98'];
-relation(13158272)['wikidata'!~'.*']['wikipedia'='pl:Linia kolejowa nr 906'];
+node(11564240128)['wikidata'!~'.*']['wikipedia'='pl:D&#261;b Kotwicza'];
 relation(15967407)['wikidata'!~'.*']['wikipedia'='sk:Ko&#353;ick&#225; arcidiec&#233;za'];
-relation(17047948)['wikidata'!~'.*']['wikipedia'='pl:Karczmy'];
-relation(17065754)['wikidata'!~'.*']['wikipedia'='pl:Marcin&#243;w (powiat paj&#281;cza&#324;ski)'];
-relation(17065755)['wikidata'!~'.*']['wikipedia'='pl:Chorzenice (wojew&#243;dztwo &#322;&#243;dzkie)'];
-relation(4783985)['wikidata'!~'.*']['wikipedia'='pl:Linia kolejowa nr 913'];
-relation(5200508)['wikidata'!~'.*']['wikipedia'='pl:Linia kolejowa nr 699'];
+relation(17131713)['wikidata'!~'.*']['wikipedia'='pl:T&#261;&#380;yna'];
 relation(5651117)['wikidata'!~'.*']['wikipedia'='pl:Linia kolejowa nr 217'];
-relation(5695150)['wikidata'!~'.*']['wikipedia'='pl:Borowiec (powiat &#322;&#281;czycki)'];
-relation(5728822)['wikidata'!~'.*']['wikipedia'='pl:Miksztal'];
-relation(5730487)['wikidata'!~'.*']['wikipedia'='pl:Janiszew (wojew&#243;dztwo &#322;&#243;dzkie)'];
-relation(5730490)['wikidata'!~'.*']['wikipedia'='pl:Sierak&#243;w (wojew&#243;dztwo &#322;&#243;dzkie)'];
-relation(5730703)['wikidata'!~'.*']['wikipedia'='pl:Rejmont&#243;w'];
-relation(5732403)['wikidata'!~'.*']['wikipedia'='pl:Oraczew (powiat &#322;&#281;czycki)'];
-relation(6226748)['wikidata'!~'.*']['wikipedia'='pl:Sierak&#243;w (powiat gostyni&#324;ski)'];
-way(218428370)['wikidata'!~'.*']['wikipedia'='pl:Cmentarz wojenny w Bia&#322;ej Podlaskiej przy ulicy Pokoju'];
 way(237495790)['wikidata'!~'.*']['wikipedia'='de:Schmalspurbahn Zittau&#8211;Hermsdorf'];
 ); (._;>;); out meta qt;//['wikidata from wikipedia tag']</blockquote>
 			</br>
@@ -2660,6 +3094,12 @@ way(40080977)['wikidata'='Q2176231']['wikipedia'='pl:RTCN Ko&#322;owo']['wikiped
 				</br>
 				<hr>
 				</br>
+				Q58949714 vs Q11734815
+				</br>
+				<a href="https://openstreetmap.org/relation/61038" target="_new">Nowa Ulga - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q11820378 vs Q4376594
 				</br>
 				<a href="https://openstreetmap.org/relation/6539069" target="_new">Podkarpacie Wschodnie - an affected OSM element that may be improved</a>
@@ -2677,12 +3117,6 @@ way(40080977)['wikidata'='Q2176231']['wikipedia'='pl:RTCN Ko&#322;owo']['wikiped
 				<a href="https://openstreetmap.org/relation/6609062" target="_new">Račí potok / Raczyna - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
-				</br>
-				Q24578448 vs Q21153054
-				</br>
-				<a href="https://openstreetmap.org/way/161558667" target="_new">Kaplica pw. Świętej Barbary - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
 			</br>
 			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
 			</br>
@@ -2690,10 +3124,10 @@ way(40080977)['wikidata'='Q2176231']['wikipedia'='pl:RTCN Ko&#322;owo']['wikiped
 (
 node(4809249510)['wikidata'='Q31793791']['wikipedia'='pl:Siwa Kopa (G&#243;ry Z&#322;ote)'];
 node(7298057790)['wikidata'='Q49146805']['wikipedia'='ceb:Prze&#322;&#281;cz Trzech Granic'];
+relation(61038)['wikidata'='Q58949714']['wikipedia'='pl:Kana&#322; Nowa Ulga'];
 relation(6539069)['wikidata'='Q11820378']['wikipedia'='pl:Podkarpacie Wschodnie'];
 relation(6544743)['wikidata'='Q9381140']['wikipedia'='pl:Wzniesienia &#321;u&#380;yckie'];
 relation(6609062)['wikidata'='Q25412373']['wikipedia'='pl:Raczyna (dop&#322;yw Nysy K&#322;odzkiej)'];
-way(161558667)['wikidata'='Q24578448']['wikipedia'='pl:Kaplica &#347;w. Barbary w Toruniu'];
 ); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikidata redirect']</blockquote>
 			</br>
 			<hr>

@@ -4,7 +4,7 @@
 	</head>
 <body>
 	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
-This page was generated using data obtained on various dates including 2024-01-22, -data-was-not-downloaded-for-now-, 2024-01-24, 2024-01-23, 2024-01-29. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+This page was generated using data obtained on various dates including 2024-02-01, 2024-01-31, 2024-01-30. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
 <br />
 <br />
 			</br>
@@ -13,7 +13,39 @@ This page was generated using data obtained on various dates including 2024-01-2
 			Proposed edits at this page are so obvious that automatic edit makes sense.
 			</br>
 			<hr>
-<ul><li><a href="#wikipedia tag from wikipedia tag in an outdated form">wikipedia tag from wikipedia tag in an outdated form</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikipedia tag in an outdated form for removal">wikipedia tag in an outdated form for removal</a></li><li><a href="#wikipedia wikidata mismatch - follow wikidata redirect">wikipedia wikidata mismatch - follow wikidata redirect</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for subject prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for subject prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for species prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for species prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for name:etymology prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for name:etymology prefixed tags</a></li></ul>			</br>
+<ul><li><a href="#wikipedia tag unexpected language">wikipedia tag unexpected language</a></li><li><a href="#wikipedia tag from wikipedia tag in an outdated form">wikipedia tag from wikipedia tag in an outdated form</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikipedia tag in an outdated form for removal">wikipedia tag in an outdated form for removal</a></li><li><a href="#wikipedia wikidata mismatch - follow wikidata redirect">wikipedia wikidata mismatch - follow wikidata redirect</a></li><li><a href="#wikipedia wikidata mismatch - follow wikidata redirect - for brand prefixed tags">wikipedia wikidata mismatch - follow wikidata redirect - for brand prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - follow wikidata redirect - for name:etymology prefixed tags">wikipedia wikidata mismatch - follow wikidata redirect - for name:etymology prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for subject prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for subject prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for species prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for species prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for name:etymology prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for name:etymology prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for old_name:etymology prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for old_name:etymology prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for architect prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for architect prefixed tags</a></li></ul>			</br>
+			<a href="#wikipedia tag unexpected language"><h2 id="wikipedia tag unexpected language">wikipedia tag unexpected language</h2></a>
+				</br>
+				wikipedia page in unexpected language - en was expected:
+				</br>
+				<a href="https://openstreetmap.org/way/311120377" target="_new">Lycée Français de San Francisco - an affected OSM element that may be improved</a>
+				</br>
+				fr:Lycée français de San Francisco -> en:Lycée Français de San Francisco
+				</br>
+				Lyc&#233;e Fran&#231;ais de San Francisco
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - en was expected:
+				</br>
+				<a href="https://openstreetmap.org/way/672441194" target="_new">Lycée Français de San Francisco - an affected OSM element that may be improved</a>
+				</br>
+				fr:Lycée français de San Francisco -> en:Lycée Français de San Francisco
+				</br>
+				Lyc&#233;e Fran&#231;ais de San Francisco
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(311120377)['wikidata'='Q3269071']['wikipedia'='fr:Lyc&#233;e fran&#231;ais de San Francisco'];
+way(672441194)['wikidata'='Q3269071']['wikipedia'='fr:Lyc&#233;e fran&#231;ais de San Francisco'];
+); (._;>;); out meta qt;//['wikipedia tag unexpected language']</blockquote>
+			</br>
+			<hr>
+			</br>
 			<a href="#wikipedia tag from wikipedia tag in an outdated form"><h2 id="wikipedia tag from wikipedia tag in an outdated form">wikipedia tag from wikipedia tag in an outdated form</h2></a>
 				</br>
 				wikipedia tag in outdated form ([&#x27;wikipedia:en&#x27;]), wikipedia tag may be added
@@ -430,9 +462,39 @@ way(465148151)['wikidata'='Q4245099']['wikipedia'='en:Nemours Mansion and Garden
 				</br>
 				<hr>
 				</br>
+				wikipedia tag in outdated form ([&#x27;wikipedia:es&#x27;]), with wikipedia and wikidata tag present and may be safely removed
+				</br>
+				<a href="https://openstreetmap.org/node/151638563" target="_new">Rio Grande City - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia tag in outdated form ([&#x27;wikipedia:es&#x27;]), with wikipedia and wikidata tag present and may be safely removed
+				</br>
+				<a href="https://openstreetmap.org/node/151665940" target="_new">McAllen - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia tag in outdated form ([&#x27;wikipedia:es&#x27;]), with wikipedia and wikidata tag present and may be safely removed
+				</br>
+				<a href="https://openstreetmap.org/node/1917310844" target="_new">Oklahoma City - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				wikipedia tag in outdated form ([&#x27;wikipedia:pl&#x27;, &#x27;wikipedia:ru&#x27;]), with wikipedia and wikidata tag present and may be safely removed
 				</br>
 				<a href="https://openstreetmap.org/node/331257382" target="_new">Andrew Jackson - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia tag in outdated form ([&#x27;wikipedia:es&#x27;]), with wikipedia and wikidata tag present and may be safely removed
+				</br>
+				<a href="https://openstreetmap.org/relation/113786" target="_new">McAllen - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia tag in outdated form ([&#x27;wikipedia:es&#x27;]), with wikipedia and wikidata tag present and may be safely removed
+				</br>
+				<a href="https://openstreetmap.org/relation/115425" target="_new">Rio Grande City - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -453,7 +515,12 @@ way(465148151)['wikidata'='Q4245099']['wikipedia'='en:Nemours Mansion and Garden
 			<blockquote>[out:xml][timeout:3600];
 (
 node(151385190)['wikidata'='Q602939']['wikipedia'='en:French_Quarter']['wikipedia:es'='Barrio Franc&#233;s de Nueva Orleans']['wikipedia:fr'='Vieux carr&#233; fran&#231;ais de La Nouvelle-Orl&#233;ans'];
+node(151638563)['wikidata'='Q981868']['wikipedia'='en:Rio Grande City, Texas']['wikipedia:es'='R&#237;o Grande City'];
+node(151665940)['wikidata'='Q51698']['wikipedia'='en:McAllen, Texas']['wikipedia:es'='McAllen (Texas)'];
+node(1917310844)['wikidata'='Q34863']['wikipedia'='en:Oklahoma City, Oklahoma']['wikipedia:es'='Ciudad de Oklahoma'];
 node(331257382)['wikidata'='Q4343568']['wikipedia'='en:Andrew Jackson (Mills)']['wikipedia:pl'='Pomnik Andrew Jacksona w Waszyngtonie']['wikipedia:ru'='&#1055;&#1072;&#1084;&#1103;&#1090;&#1085;&#1080;&#1082; &#1087;&#1088;&#1077;&#1079;&#1080;&#1076;&#1077;&#1085;&#1090;&#1091; &#1069;&#1085;&#1076;&#1088;&#1102; &#1044;&#1078;&#1077;&#1082;&#1089;&#1086;&#1085;&#1091;'];
+relation(113786)['wikidata'='Q51698']['wikipedia'='en:McAllen, Texas']['wikipedia:es'='McAllen (Texas)'];
+relation(115425)['wikidata'='Q981868']['wikipedia'='en:Rio Grande City, Texas']['wikipedia:es'='R&#237;o Grande City'];
 relation(1994099)['wikidata'='Q8560764']['wikipedia'='es:Distrito de Indiana']['wikipedia:en'='Indiana District, Maynas'];
 way(28352381)['wikidata'='Q931042']['wikipedia'='en:Louis Armstrong Park']['wikipedia:es'='Parque Louis Armstrong'];
 ); (._;>;); out meta qt;//['wikipedia tag in an outdated form for removal']</blockquote>
@@ -479,9 +546,67 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 			</br>
 			<hr>
 			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikidata redirect - for brand prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikidata redirect - for brand prefixed tags">wikipedia wikidata mismatch - follow wikidata redirect - for brand prefixed tags</h2></a>
+			</br>
+			brand:wikidata and brand:wikipedia tags link to a different objects, because brand:wikidata tag points to a redirect that should be followed
+				</br>
+				Q22922899 vs Q10327170
+				</br>
+				<a href="https://openstreetmap.org/way/1120477736" target="_new">Massage Envy - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q26742231 vs Q21170490
+				</br>
+				<a href="https://openstreetmap.org/way/566448517" target="_new">Jaguar Glen Cove - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q22922899 vs Q10327170
+				</br>
+				<a href="https://openstreetmap.org/way/691776669" target="_new">Massage Envy - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(1120477736)['brand:wikidata'='Q22922899']['brand:wikipedia'='en:Massage Envy'];
+way(566448517)['brand:wikidata'='Q26742231']['brand:wikipedia'='en:Jaguar (marque)'];
+way(691776669)['brand:wikidata'='Q22922899']['brand:wikipedia'='en:Massage Envy'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikidata redirect - for brand prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikidata redirect - for name:etymology prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikidata redirect - for name:etymology prefixed tags">wikipedia wikidata mismatch - follow wikidata redirect - for name:etymology prefixed tags</h2></a>
+			</br>
+			name:etymology:wikidata and name:etymology:wikipedia tags link to a different objects, because name:etymology:wikidata tag points to a redirect that should be followed
+				</br>
+				Q64879991 vs Q49495272
+				</br>
+				<a href="https://openstreetmap.org/node/5197278828" target="_new">Grant Park - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(5197278828)['name:etymology:wikidata'='Q64879991']['name:etymology:wikipedia'='en:Grant Park (Portland, Oregon)'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikidata redirect - for name:etymology prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
 			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags</h2></a>
 			</br>
 			operator:wikidata and operator:wikipedia tags link to a different objects, because operator:wikipedia tag points to a redirect that should be followed
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/node/10689401810" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
 				</br>
 				Q4835981 vs (missing) article redirects from en:BMO Harris Bank to en:BMO Bank
 				</br>
@@ -504,6 +629,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				Q5600185 vs (missing) article redirects from en:Great Western Bank (1907&#8211;present) to en:Great Western Bank (1907&#8211;2022)
 				</br>
 				<a href="https://openstreetmap.org/node/1884661068" target="_new">Great Western Bank - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/node/1983847535" target="_new">Comfort Inn & Suites - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -549,9 +680,27 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				<hr>
 				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/node/2709506327" target="_new">Travelodge - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q85727717 vs (missing) article redirects from en:1Life Healthcare to en:One Medical
+				</br>
+				<a href="https://openstreetmap.org/node/2939935901" target="_new">One Medical - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q3030410 vs (missing) article redirects from en:Disney Consumer Products and Interactive Media to en:Disney Consumer Products
 				</br>
 				<a href="https://openstreetmap.org/node/3302844761" target="_new">Disney Store - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q839466 vs (missing) article redirects from en:Domino&#x27;s Pizza to en:Domino&#x27;s
+				</br>
+				<a href="https://openstreetmap.org/node/3758288297" target="_new">Domino's - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -711,9 +860,21 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				<hr>
 				</br>
+				Q3030410 vs (missing) article redirects from en:Disney Consumer Products and Interactive Media to en:Disney Consumer Products
+				</br>
+				<a href="https://openstreetmap.org/node/5237170859" target="_new">Disney Store - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
 				<a href="https://openstreetmap.org/node/5322674733" target="_new">Super 8 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q3030410 vs (missing) article redirects from en:Disney Consumer Products and Interactive Media to en:Disney Consumer Products
+				</br>
+				<a href="https://openstreetmap.org/node/5339561956" target="_new">Disney Store - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -743,6 +904,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/node/6484543195" target="_new">Super 8 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/node/6538309120" target="_new">Super 8 - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
@@ -765,9 +932,27 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				<hr>
 				</br>
+				Q7669891 vs (missing) article redirects from en:TD Bank, N.A. to en:TD Bank (United States)
+				</br>
+				<a href="https://openstreetmap.org/node/8091058541" target="_new">TD Bank - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q4835981 vs (missing) article redirects from en:BMO Harris Bank to en:BMO Bank
 				</br>
 				<a href="https://openstreetmap.org/node/8348243026" target="_new">BMO - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7669891 vs (missing) article redirects from en:TD Bank, N.A. to en:TD Bank (United States)
+				</br>
+				<a href="https://openstreetmap.org/node/8455829694" target="_new">TD Bank - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7669891 vs (missing) article redirects from en:TD Bank, N.A. to en:TD Bank (United States)
+				</br>
+				<a href="https://openstreetmap.org/node/8458432262" target="_new">TD Bank - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -789,9 +974,45 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				<hr>
 				</br>
+				Q7669891 vs (missing) article redirects from en:TD Bank, N.A. to en:TD Bank (United States)
+				</br>
+				<a href="https://openstreetmap.org/node/9247775999" target="_new">TD Bank - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q55633597 vs (missing) article redirects from en:South State Bank to en:SouthState Bank
 				</br>
 				<a href="https://openstreetmap.org/node/9291171700" target="_new">South State Bank - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7669891 vs (missing) article redirects from en:TD Bank, N.A. to en:TD Bank (United States)
+				</br>
+				<a href="https://openstreetmap.org/node/9350957304" target="_new">TD Bank - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q154950 vs (missing) article redirects from en:Royal Dutch Shell to en:Shell plc
+				</br>
+				<a href="https://openstreetmap.org/node/939881092" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q154950 vs (missing) article redirects from en:Royal Dutch Shell to en:Shell plc
+				</br>
+				<a href="https://openstreetmap.org/node/939881168" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q154950 vs (missing) article redirects from en:Royal Dutch Shell to en:Shell plc
+				</br>
+				<a href="https://openstreetmap.org/node/939881228" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q154950 vs (missing) article redirects from en:Royal Dutch Shell to en:Shell plc
+				</br>
+				<a href="https://openstreetmap.org/node/939881253" target="_new">an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -821,6 +1042,18 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/relation/14190649" target="_new">Days Inn by Wyndham Tonawanda/Buffalo - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/relation/14450521" target="_new">Super 8 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/relation/14962160" target="_new">Days Inn - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
@@ -828,6 +1061,18 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
 				<a href="https://openstreetmap.org/relation/6666251" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/relation/6879087" target="_new">La Quinta Inn by Wyndham Lubbock - Downtown Civic Center - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/relation/7348581" target="_new">Days Inn - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -840,6 +1085,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
 				<a href="https://openstreetmap.org/relation/7920315" target="_new">La Quinta Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q96372437 vs (missing) article redirects from en:Ascension (company) to en:Ascension (healthcare system)
+				</br>
+				<a href="https://openstreetmap.org/relation/7935042" target="_new">Ascension Saint John Medical Center - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -879,9 +1130,21 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				<hr>
 				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/1081006280" target="_new">Travelodge - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q6047563 vs (missing) article redirects from en:Intermountain Healthcare to en:Intermountain Health
 				</br>
 				<a href="https://openstreetmap.org/way/108178880" target="_new">Riverton Hospital - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/109715109" target="_new">Ramada - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -893,13 +1156,31 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/way/112437596" target="_new">Econo Lodge - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/way/118668576" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/119415630" target="_new">Super 8 - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
 				Q6047563 vs (missing) article redirects from en:Intermountain Healthcare to en:Intermountain Health
 				</br>
 				<a href="https://openstreetmap.org/way/1210203200" target="_new">Heber Valley Hospital - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/1236126612" target="_new">Travelodge - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -930,6 +1211,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				Q6047563 vs (missing) article redirects from en:Intermountain Healthcare to en:Intermountain Health
 				</br>
 				<a href="https://openstreetmap.org/way/148059453" target="_new">The Orthopedic Specialty Hospital - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/159423303" target="_new">Super 8 - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -983,6 +1270,18 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/way/196949481" target="_new">La Quinta Inn & Suites by Wyndham Denton - University Drive - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/199540205" target="_new">Ramada by Wyndham Del Rio - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/way/200199392" target="_new">Super 8 - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
@@ -1019,6 +1318,18 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/way/222046390" target="_new">La Quinta Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/222720058" target="_new">Super 8 by Wyndham Amarillo West - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/way/225263641" target="_new">Super 8 - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
@@ -1026,6 +1337,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
 				<a href="https://openstreetmap.org/way/226116577" target="_new">Ramada - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/233331178" target="_new">Days Inn - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -1043,6 +1360,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/way/243721610" target="_new">Super 8 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/way/245015109" target="_new">Days Inn - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
@@ -1050,6 +1373,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
 				<a href="https://openstreetmap.org/way/256016021" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/260546972" target="_new">Super 8 - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -1077,6 +1406,18 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				<hr>
 				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/271674294" target="_new">La Quinta Inn & Suites by Wyndham Burleson - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/271674306" target="_new">Super 8 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q6047563 vs (missing) article redirects from en:Intermountain Healthcare to en:Intermountain Health
 				</br>
 				<a href="https://openstreetmap.org/way/27366960" target="_new">McKay-Dee Hospital - an affected OSM element that may be improved</a>
@@ -1097,6 +1438,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/way/279006406" target="_new">Ramada - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/way/282053525" target="_new">Ramada by Wyndham Greensboro - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
@@ -1110,6 +1457,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
 				<a href="https://openstreetmap.org/way/283601645" target="_new">Days Inn by Wyndham High Point/Archdale - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/286811261" target="_new">La Quinta Inn - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -1151,7 +1504,19 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/way/300587160" target="_new">Super 8 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/way/302355188" target="_new">Super 8 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/304627436" target="_new">Super 8 - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -1170,6 +1535,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
 				<a href="https://openstreetmap.org/way/305364722" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/305375752" target="_new">Ramada - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -1223,6 +1594,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/way/338196303" target="_new">Ramada - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/way/343025687" target="_new">La Quinta Inn & Suites by Wyndham Boone - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
@@ -1251,6 +1628,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				<hr>
 				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/366207614" target="_new">La Quinta Inn & Suites - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q6047563 vs (missing) article redirects from en:Intermountain Healthcare to en:Intermountain Health
 				</br>
 				<a href="https://openstreetmap.org/way/36821838" target="_new">Logan Regional Hospital - an affected OSM element that may be improved</a>
@@ -1266,6 +1649,18 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
 				<a href="https://openstreetmap.org/way/370241634" target="_new">Days Inn by Wyndham Brunswick Bath Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/374625444" target="_new">Super 8 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/374778140" target="_new">Days Inn by Wyndham Seatac Airport - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -1331,6 +1726,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/way/399477159" target="_new">Days Inn Abilene - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/way/400843780" target="_new">Super 8 - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
@@ -1367,7 +1768,25 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/way/409817432" target="_new">La Quinta Inn Toledo Perrysburg - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/41413590" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/way/422747472" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/428046689" target="_new">La Quinta Inn - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -1437,9 +1856,21 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				<hr>
 				</br>
+				Q5513284 vs (missing) article redirects from en:GE Global Research to en:GE Research
+				</br>
+				<a href="https://openstreetmap.org/way/479164244" target="_new">GE Global Research Center - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
 				<a href="https://openstreetmap.org/way/481956529" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/488770489" target="_new">Days Inn - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -1463,13 +1894,67 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/way/49465404" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/500541890" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/501188687" target="_new">Super 8 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/502484810" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/way/505291309" target="_new">Days Inn - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/way/517412793" target="_new">La Quinta Inn & Suites by Wyndham Waxahachie - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/524697156" target="_new">Days Inn by Wyndham Denton - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/532104888" target="_new">La Quinta - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/532194144" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/way/538053129" target="_new">La Quinta Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/538593698" target="_new">La Quinta Inn - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -1482,6 +1967,18 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
 				<a href="https://openstreetmap.org/way/540438758" target="_new">Super 8 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/544708837" target="_new">La Quinta Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/544708838" target="_new">Super 8 - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -1533,6 +2030,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				<hr>
 				</br>
+				Q96372437 vs (missing) article redirects from en:Ascension (company) to en:Ascension (healthcare system)
+				</br>
+				<a href="https://openstreetmap.org/way/566754318" target="_new">Ascension Seton Northwest Hospital - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q6047563 vs (missing) article redirects from en:Intermountain Healthcare to en:Intermountain Health
 				</br>
 				<a href="https://openstreetmap.org/way/571772156" target="_new">Intermountain Healthcare Layton Hospital - an affected OSM element that may be improved</a>
@@ -1551,6 +2054,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				<hr>
 				</br>
+				Q96372437 vs (missing) article redirects from en:Ascension (company) to en:Ascension (healthcare system)
+				</br>
+				<a href="https://openstreetmap.org/way/584319534" target="_new">Ascension Saint John Owasso - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
 				<a href="https://openstreetmap.org/way/586442475" target="_new">La Quinta Augusta - an affected OSM element that may be improved</a>
@@ -1560,6 +2069,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				Q96372437 vs (missing) article redirects from en:Ascension (company) to en:Ascension (healthcare system)
 				</br>
 				<a href="https://openstreetmap.org/way/587609631" target="_new">Saint Vincent Kokomo Hospital - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/589335220" target="_new">La Quinta Inn - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -1593,6 +2108,18 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				<hr>
 				</br>
+				Q96372437 vs (missing) article redirects from en:Ascension (company) to en:Ascension (healthcare system)
+				</br>
+				<a href="https://openstreetmap.org/way/598291441" target="_new">Ascension Seton Highland Lakes Hospital - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q96372437 vs (missing) article redirects from en:Ascension (company) to en:Ascension (healthcare system)
+				</br>
+				<a href="https://openstreetmap.org/way/599504497" target="_new">Seton Medical Center Williamson - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
 				<a href="https://openstreetmap.org/way/607456981" target="_new">Days Inn - an affected OSM element that may be improved</a>
@@ -1602,6 +2129,18 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
 				<a href="https://openstreetmap.org/way/615573935" target="_new">La Quinta Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/61697503" target="_new">La Quinta Inn & Suites by Wyndham DFW Airport South / Irving - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/61698859" target="_new">Super 8 - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -1625,6 +2164,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/way/622197141" target="_new">La Quinta Inn & Suites by Wyndham McAllen Convention Center - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/way/625173745" target="_new">Days Inn Abseacon - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
@@ -1643,7 +2188,25 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/way/636140372" target="_new">Super 8 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/way/64361689" target="_new">Super 8 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/647217514" target="_new">La Quinta Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/648488458" target="_new">Days Inn - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -1667,7 +2230,19 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/way/661177691" target="_new">Days Inn by Wyndham Mesquite Rodeo TX - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/way/662089250" target="_new">Super 8 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/66210205" target="_new">Super 8 Latham/Albany Troy Area - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -1679,13 +2254,67 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/way/673924851" target="_new">La Quinta Inn & Suites by Wyndham Dallas Mesquite - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/way/674860062" target="_new">Travelodge - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/way/67594660" target="_new">Super 8 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/676663830" target="_new">La Quinta Inn & Suites - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/676666903" target="_new">Travelodge - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/676667645" target="_new">Travelodge - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/678523351" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/678629298" target="_new">La Quinta - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/678820395" target="_new">La Quinta Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/way/681495243" target="_new">Super 8 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/683032009" target="_new">Super 8 - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -1757,6 +2386,18 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/way/700188868" target="_new">Super 8 by Wyndham Mineral Wells - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/700440512" target="_new">Days Inn & Suites by Wyndham Mineral Wells - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/way/702920704" target="_new">Ramada by Wyndham Angola/Fremont Area - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
@@ -1809,6 +2450,18 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				<hr>
 				</br>
+				Q85727717 vs (missing) article redirects from en:1Life Healthcare to en:One Medical
+				</br>
+				<a href="https://openstreetmap.org/way/792776883" target="_new">One Medical - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/80526455" target="_new">Super 8 Mason - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
 				<a href="https://openstreetmap.org/way/81140446" target="_new">Days Inn - an affected OSM element that may be improved</a>
@@ -1830,6 +2483,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
 				<a href="https://openstreetmap.org/way/838831181" target="_new">La Quinta Inn & Suites by Wyndham Charlotte Airport South - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/844453165" target="_new">Super 8 - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -1901,7 +2560,25 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 				</br>
 				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
 				</br>
+				<a href="https://openstreetmap.org/way/955630827" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
 				<a href="https://openstreetmap.org/way/955646267" target="_new">Days Inn by Wyndham Ellis - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/955721364" target="_new">La Quinta Inn & Suites by Wyndham Central Point - Medford - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/955724866" target="_new">Super 8 by Wyndham Central Pt Medford - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -1927,10 +2604,12 @@ way(147232429)['wikidata'='Q98139924']['wikipedia'='en:K&#257;ohikaipu'];
 			</br>
 			<blockquote>[out:xml][timeout:3600];
 (
+node(10689401810)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 node(1335922751)['operator:wikidata'='Q4835981']['operator:wikipedia'='en:BMO Harris Bank'];
 node(1686430772)['operator:wikidata'='Q7669891']['operator:wikipedia'='en:TD Bank, N.A.'];
 node(1712086063)['operator:wikidata'='Q7669891']['operator:wikipedia'='en:TD Bank, N.A.'];
 node(1884661068)['operator:wikidata'='Q5600185']['operator:wikipedia'='en:Great Western Bank (1907&#8211;present)'];
+node(1983847535)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 node(2285134861)['operator:wikidata'='Q4835981']['operator:wikipedia'='en:BMO Harris Bank'];
 node(2322347708)['operator:wikidata'='Q4835981']['operator:wikipedia'='en:BMO Harris Bank'];
 node(2322413171)['operator:wikidata'='Q4835981']['operator:wikipedia'='en:BMO Harris Bank'];
@@ -1938,7 +2617,10 @@ node(2322673377)['operator:wikidata'='Q4835981']['operator:wikipedia'='en:BMO Ha
 node(2439298025)['operator:wikidata'='Q4835981']['operator:wikipedia'='en:BMO Harris Bank'];
 node(2569209777)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 node(2618204547)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+node(2709506327)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+node(2939935901)['operator:wikidata'='Q85727717']['operator:wikipedia'='en:1Life Healthcare'];
 node(3302844761)['operator:wikidata'='Q3030410']['operator:wikipedia'='en:Disney Consumer Products and Interactive Media'];
+node(3758288297)['operator:wikidata'='Q839466']['operator:wikipedia'='en:Domino\'s Pizza'];
 node(3864648383)['operator:wikidata'='Q5453817']['operator:wikipedia'='en:First State Bank (Nebraska)'];
 node(3965020676)['operator:wikidata'='Q4835981']['operator:wikipedia'='en:BMO Harris Bank'];
 node(3971992840)['operator:wikidata'='Q4835981']['operator:wikipedia'='en:BMO Harris Bank'];
@@ -1965,43 +2647,66 @@ node(4984204300)['operator:wikidata'='Q4835981']['operator:wikipedia'='en:BMO Ha
 node(5061120038)['operator:wikidata'='Q4835981']['operator:wikipedia'='en:BMO Harris Bank'];
 node(5194248496)['operator:wikidata'='Q3030410']['operator:wikipedia'='en:Disney Consumer Products and Interactive Media'];
 node(5194291363)['operator:wikidata'='Q3030410']['operator:wikipedia'='en:Disney Consumer Products and Interactive Media'];
+node(5237170859)['operator:wikidata'='Q3030410']['operator:wikipedia'='en:Disney Consumer Products and Interactive Media'];
 node(5322674733)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+node(5339561956)['operator:wikidata'='Q3030410']['operator:wikipedia'='en:Disney Consumer Products and Interactive Media'];
 node(5412287829)['operator:wikidata'='Q7669891']['operator:wikipedia'='en:TD Bank, N.A.'];
 node(5645253540)['operator:wikidata'='Q7669891']['operator:wikipedia'='en:TD Bank, N.A.'];
 node(5645253541)['operator:wikidata'='Q7669891']['operator:wikipedia'='en:TD Bank, N.A.'];
 node(6415266484)['operator:wikidata'='Q4835981']['operator:wikipedia'='en:BMO Harris Bank'];
+node(6484543195)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 node(6538309120)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 node(6538309123)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 node(6544425780)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 node(7821801680)['operator:wikidata'='Q7669891']['operator:wikipedia'='en:TD Bank, N.A.'];
+node(8091058541)['operator:wikidata'='Q7669891']['operator:wikipedia'='en:TD Bank, N.A.'];
 node(8348243026)['operator:wikidata'='Q4835981']['operator:wikipedia'='en:BMO Harris Bank'];
+node(8455829694)['operator:wikidata'='Q7669891']['operator:wikipedia'='en:TD Bank, N.A.'];
+node(8458432262)['operator:wikidata'='Q7669891']['operator:wikipedia'='en:TD Bank, N.A.'];
 node(8579899159)['operator:wikidata'='Q4835981']['operator:wikipedia'='en:BMO Harris Bank'];
 node(894539552)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 node(894539565)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+node(9247775999)['operator:wikidata'='Q7669891']['operator:wikipedia'='en:TD Bank, N.A.'];
 node(9291171700)['operator:wikidata'='Q55633597']['operator:wikipedia'='en:South State Bank'];
+node(9350957304)['operator:wikidata'='Q7669891']['operator:wikipedia'='en:TD Bank, N.A.'];
+node(939881092)['operator:wikidata'='Q154950']['operator:wikipedia'='en:Royal Dutch Shell'];
+node(939881168)['operator:wikidata'='Q154950']['operator:wikipedia'='en:Royal Dutch Shell'];
+node(939881228)['operator:wikidata'='Q154950']['operator:wikipedia'='en:Royal Dutch Shell'];
+node(939881253)['operator:wikidata'='Q154950']['operator:wikipedia'='en:Royal Dutch Shell'];
 node(972237345)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 node(9780426735)['operator:wikidata'='Q4835981']['operator:wikipedia'='en:BMO Harris Bank'];
 relation(13420692)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 relation(14001702)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+relation(14190649)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+relation(14450521)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 relation(14962160)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 relation(6666251)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+relation(6879087)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+relation(7348581)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 relation(7884405)['operator:wikidata'='Q96372437']['operator:wikipedia'='en:Ascension (company)'];
 relation(7920315)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+relation(7935042)['operator:wikidata'='Q96372437']['operator:wikipedia'='en:Ascension (company)'];
 relation(9506143)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 relation(9524885)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 relation(9524886)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 relation(9657101)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 relation(9657102)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(1073647738)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(1081006280)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(108178880)['operator:wikidata'='Q6047563']['operator:wikipedia'='en:Intermountain Healthcare'];
+way(109715109)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(1099941171)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(112437596)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(118668576)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(119415630)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(1210203200)['operator:wikidata'='Q6047563']['operator:wikipedia'='en:Intermountain Healthcare'];
+way(1236126612)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(124656667)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(130856663)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(130856672)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(135951459)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(148059453)['operator:wikidata'='Q6047563']['operator:wikipedia'='en:Intermountain Healthcare'];
+way(159423303)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(159506267)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(160492904)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(172368436)['operator:wikidata'='Q7669891']['operator:wikipedia'='en:TD Bank, N.A.'];
@@ -2010,38 +2715,52 @@ way(175803530)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham 
 way(180285344)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(195217222)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(195469983)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(196949481)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(199540205)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(200199392)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(211075728)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(211077797)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(212221439)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(214628168)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(220525182)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(222046390)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(222720058)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(225263641)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(226116577)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(233331178)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(234059675)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(239530104)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(243721610)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(245015109)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(256016021)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(260546972)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(260860531)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(263455325)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(267437187)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(269014896)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(271674294)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(271674306)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(27366960)['operator:wikidata'='Q6047563']['operator:wikipedia'='en:Intermountain Healthcare'];
 way(274467743)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(274901124)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(279006406)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(282053525)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(283289501)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(283601645)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(286811261)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(289924342)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(291840743)['operator:wikidata'='Q96372437']['operator:wikipedia'='en:Ascension (company)'];
 way(293552433)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(296784205)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(29821980)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(299488008)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(300587160)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(302355188)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(304627436)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(304707127)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(305095697)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(305364722)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(305375752)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(307511174)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(312508261)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(320466579)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
@@ -2050,14 +2769,18 @@ way(334207317)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham 
 way(334211882)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(33634352)['operator:wikidata'='Q6047563']['operator:wikipedia'='en:Intermountain Healthcare'];
 way(337088565)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(338196303)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(343025687)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(360589465)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(362690087)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(363495393)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(366055133)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(366207614)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(36821838)['operator:wikidata'='Q6047563']['operator:wikipedia'='en:Intermountain Healthcare'];
 way(369312952)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(370241634)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(374625444)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(374778140)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(377080756)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(385205276)['operator:wikidata'='Q6047563']['operator:wikipedia'='en:Intermountain Healthcare'];
 way(388705566)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
@@ -2068,13 +2791,17 @@ way(392458469)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham 
 way(393289270)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(395162932)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(395374665)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(399477159)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(400843780)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(402406644)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(402408814)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(403401515)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(404804282)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(404804283)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(409817432)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(41413590)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(422747472)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(428046689)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(431241600)['operator:wikidata'='Q6047563']['operator:wikipedia'='en:Intermountain Healthcare'];
 way(43929766)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(456459207)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
@@ -2086,14 +2813,27 @@ way(463064304)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham 
 way(463963656)['operator:wikidata'='Q6047563']['operator:wikipedia'='en:Intermountain Healthcare'];
 way(471959097)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(474450089)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(479164244)['operator:wikidata'='Q5513284']['operator:wikipedia'='en:GE Global Research'];
 way(481956529)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(488770489)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(494086696)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(494372949)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(494372955)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(49465404)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(500541890)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(501188687)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(502484810)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(505291309)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(517412793)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(524697156)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(532104888)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(532194144)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(538053129)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(538593698)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(539331684)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(540438758)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(544708837)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(544708838)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(545682511)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(545682512)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(548426036)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
@@ -2102,32 +2842,54 @@ way(556782560)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham 
 way(557186451)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(56117330)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(562249796)['operator:wikidata'='Q5721418']['operator:wikipedia'='en:Henry Ford Health System'];
+way(566754318)['operator:wikidata'='Q96372437']['operator:wikipedia'='en:Ascension (company)'];
 way(571772156)['operator:wikidata'='Q6047563']['operator:wikipedia'='en:Intermountain Healthcare'];
 way(581677815)['operator:wikidata'='Q96372437']['operator:wikipedia'='en:Ascension (company)'];
 way(582748099)['operator:wikidata'='Q5721418']['operator:wikipedia'='en:Henry Ford Health System'];
+way(584319534)['operator:wikidata'='Q96372437']['operator:wikipedia'='en:Ascension (company)'];
 way(586442475)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(587609631)['operator:wikidata'='Q96372437']['operator:wikipedia'='en:Ascension (company)'];
+way(589335220)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(589839386)['operator:wikidata'='Q96372437']['operator:wikipedia'='en:Ascension (company)'];
 way(591402331)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(592205805)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(592512719)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(597121785)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(598291441)['operator:wikidata'='Q96372437']['operator:wikipedia'='en:Ascension (company)'];
+way(599504497)['operator:wikidata'='Q96372437']['operator:wikipedia'='en:Ascension (company)'];
 way(607456981)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(615573935)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(61697503)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(61698859)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(618053417)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(618053420)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(618053423)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(622197141)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(625173745)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(625640121)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(631586322)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(636140372)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(64361689)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(647217514)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(648488458)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(657068786)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(659757431)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(660036219)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(661177691)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(662089250)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(66210205)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(671921996)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(673924851)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(674860062)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(67594660)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(676663830)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(676666903)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(676667645)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(678523351)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(678629298)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(678820395)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(681495243)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(683032009)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(683429183)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(686230655)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(686507751)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
@@ -2139,6 +2901,8 @@ way(695043496)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham 
 way(695355470)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(696479547)['operator:wikidata'='Q1337797']['operator:wikipedia'='en:The ODP Corporation'];
 way(698292337)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(700188868)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(700440512)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(702920704)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(705574049)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(721227548)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
@@ -2148,10 +2912,13 @@ way(762710497)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham 
 way(764248755)['operator:wikidata'='Q1075788']['operator:wikipedia'='en:Choice Hotels International'];
 way(764516575)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(78132998)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(792776883)['operator:wikidata'='Q85727717']['operator:wikipedia'='en:1Life Healthcare'];
+way(80526455)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(81140446)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(82711293)['operator:wikidata'='Q6047563']['operator:wikipedia'='en:Intermountain Healthcare'];
 way(836892582)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(838831181)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(844453165)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(89369911)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(924704002)['operator:wikidata'='Q6047563']['operator:wikipedia'='en:Intermountain Healthcare'];
 way(932389288)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
@@ -2163,7 +2930,10 @@ way(950312869)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham 
 way(953792977)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(953792994)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(954400848)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(955630827)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(955646267)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(955721364)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(955724866)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(956535519)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(972554132)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
 way(999273266)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
@@ -2199,6 +2969,18 @@ way(999273266)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham 
 				</br>
 				<hr>
 				</br>
+				Q6803324 vs (missing) article redirects from en:Meadowbrook, Syracuse, New York to en:Meadowbrook, Syracuse
+				</br>
+				<a href="https://openstreetmap.org/node/11061483794" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q6803324 vs (missing) article redirects from en:Meadowbrook, Syracuse, New York to en:Meadowbrook, Syracuse
+				</br>
+				<a href="https://openstreetmap.org/node/11123119490" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q4849173 vs (missing) article redirects from en:Bruce Chapman to en:Bruce K. Chapman
 				</br>
 				<a href="https://openstreetmap.org/node/2315044083" target="_new">Bruce Chapman, U.S. Census Bureau 1981-1983 - an affected OSM element that may be improved</a>
@@ -2223,9 +3005,21 @@ way(999273266)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham 
 				</br>
 				<hr>
 				</br>
+				Q2698119 vs (missing) article redirects from en:Japanese warship Kanrin Maru to en:Kanrin Maru
+				</br>
+				<a href="https://openstreetmap.org/node/6597733393" target="_new">Kanrin Maru Monument - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q717401 vs (missing) article redirects from en:William J. Brennan, Jr. to en:William J. Brennan Jr.
 				</br>
 				<a href="https://openstreetmap.org/node/746875962" target="_new">William Joseph Brennan, Jr. - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q16663089 vs (missing) article redirects from en:Marine Johannes to en:Marine Johann&#232;s
+				</br>
+				<a href="https://openstreetmap.org/way/1104486639" target="_new">an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 			</br>
@@ -2237,11 +3031,15 @@ node(10947367938)['subject:wikidata'='Q4483493']['subject:wikipedia'='en:Fido (L
 node(10947434752)['subject:wikidata'='Q4483493']['subject:wikipedia'='en:Fido (Lincoln dog)'];
 node(10965824498)['subject:wikidata'='Q4483493']['subject:wikipedia'='en:Fido (Lincoln dog)'];
 node(10965857684)['subject:wikidata'='Q4483493']['subject:wikipedia'='en:Fido (Lincoln dog)'];
+node(11061483794)['subject:wikidata'='Q6803324']['subject:wikipedia'='en:Meadowbrook, Syracuse, New York'];
+node(11123119490)['subject:wikidata'='Q6803324']['subject:wikipedia'='en:Meadowbrook, Syracuse, New York'];
 node(2315044083)['subject:wikidata'='Q4849173']['subject:wikipedia'='en:Bruce Chapman'];
 node(3030035514)['subject:wikidata'='Q7887350']['subject:wikipedia'='en:United Airlines Flight 409'];
 node(3188977602)['subject:wikidata'='Q3180071']['subject:wikipedia'='en:Joe Garagiola, Sr.'];
 node(3897317158)['subject:wikidata'='Q635051']['subject:wikipedia'='en:Mississippi civil rights workers\' murders'];
+node(6597733393)['subject:wikidata'='Q2698119']['subject:wikipedia'='en:Japanese warship Kanrin Maru'];
 node(746875962)['subject:wikidata'='Q717401']['subject:wikipedia'='en:William J. Brennan, Jr.'];
+way(1104486639)['subject:wikidata'='Q16663089']['subject:wikipedia'='en:Marine Johannes'];
 ); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect - for subject prefixed tags']</blockquote>
 			</br>
 			<hr>
@@ -2874,6 +3672,12 @@ node(746875962)['subject:wikidata'='Q717401']['subject:wikipedia'='en:William J.
 				</br>
 				<hr>
 				</br>
+				Q3537097 vs (missing) article redirects from en:Cincinnati Bell Connector to en:Connector (Cincinnati)
+				</br>
+				<a href="https://openstreetmap.org/relation/4117854" target="_new">Connector - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q6728045 vs (missing) article redirects from en:Madison Metro to en:Metro Transit (Madison)
 				</br>
 				<a href="https://openstreetmap.org/relation/4508248" target="_new">Metro Route 80 - an affected OSM element that may be improved</a>
@@ -3102,6 +3906,7 @@ relation(16025840)['network:wikidata'='Q6728045']['network:wikipedia'='en:Madiso
 relation(16031487)['network:wikidata'='Q6728045']['network:wikipedia'='en:Madison Metro'];
 relation(2561256)['network:wikidata'='Q6728045']['network:wikipedia'='en:Madison Metro'];
 relation(2788573)['network:wikidata'='Q6542171']['network:wikipedia'='en:Liberty Water Taxi'];
+relation(4117854)['network:wikidata'='Q3537097']['network:wikipedia'='en:Cincinnati Bell Connector'];
 relation(4508248)['network:wikidata'='Q6728045']['network:wikipedia'='en:Madison Metro'];
 relation(8780532)['network:wikidata'='Q5623666']['network:wikipedia'='en:Gwinnett County Transit'];
 relation(8780533)['network:wikidata'='Q5623666']['network:wikipedia'='en:Gwinnett County Transit'];
@@ -3130,15 +3935,39 @@ way(718436925)['network:wikidata'='Q6542171']['network:wikipedia'='en:Liberty Wa
 			</br>
 			species:wikidata and species:wikipedia tags link to a different objects, because species:wikipedia tag points to a redirect that should be followed
 				</br>
+				Q3901583 vs (missing) article redirects from en:Phoenicopteridae to en:Flamingo
+				</br>
+				<a href="https://openstreetmap.org/node/10794028675" target="_new">Flamingo - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q36146 vs (missing) article redirects from en:Common fig to en:Fig
 				</br>
 				<a href="https://openstreetmap.org/node/7966582729" target="_new">an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
+				Q156687 vs (missing) article redirects from en:Pseudotsuga menziesii to en:Douglas fir
+				</br>
+				<a href="https://openstreetmap.org/node/8828112361" target="_new">Lucky the Tree - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q140 vs (missing) article redirects from en:Panthera leo to en:Lion
 				</br>
 				<a href="https://openstreetmap.org/way/1086429174" target="_new">African Lions - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q504496 vs (missing) article redirects from en:Patas monkey to en:Common patas monkey
+				</br>
+				<a href="https://openstreetmap.org/way/382796789" target="_new">Patas Monkey - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q848656 vs (missing) article redirects from en:Pud&#250; to en:Pudu
+				</br>
+				<a href="https://openstreetmap.org/way/742061424" target="_new">Pudu - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -3158,8 +3987,12 @@ way(718436925)['network:wikidata'='Q6542171']['network:wikipedia'='en:Liberty Wa
 			</br>
 			<blockquote>[out:xml][timeout:3600];
 (
+node(10794028675)['species:wikidata'='Q3901583']['species:wikipedia'='en:Phoenicopteridae'];
 node(7966582729)['species:wikidata'='Q36146']['species:wikipedia'='en:Common fig'];
+node(8828112361)['species:wikidata'='Q156687']['species:wikipedia'='en:Pseudotsuga menziesii'];
 way(1086429174)['species:wikidata'='Q140']['species:wikipedia'='en:Panthera leo'];
+way(382796789)['species:wikidata'='Q504496']['species:wikipedia'='en:Patas monkey'];
+way(742061424)['species:wikidata'='Q848656']['species:wikipedia'='en:Pud&#250;'];
 way(760594108)['species:wikidata'='Q787']['species:wikipedia'='en:Domestic pig'];
 way(863849688)['species:wikidata'='Q787']['species:wikipedia'='en:Domestic pig'];
 ); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect - for species prefixed tags']</blockquote>
@@ -3170,9 +4003,69 @@ way(863849688)['species:wikidata'='Q787']['species:wikipedia'='en:Domestic pig']
 			</br>
 			name:etymology:wikidata and name:etymology:wikipedia tags link to a different objects, because name:etymology:wikipedia tag points to a redirect that should be followed
 				</br>
+				Q18419 vs (missing) article redirects from en:Brooklyn, New York, New York to en:Brooklyn
+				</br>
+				<a href="https://openstreetmap.org/node/150961976" target="_new">Brooklyn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q25239 vs (missing) article redirects from en:Alnus to en:Alder
+				</br>
+				<a href="https://openstreetmap.org/relation/6447992" target="_new">Alder Hall - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q353113 vs (missing) article redirects from en:Addison Crandall Gibbs to en:A. C. Gibbs
+				</br>
+				<a href="https://openstreetmap.org/way/1075930076" target="_new">South Gibbs Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q880817 vs (missing) article redirects from en:Chester Bowles to en:Chester B. Bowles
 				</br>
 				<a href="https://openstreetmap.org/way/116775599" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q353113 vs (missing) article redirects from en:Addison Crandall Gibbs to en:A. C. Gibbs
+				</br>
+				<a href="https://openstreetmap.org/way/117446029" target="_new">Southwest Gibbs Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q30 vs (missing) article redirects from en:United States of America to en:United States
+				</br>
+				<a href="https://openstreetmap.org/way/119685133" target="_new">North Union Court - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q889406 vs (missing) article redirects from en:John Pollard Gaines to en:John P. Gaines
+				</br>
+				<a href="https://openstreetmap.org/way/123525690" target="_new">South Gaines Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q889406 vs (missing) article redirects from en:John Pollard Gaines to en:John P. Gaines
+				</br>
+				<a href="https://openstreetmap.org/way/123525692" target="_new">South Gaines Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q30 vs (missing) article redirects from en:United States of America to en:United States
+				</br>
+				<a href="https://openstreetmap.org/way/124456370" target="_new">North Union Court - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q353113 vs (missing) article redirects from en:Addison Crandall Gibbs to en:A. C. Gibbs
+				</br>
+				<a href="https://openstreetmap.org/way/134149131" target="_new">South Gibbs Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q353113 vs (missing) article redirects from en:Addison Crandall Gibbs to en:A. C. Gibbs
+				</br>
+				<a href="https://openstreetmap.org/way/135818842" target="_new">South Gibbs Street - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -3182,15 +4075,57 @@ way(863849688)['species:wikidata'='Q787']['species:wikipedia'='en:Domestic pig']
 				</br>
 				<hr>
 				</br>
+				Q889406 vs (missing) article redirects from en:John Pollard Gaines to en:John P. Gaines
+				</br>
+				<a href="https://openstreetmap.org/way/156420613" target="_new">South Gaines Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q18575 vs (missing) article redirects from en:Tuscon, Arizona to en:Tucson, Arizona
 				</br>
 				<a href="https://openstreetmap.org/way/15944949" target="_new">Tucson Place - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
+				Q353113 vs (missing) article redirects from en:Addison Crandall Gibbs to en:A. C. Gibbs
+				</br>
+				<a href="https://openstreetmap.org/way/172864444" target="_new">South Gibbs Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q353113 vs (missing) article redirects from en:Addison Crandall Gibbs to en:A. C. Gibbs
+				</br>
+				<a href="https://openstreetmap.org/way/172864445" target="_new">South Gibbs Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q353113 vs (missing) article redirects from en:Addison Crandall Gibbs to en:A. C. Gibbs
+				</br>
+				<a href="https://openstreetmap.org/way/172864446" target="_new">South Gibbs Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q353113 vs (missing) article redirects from en:Addison Crandall Gibbs to en:A. C. Gibbs
+				</br>
+				<a href="https://openstreetmap.org/way/174037993" target="_new">South Gibbs Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q353113 vs (missing) article redirects from en:Addison Crandall Gibbs to en:A. C. Gibbs
+				</br>
+				<a href="https://openstreetmap.org/way/189754292" target="_new">South Gibbs Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q1205690 vs (missing) article redirects from en:Pellinore to en:King Pellinore
 				</br>
 				<a href="https://openstreetmap.org/way/22015097" target="_new">Pellinore Drive - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q30 vs (missing) article redirects from en:United States of America to en:United States
+				</br>
+				<a href="https://openstreetmap.org/way/30454818" target="_new">North Union Court - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -3218,15 +4153,93 @@ way(863849688)['species:wikidata'='Q787']['species:wikipedia'='en:Domestic pig']
 				</br>
 				<hr>
 				</br>
+				Q889406 vs (missing) article redirects from en:John Pollard Gaines to en:John P. Gaines
+				</br>
+				<a href="https://openstreetmap.org/way/329049326" target="_new">South Gaines Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q407113 vs (missing) article redirects from en:Air Force (shoe) to en:Nike Air Force
+				</br>
+				<a href="https://openstreetmap.org/way/372431386" target="_new">Air Force 1 Building - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q353113 vs (missing) article redirects from en:Addison Crandall Gibbs to en:A. C. Gibbs
+				</br>
+				<a href="https://openstreetmap.org/way/414515548" target="_new">Southwest Gibbs Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q880817 vs (missing) article redirects from en:Chester Bowles to en:Chester B. Bowles
 				</br>
 				<a href="https://openstreetmap.org/way/52013682" target="_new">an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
+				Q353113 vs (missing) article redirects from en:Addison Crandall Gibbs to en:A. C. Gibbs
+				</br>
+				<a href="https://openstreetmap.org/way/5516136" target="_new">Southwest Gibbs Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q353113 vs (missing) article redirects from en:Addison Crandall Gibbs to en:A. C. Gibbs
+				</br>
+				<a href="https://openstreetmap.org/way/5516139" target="_new">South Gibbs Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q30 vs (missing) article redirects from en:United States of America to en:United States
+				</br>
+				<a href="https://openstreetmap.org/way/5536622" target="_new">North Union Court - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q889406 vs (missing) article redirects from en:John Pollard Gaines to en:John P. Gaines
+				</br>
+				<a href="https://openstreetmap.org/way/5538960" target="_new">South Gaines Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q353113 vs (missing) article redirects from en:Addison Crandall Gibbs to en:A. C. Gibbs
+				</br>
+				<a href="https://openstreetmap.org/way/61760225" target="_new">Southwest Gibbs Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q30 vs (missing) article redirects from en:United States of America to en:United States
+				</br>
+				<a href="https://openstreetmap.org/way/673703516" target="_new">North Union Court - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q353113 vs (missing) article redirects from en:Addison Crandall Gibbs to en:A. C. Gibbs
+				</br>
+				<a href="https://openstreetmap.org/way/726588855" target="_new">South Gibbs Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q353113 vs (missing) article redirects from en:Addison Crandall Gibbs to en:A. C. Gibbs
+				</br>
+				<a href="https://openstreetmap.org/way/72693284" target="_new">South Gibbs Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q353113 vs (missing) article redirects from en:Addison Crandall Gibbs to en:A. C. Gibbs
+				</br>
+				<a href="https://openstreetmap.org/way/755674823" target="_new">South Gibbs Street - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
 				Q239925 vs (missing) article redirects from en:Saints Cyril and Methodius to en:Cyril and Methodius
 				</br>
 				<a href="https://openstreetmap.org/way/863663893" target="_new">Saints Cyril and Methodius Child Development Center - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q353113 vs (missing) article redirects from en:Addison Crandall Gibbs to en:A. C. Gibbs
+				</br>
+				<a href="https://openstreetmap.org/way/909176503" target="_new">South Gibbs Street - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 				</br>
@@ -3246,19 +4259,101 @@ way(863849688)['species:wikidata'='Q787']['species:wikipedia'='en:Domestic pig']
 			</br>
 			<blockquote>[out:xml][timeout:3600];
 (
+node(150961976)['name:etymology:wikidata'='Q18419']['name:etymology:wikipedia'='en:Brooklyn, New York, New York'];
+relation(6447992)['name:etymology:wikidata'='Q25239']['name:etymology:wikipedia'='en:Alnus'];
+way(1075930076)['name:etymology:wikidata'='Q353113']['name:etymology:wikipedia'='en:Addison Crandall Gibbs'];
 way(116775599)['name:etymology:wikidata'='Q880817']['name:etymology:wikipedia'='en:Chester Bowles'];
+way(117446029)['name:etymology:wikidata'='Q353113']['name:etymology:wikipedia'='en:Addison Crandall Gibbs'];
+way(119685133)['name:etymology:wikidata'='Q30']['name:etymology:wikipedia'='en:United States of America'];
+way(123525690)['name:etymology:wikidata'='Q889406']['name:etymology:wikipedia'='en:John Pollard Gaines'];
+way(123525692)['name:etymology:wikidata'='Q889406']['name:etymology:wikipedia'='en:John Pollard Gaines'];
+way(124456370)['name:etymology:wikidata'='Q30']['name:etymology:wikipedia'='en:United States of America'];
+way(134149131)['name:etymology:wikidata'='Q353113']['name:etymology:wikipedia'='en:Addison Crandall Gibbs'];
+way(135818842)['name:etymology:wikidata'='Q353113']['name:etymology:wikipedia'='en:Addison Crandall Gibbs'];
 way(14605308)['name:etymology:wikidata'='Q1866923']['name:etymology:wikipedia'='es:la Llorona'];
+way(156420613)['name:etymology:wikidata'='Q889406']['name:etymology:wikipedia'='en:John Pollard Gaines'];
 way(15944949)['name:etymology:wikidata'='Q18575']['name:etymology:wikipedia'='en:Tuscon, Arizona'];
+way(172864444)['name:etymology:wikidata'='Q353113']['name:etymology:wikipedia'='en:Addison Crandall Gibbs'];
+way(172864445)['name:etymology:wikidata'='Q353113']['name:etymology:wikipedia'='en:Addison Crandall Gibbs'];
+way(172864446)['name:etymology:wikidata'='Q353113']['name:etymology:wikipedia'='en:Addison Crandall Gibbs'];
+way(174037993)['name:etymology:wikidata'='Q353113']['name:etymology:wikipedia'='en:Addison Crandall Gibbs'];
+way(189754292)['name:etymology:wikidata'='Q353113']['name:etymology:wikipedia'='en:Addison Crandall Gibbs'];
 way(22015097)['name:etymology:wikidata'='Q1205690']['name:etymology:wikipedia'='en:Pellinore'];
+way(30454818)['name:etymology:wikidata'='Q30']['name:etymology:wikipedia'='en:United States of America'];
 way(306180556)['name:etymology:wikidata'='Q880817']['name:etymology:wikipedia'='en:Chester Bowles'];
 way(306180560)['name:etymology:wikidata'='Q880817']['name:etymology:wikipedia'='en:Chester Bowles'];
 way(306180561)['name:etymology:wikidata'='Q880817']['name:etymology:wikipedia'='en:Chester Bowles'];
 way(306180562)['name:etymology:wikidata'='Q880817']['name:etymology:wikipedia'='en:Chester Bowles'];
+way(329049326)['name:etymology:wikidata'='Q889406']['name:etymology:wikipedia'='en:John Pollard Gaines'];
+way(372431386)['name:etymology:wikidata'='Q407113']['name:etymology:wikipedia'='en:Air Force (shoe)'];
+way(414515548)['name:etymology:wikidata'='Q353113']['name:etymology:wikipedia'='en:Addison Crandall Gibbs'];
 way(52013682)['name:etymology:wikidata'='Q880817']['name:etymology:wikipedia'='en:Chester Bowles'];
+way(5516136)['name:etymology:wikidata'='Q353113']['name:etymology:wikipedia'='en:Addison Crandall Gibbs'];
+way(5516139)['name:etymology:wikidata'='Q353113']['name:etymology:wikipedia'='en:Addison Crandall Gibbs'];
+way(5536622)['name:etymology:wikidata'='Q30']['name:etymology:wikipedia'='en:United States of America'];
+way(5538960)['name:etymology:wikidata'='Q889406']['name:etymology:wikipedia'='en:John Pollard Gaines'];
+way(61760225)['name:etymology:wikidata'='Q353113']['name:etymology:wikipedia'='en:Addison Crandall Gibbs'];
+way(673703516)['name:etymology:wikidata'='Q30']['name:etymology:wikipedia'='en:United States of America'];
+way(726588855)['name:etymology:wikidata'='Q353113']['name:etymology:wikipedia'='en:Addison Crandall Gibbs'];
+way(72693284)['name:etymology:wikidata'='Q353113']['name:etymology:wikipedia'='en:Addison Crandall Gibbs'];
+way(755674823)['name:etymology:wikidata'='Q353113']['name:etymology:wikipedia'='en:Addison Crandall Gibbs'];
 way(863663893)['name:etymology:wikidata'='Q239925']['name:etymology:wikipedia'='en:Saints Cyril and Methodius'];
+way(909176503)['name:etymology:wikidata'='Q353113']['name:etymology:wikipedia'='en:Addison Crandall Gibbs'];
 way(93658408)['name:etymology:wikidata'='Q880817']['name:etymology:wikipedia'='en:Chester Bowles'];
 way(93658459)['name:etymology:wikidata'='Q880817']['name:etymology:wikipedia'='en:Chester Bowles'];
 ); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect - for name:etymology prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for old_name:etymology prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect - for old_name:etymology prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for old_name:etymology prefixed tags</h2></a>
+			</br>
+			old_name:etymology:wikidata and old_name:etymology:wikipedia tags link to a different objects, because old_name:etymology:wikipedia tag points to a redirect that should be followed
+				</br>
+				Q387103 vs (missing) article redirects from en:Deschutes River (Oregon) to en:Deschutes River
+				</br>
+				<a href="https://openstreetmap.org/way/44761589" target="_new">Terra T/C Building - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(44761589)['old_name:etymology:wikidata'='Q387103']['old_name:etymology:wikipedia'='en:Deschutes River (Oregon)'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect - for old_name:etymology prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for architect prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect - for architect prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for architect prefixed tags</h2></a>
+			</br>
+			architect:wikidata and architect:wikipedia tags link to a different objects, because architect:wikipedia tag points to a redirect that should be followed
+				</br>
+				Q7079909 vs (missing) article redirects from en:Ogden Codman, Jr. to en:Ogden Codman Jr.
+				</br>
+				<a href="https://openstreetmap.org/way/266940394" target="_new">La Scuola d'Italia Guglielmo Marconi - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7079909 vs (missing) article redirects from en:Ogden Codman, Jr. to en:Ogden Codman Jr.
+				</br>
+				<a href="https://openstreetmap.org/way/266940614" target="_new">Lucy Drexel Dahlgren House - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q7079909 vs (missing) article redirects from en:Ogden Codman, Jr. to en:Ogden Codman Jr.
+				</br>
+				<a href="https://openstreetmap.org/way/266940626" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(266940394)['architect:wikidata'='Q7079909']['architect:wikipedia'='en:Ogden Codman, Jr.'];
+way(266940614)['architect:wikidata'='Q7079909']['architect:wikipedia'='en:Ogden Codman, Jr.'];
+way(266940626)['architect:wikidata'='Q7079909']['architect:wikipedia'='en:Ogden Codman, Jr.'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect - for architect prefixed tags']</blockquote>
 			</br>
 			<hr>
 <h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />

@@ -4,7 +4,7 @@
 	</head>
 <body>
 	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
-This page was generated using data obtained on various dates including -data-was-not-downloaded-for-now-. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+This page was generated using data obtained on various dates including 2024-01-31, 2024-01-30. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
 <br />
 <br />
 			</br>
@@ -13,7 +13,309 @@ This page was generated using data obtained on various dates including -data-was
 			Proposed edits at this page are so obvious that automatic edit makes sense.
 			</br>
 			<hr>
-<ul></ul><h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
+<ul><li><a href="#wikipedia tag in an outdated form for removal">wikipedia tag in an outdated form for removal</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags</a></li></ul>			</br>
+			<a href="#wikipedia tag in an outdated form for removal"><h2 id="wikipedia tag in an outdated form for removal">wikipedia tag in an outdated form for removal</h2></a>
+				</br>
+				wikipedia tag in outdated form ([&#x27;wikipedia:es&#x27;]), with wikipedia and wikidata tag present and may be safely removed
+				</br>
+				<a href="https://openstreetmap.org/node/151638563" target="_new">Rio Grande City - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia tag in outdated form ([&#x27;wikipedia:es&#x27;]), with wikipedia and wikidata tag present and may be safely removed
+				</br>
+				<a href="https://openstreetmap.org/node/151665940" target="_new">McAllen - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia tag in outdated form ([&#x27;wikipedia:es&#x27;]), with wikipedia and wikidata tag present and may be safely removed
+				</br>
+				<a href="https://openstreetmap.org/relation/113786" target="_new">McAllen - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia tag in outdated form ([&#x27;wikipedia:es&#x27;]), with wikipedia and wikidata tag present and may be safely removed
+				</br>
+				<a href="https://openstreetmap.org/relation/115425" target="_new">Rio Grande City - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(151638563)['wikidata'='Q981868']['wikipedia'='en:Rio Grande City, Texas']['wikipedia:es'='R&#237;o Grande City'];
+node(151665940)['wikidata'='Q51698']['wikipedia'='en:McAllen, Texas']['wikipedia:es'='McAllen (Texas)'];
+relation(113786)['wikidata'='Q51698']['wikipedia'='en:McAllen, Texas']['wikipedia:es'='McAllen (Texas)'];
+relation(115425)['wikidata'='Q981868']['wikipedia'='en:Rio Grande City, Texas']['wikipedia:es'='R&#237;o Grande City'];
+); (._;>;); out meta qt;//['wikipedia tag in an outdated form for removal']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags</h2></a>
+			</br>
+			operator:wikidata and operator:wikipedia tags link to a different objects, because operator:wikipedia tag points to a redirect that should be followed
+				</br>
+				Q3030410 vs (missing) article redirects from en:Disney Consumer Products and Interactive Media to en:Disney Consumer Products
+				</br>
+				<a href="https://openstreetmap.org/node/5237170859" target="_new">Disney Store - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q3030410 vs (missing) article redirects from en:Disney Consumer Products and Interactive Media to en:Disney Consumer Products
+				</br>
+				<a href="https://openstreetmap.org/node/5339561956" target="_new">Disney Store - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q154950 vs (missing) article redirects from en:Royal Dutch Shell to en:Shell plc
+				</br>
+				<a href="https://openstreetmap.org/node/939881092" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q154950 vs (missing) article redirects from en:Royal Dutch Shell to en:Shell plc
+				</br>
+				<a href="https://openstreetmap.org/node/939881168" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q154950 vs (missing) article redirects from en:Royal Dutch Shell to en:Shell plc
+				</br>
+				<a href="https://openstreetmap.org/node/939881228" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q154950 vs (missing) article redirects from en:Royal Dutch Shell to en:Shell plc
+				</br>
+				<a href="https://openstreetmap.org/node/939881253" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/relation/6879087" target="_new">La Quinta Inn by Wyndham Lubbock - Downtown Civic Center - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/196949481" target="_new">La Quinta Inn & Suites by Wyndham Denton - University Drive - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/199540205" target="_new">Ramada by Wyndham Del Rio - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/222046390" target="_new">La Quinta Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/222720058" target="_new">Super 8 by Wyndham Amarillo West - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/260546972" target="_new">Super 8 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/271674294" target="_new">La Quinta Inn & Suites by Wyndham Burleson - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/271674306" target="_new">Super 8 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/279006406" target="_new">Ramada - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/399477159" target="_new">Days Inn Abilene - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/500541890" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/502484810" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/517412793" target="_new">La Quinta Inn & Suites by Wyndham Waxahachie - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/524697156" target="_new">Days Inn by Wyndham Denton - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/532104888" target="_new">La Quinta - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/532194144" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q96372437 vs (missing) article redirects from en:Ascension (company) to en:Ascension (healthcare system)
+				</br>
+				<a href="https://openstreetmap.org/way/566754318" target="_new">Ascension Seton Northwest Hospital - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q96372437 vs (missing) article redirects from en:Ascension (company) to en:Ascension (healthcare system)
+				</br>
+				<a href="https://openstreetmap.org/way/598291441" target="_new">Ascension Seton Highland Lakes Hospital - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q96372437 vs (missing) article redirects from en:Ascension (company) to en:Ascension (healthcare system)
+				</br>
+				<a href="https://openstreetmap.org/way/599504497" target="_new">Seton Medical Center Williamson - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/61697503" target="_new">La Quinta Inn & Suites by Wyndham DFW Airport South / Irving - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/61698859" target="_new">Super 8 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/622197141" target="_new">La Quinta Inn & Suites by Wyndham McAllen Convention Center - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/648488458" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/661177691" target="_new">Days Inn by Wyndham Mesquite Rodeo TX - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/673924851" target="_new">La Quinta Inn & Suites by Wyndham Dallas Mesquite - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/678523351" target="_new">Days Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/678629298" target="_new">La Quinta - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/678820395" target="_new">La Quinta Inn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/700188868" target="_new">Super 8 by Wyndham Mineral Wells - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q8040120 vs (missing) article redirects from en:Wyndham Hotels and Resorts to en:Wyndham Hotels &amp; Resorts
+				</br>
+				<a href="https://openstreetmap.org/way/700440512" target="_new">Days Inn & Suites by Wyndham Mineral Wells - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(5237170859)['operator:wikidata'='Q3030410']['operator:wikipedia'='en:Disney Consumer Products and Interactive Media'];
+node(5339561956)['operator:wikidata'='Q3030410']['operator:wikipedia'='en:Disney Consumer Products and Interactive Media'];
+node(939881092)['operator:wikidata'='Q154950']['operator:wikipedia'='en:Royal Dutch Shell'];
+node(939881168)['operator:wikidata'='Q154950']['operator:wikipedia'='en:Royal Dutch Shell'];
+node(939881228)['operator:wikidata'='Q154950']['operator:wikipedia'='en:Royal Dutch Shell'];
+node(939881253)['operator:wikidata'='Q154950']['operator:wikipedia'='en:Royal Dutch Shell'];
+relation(6879087)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(196949481)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(199540205)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(222046390)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(222720058)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(260546972)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(271674294)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(271674306)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(279006406)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(399477159)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(500541890)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(502484810)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(517412793)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(524697156)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(532104888)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(532194144)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(566754318)['operator:wikidata'='Q96372437']['operator:wikipedia'='en:Ascension (company)'];
+way(598291441)['operator:wikidata'='Q96372437']['operator:wikipedia'='en:Ascension (company)'];
+way(599504497)['operator:wikidata'='Q96372437']['operator:wikipedia'='en:Ascension (company)'];
+way(61697503)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(61698859)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(622197141)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(648488458)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(661177691)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(673924851)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(678523351)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(678629298)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(678820395)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(700188868)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+way(700440512)['operator:wikidata'='Q8040120']['operator:wikipedia'='en:Wyndham Hotels and Resorts'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags']</blockquote>
+			</br>
+			<hr>
+<h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
 <p class="small">Note to self: online version hosted at <a href="https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports">https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports</a>, files are stored at <a href="https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports">https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports</a>.		</div>
 	</body>
 </html>

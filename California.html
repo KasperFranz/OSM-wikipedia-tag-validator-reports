@@ -4,7 +4,7 @@
 	</head>
 <body>
 	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
-This page was generated using data obtained on -data-was-not-downloaded-for-now-. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+This page was generated using data obtained on 2024-01-30. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
 <br />
 <br />
 			</br>
@@ -13,7 +13,206 @@ This page was generated using data obtained on -data-was-not-downloaded-for-now-
 			Remember to check whether edits make sense! All reports are on this page because these tasks require human judgment to verify whether the proposed edit makes sense. Some proposed edits will be wrong, in such case they should be not done and problem reported
 			</br>
 			<hr>
-<ul></ul><h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
+<ul><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a software">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a software</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikidata tag to a website">should use a secondary wikipedia tag - linking from wikidata tag to a website</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikidata tag to a software">should use a secondary wikipedia tag - linking from wikidata tag to a software</a></li><li><a href="#wikipedia wikidata mismatch">wikipedia wikidata mismatch</a></li><li><a href="#malformed wikipedia tag">malformed wikipedia tag</a></li><li><a href="#malformed secondary wikipedia tag - for artist prefixed tags">malformed secondary wikipedia tag - for artist prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - for species prefixed tags">wikipedia wikidata mismatch - for species prefixed tags</a></li><li><a href="#wikipedia tag links bot wikipedia">wikipedia tag links bot wikipedia</a></li></ul>			</br>
+			<a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a software"><h2 id="should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a software">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a software</h2></a>
+				</br>
+				linked wikidata entry (Q1142035) is about a software, so it is very unlikely to be correct <br />        subject:wikipedia=*  tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/node/10080940263" target="_new">Crunchyroll - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				linked wikidata entry (Q3090589) is about a software, so it is very unlikely to be correct <br />        subject:wikipedia=*  tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/node/9687217913" target="_new">Change.org - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				linked wikidata entry (Q461) is about a software, so it is very unlikely to be correct <br />        subject:wikipedia=*  tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/way/38092130" target="_new">Internet Archive - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				linked wikidata entry (Q7021239) is about a software, so it is very unlikely to be correct <br />        subject:wikipedia=*  tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/way/71504443" target="_new">Nextdoor - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(10080940263)['wikidata'='Q1142035'];
+node(9687217913)['wikidata'='Q3090589'];
+way(38092130)['wikidata'='Q461'];
+way(71504443)['wikidata'='Q7021239'];
+); (._;>;); out meta qt;//['should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a software']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#should use a secondary wikipedia tag - linking from wikidata tag to a website"><h2 id="should use a secondary wikipedia tag - linking from wikidata tag to a website">should use a secondary wikipedia tag - linking from wikidata tag to a website</h2></a>
+				</br>
+				linked wikidata entry (Q63327) is about a website, so it is very unlikely to be correct <br />        subject:wikipedia=*  tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/node/3532719200" target="_new">Airbnb - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(3532719200)['wikidata'='Q63327'];
+); (._;>;); out meta qt;//['should use a secondary wikipedia tag - linking from wikidata tag to a website']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#should use a secondary wikipedia tag - linking from wikidata tag to a software"><h2 id="should use a secondary wikipedia tag - linking from wikidata tag to a software">should use a secondary wikipedia tag - linking from wikidata tag to a software</h2></a>
+				</br>
+				linked wikidata entry (Q780442) is about a software, so it is very unlikely to be correct <br />        subject:wikipedia=*  tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/node/3277801205" target="_new">Uber - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(3277801205)['wikidata'='Q780442'];
+); (._;>;); out meta qt;//['should use a secondary wikipedia tag - linking from wikidata tag to a software']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch"><h2 id="wikipedia wikidata mismatch">wikipedia wikidata mismatch</h2></a>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q49573226 vs Q527972 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/way/25278818" target="_new">Union Square - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(25278818)['wikidata'='Q49573226']['wikipedia'='en:Union Square, San Francisco'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#malformed wikipedia tag"><h2 id="malformed wikipedia tag">malformed wikipedia tag</h2></a>
+				</br>
+				malformed value in wikipedia tag (Mountain Lake Park)
+				</br>
+				<a href="https://openstreetmap.org/way/401354283" target="_new">Mountain Lake Park - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(401354283)['wikipedia'='Mountain Lake Park'];
+); (._;>;); out meta qt;//['malformed wikipedia tag']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#malformed secondary wikipedia tag - for artist prefixed tags"><h2 id="malformed secondary wikipedia tag - for artist prefixed tags">malformed secondary wikipedia tag - for artist prefixed tags</h2></a>
+				</br>
+				malformed value in artist:wikipedia tag (https://wikipedia.org/wiki/John_Seward_Johnson_II)
+				</br>
+				<a href="https://openstreetmap.org/node/1147880103" target="_new">Smile - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in artist:wikipedia tag (https://wikipedia.org/wiki/Andy_Goldsworthy)
+				</br>
+				<a href="https://openstreetmap.org/node/1564470252" target="_new">Spire - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in artist:wikipedia tag (https://en.wikipedia.org/wiki/Richard_Serra)
+				</br>
+				<a href="https://openstreetmap.org/relation/15904147" target="_new">Ballast - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in artist:wikipedia tag (https://en.wikipedia.org/wiki/Kara_Maria)
+				</br>
+				<a href="https://openstreetmap.org/way/1175620774" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in artist:wikipedia tag (https://wikipedia.org/wiki/Sirron_Norris)
+				</br>
+				<a href="https://openstreetmap.org/way/1176372329" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in artist:wikipedia tag (https://en.wikipedia.org/wiki/Bip_Apollo)
+				</br>
+				<a href="https://openstreetmap.org/way/1192514369" target="_new">Baby Cop - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(1147880103)['artist:wikipedia'='https://wikipedia.org/wiki/John_Seward_Johnson_II'];
+node(1564470252)['artist:wikipedia'='https://wikipedia.org/wiki/Andy_Goldsworthy'];
+relation(15904147)['artist:wikipedia'='https://en.wikipedia.org/wiki/Richard_Serra'];
+way(1175620774)['artist:wikipedia'='https://en.wikipedia.org/wiki/Kara_Maria'];
+way(1176372329)['artist:wikipedia'='https://wikipedia.org/wiki/Sirron_Norris'];
+way(1192514369)['artist:wikipedia'='https://en.wikipedia.org/wiki/Bip_Apollo'];
+); (._;>;); out meta qt;//['malformed secondary wikipedia tag - for artist prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - for species prefixed tags"><h2 id="wikipedia wikidata mismatch - for species prefixed tags">wikipedia wikidata mismatch - for species prefixed tags</h2></a>
+				</br>
+				species:wikidata and species:wikipedia tags link to a different objects (Q41994 vs Q3901583 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/way/382798035" target="_new">Flamingo - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(382798035)['species:wikidata'='Q41994']['species:wikipedia'='en:Flamingo'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - for species prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia tag links bot wikipedia"><h2 id="wikipedia tag links bot wikipedia">wikipedia tag links bot wikipedia</h2></a>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/369170951" target="_new">Aquatic Park Cove - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/way/114151121" target="_new">Ina Coolbrith Park - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(369170951)['wikidata'='Q49373024']['wikipedia'='ceb:Aquatic Cove'];
+way(114151121)['wikidata'='Q49504637']['wikipedia'='ceb:Ina Coolbrith Park'];
+); (._;>;); out meta qt;//['wikipedia tag links bot wikipedia']</blockquote>
+			</br>
+			<hr>
+<h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
 <p class="small">Note to self: online version hosted at <a href="https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports">https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports</a>, files are stored at <a href="https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports">https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports</a>.		</div>
 	</body>
 </html>
