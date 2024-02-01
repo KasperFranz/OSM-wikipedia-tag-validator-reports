@@ -1,0 +1,1200 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://mapsaregreat.com/style.css" /> <!-- GPLv3 licensed -->
+	</head>
+<body>
+	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
+This page was generated using data obtained on 2024-01-31. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+<br />
+<br />
+			</br>
+			<hr>
+			</br>
+			Remember to check whether edits make sense! All reports are on this page because these tasks require human judgment to verify whether the proposed edit makes sense. Some proposed edits will be wrong, in such case they should be not done and problem reported
+			</br>
+			<hr>
+<ul><li><a href="#wikipedia tag links to 404">wikipedia tag links to 404</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a vehicle model or class">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a vehicle model or class</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a weapon model or class">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a weapon model or class</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a public transport network">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a public transport network</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a religious denomination">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a religious denomination</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a meeting">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a meeting</a></li><li><a href="#wikipedia wikidata mismatch">wikipedia wikidata mismatch</a></li><li><a href="#malformed wikipedia tag">malformed wikipedia tag</a></li><li><a href="#blacklisted connection with known replacement">blacklisted connection with known replacement</a></li><li><a href="#wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not">wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not</a></li><li><a href="#wikipedia/wikidata type tag that is incorrect according to not:* tag">wikipedia/wikidata type tag that is incorrect according to not:* tag</a></li><li><a href="#malformed secondary wikipedia tag - for operator prefixed tags">malformed secondary wikipedia tag - for operator prefixed tags</a></li><li><a href="#malformed secondary wikipedia tag - for name:etymology prefixed tags">malformed secondary wikipedia tag - for name:etymology prefixed tags</a></li><li><a href="#malformed secondary wikipedia tag - for architect prefixed tags">malformed secondary wikipedia tag - for architect prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - for operator prefixed tags">wikipedia wikidata mismatch - for operator prefixed tags</a></li><li><a href="#wikipedia tag links bot wikipedia">wikipedia tag links bot wikipedia</a></li><li><a href="#malformed secondary wikidata tag - for species prefixed tags">malformed secondary wikidata tag - for species prefixed tags</a></li></ul>			</br>
+			<a href="#wikipedia tag links to 404"><h2 id="wikipedia tag links to 404">wikipedia tag links to 404</h2></a>
+			</br>
+			Wikipedia article linked from OSM object using wikipedia tag is missing.<br />Often article was moved without leaving redirect and wikipedia tag should be edited to point to the new one.<br />Article may be deleted and no longer existing, or link was never valid. In such cases wikipedia tag should be deleted.
+				</br>
+				
+				</br>
+				<a href="https://openstreetmap.org/relation/14313973" target="_new">Ritchie Creek - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				
+				</br>
+				<a href="https://openstreetmap.org/relation/6824418" target="_new">Lower Wisconsin State Riverway - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+relation(14313973)['wikipedia'='ceb:Ritchie Creek (river in the United States, Wisconsin)'];
+relation(6824418)['wikipedia'='en:Lower Wisconsin State Riverway'];
+); (._;>;); out meta qt;//['wikipedia tag links to 404']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human"><h2 id="should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human</h2></a>
+				</br>
+				linked wikidata entry (Q7322) is about a human, so it is very unlikely to be correct <br />        subject:wikipedia=* or name:wikipedia tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/way/481281984" target="_new">Christopher Columbus - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(481281984)['wikidata'='Q7322'];
+); (._;>;); out meta qt;//['should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a vehicle model or class"><h2 id="should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a vehicle model or class">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a vehicle model or class</h2></a>
+				</br>
+				linked wikidata entry (Q382421) is about a vehicle model or class, so it is very unlikely to be correct <br />        subject:wikipedia=* or model:wikipedia tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/node/4665523238" target="_new">M60A3 tank - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				linked wikidata entry (Q382421) is about a vehicle model or class, so it is very unlikely to be correct <br />        subject:wikipedia=* or model:wikipedia tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/way/559191344" target="_new">M60A3 Patton Tank - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(4665523238)['wikidata'='Q382421'];
+way(559191344)['wikidata'='Q382421'];
+); (._;>;); out meta qt;//['should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a vehicle model or class']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a weapon model or class"><h2 id="should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a weapon model or class">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a weapon model or class</h2></a>
+				</br>
+				linked wikidata entry (Q191643) is about a weapon model or class, so it is very unlikely to be correct <br />        subject:wikipedia=* or model:wikipedia tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/way/559191343" target="_new">M4A3 Sherman Tank - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(559191343)['wikidata'='Q191643'];
+); (._;>;); out meta qt;//['should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a weapon model or class']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a public transport network"><h2 id="should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a public transport network">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a public transport network</h2></a>
+				</br>
+				linked wikidata entry (Q7912245) is about a public transport network, so it is very unlikely to be correct <br />        subject:wikipedia=* or operator:wikipedia tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/node/11327708474" target="_new">Valley Transit - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				linked wikidata entry (Q19877002) is about a public transport network, so it is very unlikely to be correct <br />        subject:wikipedia=* or operator:wikipedia tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/way/600469723" target="_new">Streetcar Operations & Maintenance Facility - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				linked wikidata entry (Q5514128) is about a public transport network, so it is very unlikely to be correct <br />        subject:wikipedia=* or operator:wikipedia tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/way/748896265" target="_new">GO Transit - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(11327708474)['wikidata'='Q7912245'];
+way(600469723)['wikidata'='Q19877002'];
+way(748896265)['wikidata'='Q5514128'];
+); (._;>;); out meta qt;//['should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a public transport network']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a religious denomination"><h2 id="should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a religious denomination">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a religious denomination</h2></a>
+				</br>
+				linked wikidata entry (Q35269) is about a religious denomination, so it is very unlikely to be correct <br />        subject:wikipedia=*  tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/way/413172828" target="_new">Kingdom Hall of Jehovah's Witnesses - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(413172828)['wikidata'='Q35269'];
+); (._;>;); out meta qt;//['should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a religious denomination']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a meeting"><h2 id="should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a meeting">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a meeting</h2></a>
+				</br>
+				linked wikidata entry (Q1273800) is about a meeting, so it is very unlikely to be correct <br />        subject:wikipedia=*  tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/way/613183124" target="_new">EAA AirVenture Grounds - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(613183124)['wikidata'='Q1273800'];
+); (._;>;); out meta qt;//['should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a meeting']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch"><h2 id="wikipedia wikidata mismatch">wikipedia wikidata mismatch</h2></a>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q7303869 vs Q1887726 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/151504111" target="_new">Red Cedar - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q11680124 vs Q577811 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/153721137" target="_new">Baileys Harbor - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q608172 vs Q1569843 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/153804662" target="_new">Lac du Flambeau / Waaswaaganing - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q5553245 vs Q5553244 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/3998275341" target="_new">Gertie the Duck - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q6120738 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has wikipedia tag that links redirect (&#x27;Jacques Marquette (sculpture)&#x27; to &#x27;Pere Marquette (disambiguation)&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/node/4301404281" target="_new">Jacques Marquette - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q59392188 vs Q16148484 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/relation/11247328" target="_new">Ho-Chunk Nation Indian Reservation - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q7893734 vs Q5691032 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/relation/11987916" target="_new">Town of Unity - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q4817602 vs Q409985 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/relation/2304873" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q5817097 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has wikipedia tag that links redirect (&#x27;Monroe, Green County, Wisconsin&#x27; to &#x27;Monroe, Wisconsin (disambiguation)&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/251666" target="_new">Monroe - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q2247850 vs Q9031818 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/relation/251874" target="_new">Merton - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q3710324 vs Q123581296 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/relation/3639113" target="_new">Town of Greenville - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q4892348 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has wikipedia tag that links redirect (&#x27;Berlin, Green Lake County, Wisconsin&#x27; to &#x27;Berlin, Wisconsin (disambiguation)&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/3990337" target="_new">Town of Berlin - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q28655365 vs Q12061070 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/relation/4743738" target="_new">Lac du Flambeau Indian Reservation - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q48785121 vs Q6395524 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/relation/7066320" target="_new">Kettle Moraine State Forest - South - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q41544580 vs Q7093670 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/relation/8370539" target="_new">Oneida Indian Reservation - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q28529744 vs Q6467824 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/relation/8370561" target="_new">Lac Courte Oreilles Indian Reservation - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q6414105 vs Q474242 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/way/1098280083" target="_new">Kinnickinnic River - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q8027209 vs Q48768568 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/way/153063315" target="_new">Wisconsin Institute for Discovery - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q7910733 vs Q7910734 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/way/183384777" target="_new">Alumni Partnership Center - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q49477244 vs Q5052291 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/way/27373044" target="_new">Cathedral Square Park - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q5385000 vs Q64349066 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/way/403696420" target="_new">Brigadier General Erastus B. Wolcott - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(151504111)['wikidata'='Q7303869']['wikipedia'='en:Red Cedar, Wisconsin'];
+node(153721137)['wikidata'='Q11680124']['wikipedia'='en:Baileys Harbor (CDP), Wisconsin'];
+node(153804662)['wikidata'='Q608172']['wikipedia'='en:Lac du Flambeau (CDP), Wisconsin'];
+node(3998275341)['wikidata'='Q5553245']['wikipedia'='en:Gertie the Duck'];
+node(4301404281)['wikidata'='Q6120738']['wikipedia'='en:Jacques Marquette (sculpture)'];
+relation(11247328)['wikidata'='Q59392188']['wikipedia'='en:Ho-Chunk Nation of Wisconsin'];
+relation(11987916)['wikidata'='Q7893734']['wikipedia'='en:Unity, Clark County, Wisconsin'];
+relation(2304873)['wikidata'='Q4817602']['wikipedia'='en:U.S. Route 63'];
+relation(251666)['wikidata'='Q5817097']['wikipedia'='en:Monroe, Green County, Wisconsin'];
+relation(251874)['wikidata'='Q2247850']['wikipedia'='en:Merton, Wisconsin'];
+relation(3639113)['wikidata'='Q3710324']['wikipedia'='en:Greenville, Wisconsin'];
+relation(3990337)['wikidata'='Q4892348']['wikipedia'='en:Berlin, Green Lake County, Wisconsin'];
+relation(4743738)['wikidata'='Q28655365']['wikipedia'='en:Lac du Flambeau Band of Lake Superior Chippewa'];
+relation(7066320)['wikidata'='Q48785121']['wikipedia'='en:Kettle Moraine State Forest'];
+relation(8370539)['wikidata'='Q41544580']['wikipedia'='en:Oneida Nation of Wisconsin'];
+relation(8370561)['wikidata'='Q28529744']['wikipedia'='en:Lac Courte Oreilles Band of Lake Superior Chippewa Indians'];
+way(1098280083)['wikidata'='Q6414105']['wikipedia'='en:Milwaukee River'];
+way(153063315)['wikidata'='Q8027209']['wikipedia'='en:Wisconsin Institutes for Discovery'];
+way(183384777)['wikidata'='Q7910733']['wikipedia'='en:Valentin Blatz Brewing Company Office Building'];
+way(27373044)['wikidata'='Q49477244']['wikipedia'='en:Cathedral Square Park'];
+way(403696420)['wikidata'='Q5385000']['wikipedia'='en:Erastus B. Wolcott'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#malformed wikipedia tag"><h2 id="malformed wikipedia tag">malformed wikipedia tag</h2></a>
+				</br>
+				malformed value in wikipedia tag (Boston Store (Wisconsin-based department store))
+				</br>
+				<a href="https://openstreetmap.org/way/1136272009" target="_new">Boston Store - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(1136272009)['wikipedia'='Boston Store (Wisconsin-based department store)'];
+); (._;>;); out meta qt;//['malformed wikipedia tag']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#blacklisted connection with known replacement"><h2 id="blacklisted connection with known replacement">blacklisted connection with known replacement</h2></a>
+				</br>
+				it is a typical wrong link and it has an obvious replacement, brand:wikipedia/brand:wikidata should be used instead
+				</br>
+				<a href="https://openstreetmap.org/way/1080603735" target="_new">Harley-Davidson - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				it is a typical wrong link and it has an obvious replacement, brand:wikipedia/brand:wikidata should be used instead
+				</br>
+				<a href="https://openstreetmap.org/way/1082229109" target="_new">Harley-Davidson - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				it is a typical wrong link and it has an obvious replacement, brand:wikipedia/brand:wikidata should be used instead
+				</br>
+				<a href="https://openstreetmap.org/way/1179837462" target="_new">Starbucks - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				it is a typical wrong link and it has an obvious replacement, brand:wikipedia/brand:wikidata should be used instead
+				</br>
+				<a href="https://openstreetmap.org/way/978577852" target="_new">Harley Davidson - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(1080603735)['wikidata'='Q192814']['wikipedia'='en:Harley-Davidson'];
+way(1082229109)['wikidata'='Q192814']['wikipedia'='en:Harley-Davidson'];
+way(1179837462)['wikipedia'='en:Starbucks'];
+way(978577852)['wikidata'='Q192814']['wikipedia'='en:Harley-Davidson'];
+); (._;>;); out meta qt;//['blacklisted connection with known replacement']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not"><h2 id="wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not">wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not</h2></a>
+			</br>
+			wikidata and wikipedia tags link to a different objects, because wikidata tag points to a redirect that should be followed
+				</br>
+				article claims to point to disambig, wikidata does not. wikidata tag is likely to be correct, wikipedia tag almost certainly is not
+				</br>
+				<a href="https://openstreetmap.org/node/153802444" target="_new">Red River - an affected OSM element that may be improved</a>
+				</br>
+				en:Red River, Wisconsin -> en:Red River, Kewaunee County, Wisconsin
+				</br>
+				Red River, Kewaunee County, Wisconsin
+				</br>
+				<hr>
+				</br>
+				article claims to point to disambig, wikidata does not. wikidata tag is likely to be correct, wikipedia tag almost certainly is not
+				</br>
+				<a href="https://openstreetmap.org/relation/14122957" target="_new">Bear River - an affected OSM element that may be improved</a>
+				</br>
+				ceb:Bear River -> ceb:Bear River (suba sa Tinipong Bansa, Wisconsin)
+				</br>
+				Bear River (suba sa Tinipong Bansa, Wisconsin)
+				</br>
+				<hr>
+				</br>
+				article claims to point to disambig, wikidata does not. wikidata tag is likely to be correct, wikipedia tag almost certainly is not
+				</br>
+				<a href="https://openstreetmap.org/relation/242818" target="_new">Friendship - an affected OSM element that may be improved</a>
+				</br>
+				en:Friendship, Wisconsin -> en:Friendship (village), Wisconsin
+				</br>
+				Friendship (village), Wisconsin
+				</br>
+				<hr>
+				</br>
+				article claims to point to disambig, wikidata does not. wikidata tag is likely to be correct, wikipedia tag almost certainly is not
+				</br>
+				<a href="https://openstreetmap.org/relation/251746" target="_new">Highland - an affected OSM element that may be improved</a>
+				</br>
+				en:Highland, Wisconsin -> en:Highland (village), Iowa County, Wisconsin
+				</br>
+				Highland (village), Iowa County, Wisconsin
+				</br>
+				<hr>
+				</br>
+				article claims to point to disambig, wikidata does not. wikidata tag is likely to be correct, wikipedia tag almost certainly is not
+				</br>
+				<a href="https://openstreetmap.org/relation/251759" target="_new">Sheldon - an affected OSM element that may be improved</a>
+				</br>
+				en:Sheldon, Wisconsin -> en:Sheldon, Rusk County, Wisconsin
+				</br>
+				Sheldon, Rusk County, Wisconsin
+				</br>
+				<hr>
+				</br>
+				article claims to point to disambig, wikidata does not. wikidata tag is likely to be correct, wikipedia tag almost certainly is not
+				</br>
+				<a href="https://openstreetmap.org/relation/251766" target="_new">Ettrick - an affected OSM element that may be improved</a>
+				</br>
+				en:Ettrick, Wisconsin -> en:Ettrick (village), Wisconsin
+				</br>
+				Ettrick (village), Wisconsin
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(153802444)['wikidata'='Q1888063']['wikipedia'='en:Red River, Wisconsin'];
+relation(14122957)['wikidata'='Q49849265']['wikipedia'='ceb:Bear River'];
+relation(242818)['wikidata'='Q1013478']['wikipedia'='en:Friendship, Wisconsin'];
+relation(251746)['wikidata'='Q938025']['wikipedia'='en:Highland, Wisconsin'];
+relation(251759)['wikidata'='Q2295650']['wikipedia'='en:Sheldon, Wisconsin'];
+relation(251766)['wikidata'='Q2025323']['wikipedia'='en:Ettrick, Wisconsin'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia/wikidata type tag that is incorrect according to not:* tag"><h2 id="wikipedia/wikidata type tag that is incorrect according to not:* tag">wikipedia/wikidata type tag that is incorrect according to not:* tag</h2></a>
+				</br>
+				brand:wikidata=Q3388303 is present despite that not:brand:wikidata=Q3388303 is also present - at least one of them is wrong
+				</br>
+				<a href="https://openstreetmap.org/node/3491289356" target="_new">Piggly Wiggly - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				operator:wikidata=Q56583617 is present despite that not:operator:wikidata=Q56583617 is also present - at least one of them is wrong
+				</br>
+				<a href="https://openstreetmap.org/way/176104669" target="_new">North Appleton - Fitzgerald 345kV - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				brand:wikidata=Q152057 is present despite that not:brand:wikidata=Q152057 is also present - at least one of them is wrong
+				</br>
+				<a href="https://openstreetmap.org/way/793522572" target="_new">BP - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(3491289356)['brand:wikidata'='Q3388303']['not:brand:wikidata'='Q3388303'];
+way(176104669)['not:operator:wikidata'='Q56583617']['operator:wikidata'='Q56583617'];
+way(793522572)['brand:wikidata'='Q152057']['not:brand:wikidata'='Q152057'];
+); (._;>;); out meta qt;//['wikipedia/wikidata type tag that is incorrect according to not:* tag']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#malformed secondary wikipedia tag - for operator prefixed tags"><h2 id="malformed secondary wikipedia tag - for operator prefixed tags">malformed secondary wikipedia tag - for operator prefixed tags</h2></a>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/relation/14260822" target="_new">ANR Pipeline - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (Wisconsin Public Service Corporation)
+				</br>
+				<a href="https://openstreetmap.org/relation/14283068" target="_new">Weston Power Plant - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/1006199883" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/1006207763" target="_new">ANR Lateral Loop 1-269 Tomahawk - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/1006207764" target="_new">ANR Lateral 269 Tomahawk - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/1006207765" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/1006207766" target="_new">ANR Lateral 212 Lincoln Boys School - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/1006207767" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/1006207768" target="_new">ANR Lateral Loop 1-269 Tomahawk - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/1006207769" target="_new">ANR Lateral 269 Tomahawk - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/1006207770" target="_new">ANR Lateral 395 Rhinelander - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/1006207771" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/1006207772" target="_new">ANR Lateral 395 Rhinelander - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (WEC Energy Group)
+				</br>
+				<a href="https://openstreetmap.org/way/1010370915" target="_new">Sunvest Solar-Chaska Solar Array - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (Northern Natural Pipeline)
+				</br>
+				<a href="https://openstreetmap.org/way/1017239870" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (Waste Management)
+				</br>
+				<a href="https://openstreetmap.org/way/560416959" target="_new">Waste Management - Paper Valley Recycling Center - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (Berkshire Hathaway Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/738694184" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/849988998" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/990619319" target="_new">ANR LATERAL LOOP 2 2-350 KEWASKUM GREEN BAY - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/990619320" target="_new">ANR LATERAL LOOP 1-350 KEWASKUM GREEN BAY - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/990619321" target="_new">ANR LATERAL 350 KEWASKUM GREEN BAY - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/990619322" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/990619324" target="_new">ANR LATERAL 350 KEWASKUM GREEN BAY - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (Wisconsin Public Service Corporation)
+				</br>
+				<a href="https://openstreetmap.org/way/990619325" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (Wisconsin Public Service Corporation)
+				</br>
+				<a href="https://openstreetmap.org/way/990619326" target="_new">DEPERE ENERFY CENTER - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/990619327" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (TC Energy)
+				</br>
+				<a href="https://openstreetmap.org/way/990622722" target="_new">ANR LATERAL 350 KEWASKUM GREEN BAY - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (Wisconsin Public Service Corporation)
+				</br>
+				<a href="https://openstreetmap.org/way/991028228" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (Wisconsin Public Service Corporation)
+				</br>
+				<a href="https://openstreetmap.org/way/991028229" target="_new">PULLIAM CT FEEDER - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (Wisconsin Public Service Corporation)
+				</br>
+				<a href="https://openstreetmap.org/way/991028230" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in operator:wikipedia tag (Wisconsin Public Service Corporation)
+				</br>
+				<a href="https://openstreetmap.org/way/991028231" target="_new">WEST GREEN BAY FEEDER - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+relation(14260822)['operator:wikipedia'='TC Energy'];
+relation(14283068)['operator:wikipedia'='Wisconsin Public Service Corporation'];
+way(1006199883)['operator:wikipedia'='TC Energy'];
+way(1006207763)['operator:wikipedia'='TC Energy'];
+way(1006207764)['operator:wikipedia'='TC Energy'];
+way(1006207765)['operator:wikipedia'='TC Energy'];
+way(1006207766)['operator:wikipedia'='TC Energy'];
+way(1006207767)['operator:wikipedia'='TC Energy'];
+way(1006207768)['operator:wikipedia'='TC Energy'];
+way(1006207769)['operator:wikipedia'='TC Energy'];
+way(1006207770)['operator:wikipedia'='TC Energy'];
+way(1006207771)['operator:wikipedia'='TC Energy'];
+way(1006207772)['operator:wikipedia'='TC Energy'];
+way(1010370915)['operator:wikipedia'='WEC Energy Group'];
+way(1017239870)['operator:wikipedia'='Northern Natural Pipeline'];
+way(560416959)['operator:wikipedia'='Waste Management'];
+way(738694184)['operator:wikipedia'='Berkshire Hathaway Energy'];
+way(849988998)['operator:wikipedia'='TC Energy'];
+way(990619319)['operator:wikipedia'='TC Energy'];
+way(990619320)['operator:wikipedia'='TC Energy'];
+way(990619321)['operator:wikipedia'='TC Energy'];
+way(990619322)['operator:wikipedia'='TC Energy'];
+way(990619324)['operator:wikipedia'='TC Energy'];
+way(990619325)['operator:wikipedia'='Wisconsin Public Service Corporation'];
+way(990619326)['operator:wikipedia'='Wisconsin Public Service Corporation'];
+way(990619327)['operator:wikipedia'='TC Energy'];
+way(990622722)['operator:wikipedia'='TC Energy'];
+way(991028228)['operator:wikipedia'='Wisconsin Public Service Corporation'];
+way(991028229)['operator:wikipedia'='Wisconsin Public Service Corporation'];
+way(991028230)['operator:wikipedia'='Wisconsin Public Service Corporation'];
+way(991028231)['operator:wikipedia'='Wisconsin Public Service Corporation'];
+); (._;>;); out meta qt;//['malformed secondary wikipedia tag - for operator prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#malformed secondary wikipedia tag - for name:etymology prefixed tags"><h2 id="malformed secondary wikipedia tag - for name:etymology prefixed tags">malformed secondary wikipedia tag - for name:etymology prefixed tags</h2></a>
+				</br>
+				malformed value in name:etymology:wikipedia tag (https://en.wikipedia.org/wiki/Kenneth_H._Dahlberg)
+				</br>
+				<a href="https://openstreetmap.org/way/894057179" target="_new">Dahlberg Park - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(894057179)['name:etymology:wikipedia'='https://en.wikipedia.org/wiki/Kenneth_H._Dahlberg'];
+); (._;>;); out meta qt;//['malformed secondary wikipedia tag - for name:etymology prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#malformed secondary wikipedia tag - for architect prefixed tags"><h2 id="malformed secondary wikipedia tag - for architect prefixed tags">malformed secondary wikipedia tag - for architect prefixed tags</h2></a>
+				</br>
+				malformed value in architect:wikipedia tag (Frank Lloyd Wright)
+				</br>
+				<a href="https://openstreetmap.org/relation/15956152" target="_new">Keland House - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in architect:wikipedia tag (Frank Lloyd Wright)
+				</br>
+				<a href="https://openstreetmap.org/relation/7088265" target="_new">S.C. Johnson Administration Building - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in architect:wikipedia tag (Frank Lloyd Wright)
+				</br>
+				<a href="https://openstreetmap.org/way/377814420" target="_new">Wingspread - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in architect:wikipedia tag (Oscar Wenderoth)
+				</br>
+				<a href="https://openstreetmap.org/way/426702191" target="_new">Menomonie Post Office - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in architect:wikipedia tag (Frank Lloyd Wright)
+				</br>
+				<a href="https://openstreetmap.org/way/669760759" target="_new">Thomas P. Hardy House - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in architect:wikipedia tag (Frank Lloyd Wright)
+				</br>
+				<a href="https://openstreetmap.org/way/670147513" target="_new">Research Tower - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+relation(15956152)['architect:wikipedia'='Frank Lloyd Wright'];
+relation(7088265)['architect:wikipedia'='Frank Lloyd Wright'];
+way(377814420)['architect:wikipedia'='Frank Lloyd Wright'];
+way(426702191)['architect:wikipedia'='Oscar Wenderoth'];
+way(669760759)['architect:wikipedia'='Frank Lloyd Wright'];
+way(670147513)['architect:wikipedia'='Frank Lloyd Wright'];
+); (._;>;); out meta qt;//['malformed secondary wikipedia tag - for architect prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - for operator prefixed tags"><h2 id="wikipedia wikidata mismatch - for operator prefixed tags">wikipedia wikidata mismatch - for operator prefixed tags</h2></a>
+				</br>
+				operator:wikidata and operator:wikipedia tags link to a different objects (Q7084595 vs Q5453331 wikidata id assigned to linked Wikipedia article) Note that this OSM object has operator:wikipedia tag that links redirect (&#x27;First Midwest Bank&#x27; to &#x27;First Midwest Bancorp&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/node/3971690337" target="_new">Old National Bank - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				operator:wikidata and operator:wikipedia tags link to a different objects (Q798819 vs Q7669687 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/8007686038" target="_new">Huntington Bank - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				operator:wikidata and operator:wikipedia tags link to a different objects (Q798819 vs Q7669687 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/8007686039" target="_new">Huntington Bank - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(3971690337)['operator:wikidata'='Q7084595']['operator:wikipedia'='en:First Midwest Bank'];
+node(8007686038)['operator:wikidata'='Q798819']['operator:wikipedia'='en:TCF Bank'];
+node(8007686039)['operator:wikidata'='Q798819']['operator:wikipedia'='en:TCF Bank'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - for operator prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia tag links bot wikipedia"><h2 id="wikipedia tag links bot wikipedia">wikipedia tag links bot wikipedia</h2></a>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/354527360" target="_new">Little Rice Wildlife Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/354527378" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848189" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848190" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848191" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848192" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848193" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848194" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848195" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848196" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848197" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848198" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848199" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848200" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848201" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848202" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848203" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848204" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848205" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848206" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/node/9735848207" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/relation/10856297" target="_new">Kilby Lake - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/relation/10921469" target="_new">Thunder Lake Wildlife Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/relation/11198942" target="_new">Detroit Harbor Nature Preserve - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/relation/11676094" target="_new">Kimberly Clark Wildlife Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/relation/12106186" target="_new">Little Kaukauna Lock And Dam Historic District - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/relation/14115410" target="_new">Little Somo River - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/relation/14115479" target="_new">Little Rice River - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/relation/14116091" target="_new">North Fork Spirit River - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/relation/14161882" target="_new">Shaw Marsh Wildlife Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/relation/14162432" target="_new">New Wood Wildlife Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/relation/14169222" target="_new">Frog Lake And Pines State Natural Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/relation/16449581" target="_new">Little Rice Wildlife Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/relation/16505061" target="_new">Robbins Creek - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/relation/16849866" target="_new">Little Kaukauna Lock - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/relation/4032180" target="_new">Goose Lake Wildlife Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/relation/4642914" target="_new">Lake Emery - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/relation/5143191" target="_new">Peters Marsh Wildlife Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/relation/5143878" target="_new">Prairie River State Fishery Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/way/1213757280" target="_new">Rice Lake State Natural Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/way/192555110" target="_new">Fenner Lake - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/way/292879102" target="_new">Echo Lake - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/way/302390683" target="_new">Little Kaukauna Dam - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/way/304170203" target="_new">Grassy Lake Wildlife Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/way/305494370" target="_new">Deansville Wildlife Area - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/way/308439041" target="_new">Ennis Lake - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/way/760042030" target="_new">Little Kaukauna Lock - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - ceb is a low quality, bot generated wikipedia - it should not be linked
+				</br>
+				<a href="https://openstreetmap.org/way/760042031" target="_new">Little Kaukauna Lock - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(354527360)['wikidata'='Q49518190']['wikipedia'='ceb:Little Rice State Wildlife Area'];
+node(354527378)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848189)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848190)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848191)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848192)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848193)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848194)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848195)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848196)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848197)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848198)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848199)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848200)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848201)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848202)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848203)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848204)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848205)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848206)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+node(9735848207)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+relation(10856297)['wikidata'='Q35718427']['wikipedia'='ceb:Kilby Lake'];
+relation(10921469)['wikidata'='Q49570593']['wikipedia'='ceb:Thunder Lake State Wildlife Area'];
+relation(11198942)['wikidata'='Q49482975']['wikipedia'='ceb:Detroit Harbor State Natural Area'];
+relation(11676094)['wikidata'='Q49510801']['wikipedia'='ceb:Kimberly-Clark Wildlife Area'];
+relation(12106186)['wikidata'='Q35708011']['wikipedia'='ceb:Little Kaukauna Lock and Dam'];
+relation(14115410)['wikidata'='Q49944478']['wikipedia'='ceb:Little Somo River'];
+relation(14115479)['wikidata'='Q49943402']['wikipedia'='ceb:Little Rice River'];
+relation(14116091)['wikidata'!~'.*']['wikipedia'='ceb:North Fork Spirit River'];
+relation(14161882)['wikidata'='Q49560505']['wikipedia'='ceb:Shaw Marsh State Wildlife Area'];
+relation(14162432)['wikidata'='Q49531266']['wikipedia'='ceb:New Wood State Public Hunting Grounds'];
+relation(14169222)['wikidata'='Q49492215']['wikipedia'='ceb:Frog Lake and Pines State Natural Area'];
+relation(16449581)['wikidata'='Q49518190']['wikipedia'='ceb:Little Rice State Wildlife Area'];
+relation(16505061)['wikidata'='Q49941200']['wikipedia'='ceb:Robbins Creek (suba sa Tinipong Bansa, Wisconsin)'];
+relation(16849866)['wikidata'='Q35708011']['wikipedia'='ceb:Little Kaukauna Lock and Dam'];
+relation(4032180)['wikidata'='Q49494679']['wikipedia'='ceb:Goose Lake State Wildlife Area (parke sa Tinipong Bansa, Wisconsin)'];
+relation(4642914)['wikidata'='Q35730939']['wikipedia'='ceb:Lake Emery'];
+relation(5143191)['wikidata'='Q49541753']['wikipedia'='ceb:Peters Marsh State Wildlife Area'];
+relation(5143878)['wikidata'='Q49545845']['wikipedia'='ceb:Prairie River State Public Hunting and Fishing Area'];
+way(1213757280)['wikidata'='Q49549730']['wikipedia'='ceb:Rice Lake State Natural Area'];
+way(192555110)['wikidata'='Q35696797']['wikipedia'='ceb:Fenner Lake (lanaw sa Tinipong Bansa, Wisconsin)'];
+way(292879102)['wikidata'='Q35695140']['wikipedia'='ceb:Echo Lake (lanaw sa Tinipong Bansa, Wisconsin, Marquette County, lat 43,81, long -89,36)'];
+way(302390683)['wikidata'='Q35708003']['wikipedia'='ceb:Little Kaukauna Dam'];
+way(304170203)['wikidata'='Q49495438']['wikipedia'='ceb:Grassy Lake State Wildlife Area'];
+way(305494370)['wikidata'='Q49482349']['wikipedia'='ceb:Deansville State Wildlife Area'];
+way(308439041)['wikidata'='Q35695950']['wikipedia'='ceb:Ennis Lake (lanaw sa Tinipong Bansa, Wisconsin)'];
+way(760042030)['wikidata'='Q35708011']['wikipedia'='ceb:Little Kaukauna Lock and Dam'];
+way(760042031)['wikidata'='Q35708011']['wikipedia'='ceb:Little Kaukauna Lock and Dam'];
+); (._;>;); out meta qt;//['wikipedia tag links bot wikipedia']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#malformed secondary wikidata tag - for species prefixed tags"><h2 id="malformed secondary wikidata tag - for species prefixed tags">malformed secondary wikidata tag - for species prefixed tags</h2></a>
+				</br>
+				malformed value in species:wikidata tag (Silver Maple)
+				</br>
+				<a href="https://openstreetmap.org/node/9762666864" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in species:wikidata tag (Oak)
+				</br>
+				<a href="https://openstreetmap.org/node/9762666865" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in species:wikidata tag (Crabapple)
+				</br>
+				<a href="https://openstreetmap.org/node/9762666866" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in species:wikidata tag (Sugar Maple)
+				</br>
+				<a href="https://openstreetmap.org/node/9820742258" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(9762666864)['species:wikidata'='Silver Maple'];
+node(9762666865)['species:wikidata'='Oak'];
+node(9762666866)['species:wikidata'='Crabapple'];
+node(9820742258)['species:wikidata'='Sugar Maple'];
+); (._;>;); out meta qt;//['malformed secondary wikidata tag - for species prefixed tags']</blockquote>
+			</br>
+			<hr>
+<h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
+<p class="small">Note to self: online version hosted at <a href="https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports">https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports</a>, files are stored at <a href="https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports">https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports</a>.		</div>
+	</body>
+</html>

@@ -1,0 +1,562 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://mapsaregreat.com/style.css" /> <!-- GPLv3 licensed -->
+	</head>
+<body>
+	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
+This page was generated using data obtained on 2024-01-31. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+<br />
+<br />
+			</br>
+			<hr>
+			</br>
+			Remember to check whether edits make sense! All reports are on this page because these tasks require human judgment to verify whether the proposed edit makes sense. Some proposed edits will be wrong, in such case they should be not done and problem reported
+			</br>
+			<hr>
+<ul><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human</a></li><li><a href="#wikipedia wikidata mismatch">wikipedia wikidata mismatch</a></li><li><a href="#wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not">wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not</a></li><li><a href="#wikipedia wikidata mismatch - for network prefixed tags">wikipedia wikidata mismatch - for network prefixed tags</a></li></ul>			</br>
+			<a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human"><h2 id="should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human</h2></a>
+				</br>
+				linked wikidata entry (Q1992597) is about a human, so it is very unlikely to be correct <br />        subject:wikipedia=* or name:wikipedia tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/node/5710466496" target="_new">"Kopf" - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(5710466496)['wikidata'='Q1992597'];
+); (._;>;); out meta qt;//['should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch"><h2 id="wikipedia wikidata mismatch">wikipedia wikidata mismatch</h2></a>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q31940717 vs Q16048 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/116066941" target="_new">Crailsheim - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q116680582 vs Q15814493 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/way/246121100" target="_new">Fachwerkhaus Fiebich - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(116066941)['wikidata'='Q31940717']['wikipedia'='de:Crailsheim'];
+way(246121100)['wikidata'='Q116680582']['wikipedia'='de:Haus Fiebich (Vellberg)'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not"><h2 id="wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not">wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not</h2></a>
+			</br>
+			wikidata and wikipedia tags link to a different objects, because wikidata tag points to a redirect that should be followed
+				</br>
+				article claims to point to disambig, wikidata does not. wikidata tag is likely to be correct, wikipedia tag almost certainly is not
+				</br>
+				<a href="https://openstreetmap.org/node/5867062757" target="_new">Burgstall Stetten - an affected OSM element that may be improved</a>
+				</br>
+				de:Burgstall Stetten -> de:Burgstall Stetten (Frankenhardt)
+				</br>
+				Burgstall Stetten (Frankenhardt)
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(5867062757)['wikidata'='Q15790455']['wikipedia'='de:Burgstall Stetten'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - for network prefixed tags"><h2 id="wikipedia wikidata mismatch - for network prefixed tags">wikipedia wikidata mismatch - for network prefixed tags</h2></a>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10092064" target="_new">Bus 68: Stimpfach => Stimpfach - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10099270" target="_new">Bus 70: Gründelhardt => Obersontheim - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10099271" target="_new">Bus 70: Obersontheim => Gründelhardt - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10101571" target="_new">Bus 71: Schwäbisch Hall => Schrozberg - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10104238" target="_new">Bus 71: Schrozberg => Schwäbisch Hall - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10129861" target="_new">Bus 82: Ellrichshausen => Kirchberg - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10131512" target="_new">Bus S1: Schwäbisch Hall => Crailsheim-Ingersheim Bildstraße (Schnellbus) - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10131513" target="_new">Bus S1: Schwäbisch Hall => Crailsheim Schönebürgstraße (Schnellbus) - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10134465" target="_new">Bus S1: Schwäbisch Hall => Stern => Crailsheim Schönebürgstraße - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10134466" target="_new">Bus S1: Schwäbisch Hall => Lise-Meitner-Gymnasium => Crailsheim ZOB - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10134638" target="_new">Bus S1: Crailsheim Schulzentrum => Schwäbisch Hall ZOB (Schnellbus) - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10134639" target="_new">Bus S1: Crailsheim-Ingersheim Bildstraße => Schwäbisch Hall ZOB (Schnellbus) - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10138987" target="_new">Bus S10: Crailsheim => Langenburg - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10138988" target="_new">Bus S10: Langenburg => Crailsheim - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10139197" target="_new">Bus S10: Gerabronn => Crailsheim - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10140792" target="_new">Bus 54: Hirtenwiesen => Ingersheim - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10140793" target="_new">Bus 54: Ingersheim => Hirtenwiesen - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10141031" target="_new">Bus 55: Michelbach => Crailsheim - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10141032" target="_new">Bus 55: Crailsheim => Michelbach - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10154476" target="_new">Bus 60: Crailsheim => Crailsheim - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10154750" target="_new">Bus 61: Rosenberg => Crailsheim - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10154751" target="_new">Bus 61: Crailsheim => Rosenberg - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10163396" target="_new">Bus 28: Schwäbisch Hall => Künzelsau - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10169089" target="_new">Bus 30: Schönenberg => Untermünkheim - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10169091" target="_new">Bus 30: Schwäbisch Hall => Schönenberg - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10169408" target="_new">Bus 31: Ilshofen => Schwäbisch Hall - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10169411" target="_new">Bus 31: Schwäbisch Hall => Ilshofen - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10188132" target="_new">Bus 23S: Schrozberg => Schwäbisch Hall (Schnellbus) - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/10188133" target="_new">Bus 23S: Schwäbisch Hall => Schrozberg (Schnellbus) - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/13023627" target="_new">Bus 8: Gaildorf => Hilbenhof => Schwäbisch Hall - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/13023628" target="_new">Bus 8: Schwäbisch Hall => Hilbenhof => Gaildorf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/13023761" target="_new">Bus 10: Schwäbisch Hall => Westheim - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/7953026" target="_new">Bus 8: Gaildorf => Sittenhardt => Schwäbisch Hall - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/8237000" target="_new">Bus 63: Schwäbisch Gmünd => Gaildorf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/8257420" target="_new">Bus 17: Schwäbisch Hall => Rappoltshofen - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9800665" target="_new">Bus 4A: Schwäbisch Hall ZOB => Tullau => Schwäbisch Hall ZOB - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9808012" target="_new">Bus 5: Schwäbisch Hall => Ilshofen - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9821201" target="_new">Bus 10: Schwäbisch Hall => Hirschfelden - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9837579" target="_new">Bus 12: Schwäbisch Hall => Geifertshofen - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9845557" target="_new">Bus 12: Geifertshofen => Schwäbisch Hall - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9852042" target="_new">Bus 8: Schwäbisch Hall => Sittenhardt => Gaildorf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9874438" target="_new">Bus 23: Schwäbisch Hall => Rot am See - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9874590" target="_new">Bus 23: Cröffelbach => Ilshofen - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9880278" target="_new">Bus 23: Ilshofen => Cröffelbach - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9880279" target="_new">Bus 23: Rot am See => Schwäbisch Hall - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9891047" target="_new">Bus 25: Crailsheim => Kupferzell - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9894881" target="_new">Bus 49: Bühlertann => Gaildorf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9894891" target="_new">Bus 49: Gaildorf => Bühlertann - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9897854" target="_new">Bus 17A: Herlebach => Bühlertann - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9897856" target="_new">Bus 17A: Bühlertann => Herlebach - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9906441" target="_new">Bus 46: Mittelbronn => Gaildorf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9906442" target="_new">Bus 46: Gaildorf => Mittelbronn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9907000" target="_new">Bus 52: Gröningen => Hinterwiesen - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9908922" target="_new">Bus 52: Hinterwiesen => Gröningen - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9910672" target="_new">Bus 53: Ingersheim => Hinterwiesen - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9910983" target="_new">Bus 53: Hinterwiesen => Ingersheim - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9911648" target="_new">Bus 62: Crailsheim =>Waldbuch=> Obersontheim - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9912459" target="_new">Bus 62: Crailsheim => Obersontheim - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9912465" target="_new">Bus 62: Obersontheim => Crailsheim - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9914938" target="_new">Bus 63: Gaildorf => Schwäbisch Gmünd - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9919104" target="_new">Bus 63: Crailsheim => Crailsheim - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9980894" target="_new">Bus 64: Crailsheim => Kirchberg - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9986541" target="_new">Bus 64: Kirchberg => Crailsheim - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9991827" target="_new">Bus 65: Crailsheim => Rot am See - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9994052" target="_new">Bus 65: Schrozberg => Crailsheim - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9994973" target="_new">Bus 66: Gerabronn => Crailsheim - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				network:wikidata and network:wikipedia tags link to a different objects (Q1504893 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has network:wikipedia tag that links redirect (&#x27;KreisVerkehr Schw&#228;bisch Hall&#x27; to &#x27;Kreisverkehr Schw&#228;bisch Hall&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/relation/9997964" target="_new">Bus 66: Crailsheim => Gerabronn - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+relation(10092064)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10099270)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10099271)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10101571)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10104238)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10129861)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10131512)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10131513)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10134465)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10134466)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10134638)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10134639)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10138987)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10138988)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10139197)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10140792)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10140793)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10141031)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10141032)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10154476)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10154750)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10154751)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10163396)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10169089)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10169091)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10169408)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10169411)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10188132)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(10188133)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(13023627)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(13023628)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(13023761)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(7953026)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(8237000)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(8257420)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9800665)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9808012)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9821201)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9837579)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9845557)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9852042)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9874438)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9874590)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9880278)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9880279)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9891047)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9894881)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9894891)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9897854)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9897856)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9906441)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9906442)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9907000)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9908922)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9910672)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9910983)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9911648)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9912459)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9912465)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9914938)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9919104)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9980894)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9986541)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9991827)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9994052)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9994973)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+relation(9997964)['network:wikidata'='Q1504893']['network:wikipedia'='de:KreisVerkehr Schw&#228;bisch Hall'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - for network prefixed tags']</blockquote>
+			</br>
+			<hr>
+<h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
+<p class="small">Note to self: online version hosted at <a href="https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports">https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports</a>, files are stored at <a href="https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports">https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports</a>.		</div>
+	</body>
+</html>

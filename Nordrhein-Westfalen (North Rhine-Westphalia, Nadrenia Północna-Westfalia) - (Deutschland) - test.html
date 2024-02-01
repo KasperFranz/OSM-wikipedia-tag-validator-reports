@@ -1,0 +1,655 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://mapsaregreat.com/style.css" /> <!-- GPLv3 licensed -->
+	</head>
+<body>
+	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
+This page was generated using data obtained on various dates including 2024-01-26. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+<br />
+<br />
+			</br>
+			<hr>
+			</br>
+			This page contains reports that are tested or are known to produce false positives. Be careful with using this data.
+			</br>
+			<hr>
+<ul><li><a href="#should use a secondary wikipedia tag - linking from wikipedia tag to a television station">should use a secondary wikipedia tag - linking from wikipedia tag to a television station</a></li><li><a href="#no longer existing brand (according to Wikidata) - and marked as active shop in OSM, with tagging referring to defunct one">no longer existing brand (according to Wikidata) - and marked as active shop in OSM, with tagging referring to defunct one</a></li><li><a href="#no longer existing brand (according to Wikidata) - and marked as active shop in OSM">no longer existing brand (according to Wikidata) - and marked as active shop in OSM</a></li></ul>			</br>
+			<a href="#should use a secondary wikipedia tag - linking from wikipedia tag to a television station"><h2 id="should use a secondary wikipedia tag - linking from wikipedia tag to a television station">should use a secondary wikipedia tag - linking from wikipedia tag to a television station</h2></a>
+				</br>
+				linked wikidata entry (Q153770) is about a television station, so it is very unlikely to be correct <br />        subject:wikipedia=* or brand:wikipedia tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/way/564433452" target="_new">Deutsche Welle - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(564433452)['wikipedia'='de:Deutsche Welle'];
+); (._;>;); out meta qt;//['should use a secondary wikipedia tag - linking from wikipedia tag to a television station']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#no longer existing brand (according to Wikidata) - and marked as active shop in OSM, with tagging referring to defunct one"><h2 id="no longer existing brand (according to Wikidata) - and marked as active shop in OSM, with tagging referring to defunct one">no longer existing brand (according to Wikidata) - and marked as active shop in OSM, with tagging referring to defunct one</h2></a>
+			</br>
+			Wikidata claims that assigned brand object no longer exists. That means that either this shop is gone or it is rebranded. Or brand:wikidata tag is wrong. Historical, no longer existing object should not be mapped in OSM. REMEMBER TO VERIFY! WIKIDATA QUALITY MAY BE POOR! WIKIDATA MUST NOT BE USED AS SOURCE! ALWAYS VERIFY!
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/25943120" target="_new">MARKTKAUF - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(25943120)['wikidata'='Q1533254'];
+); (._;>;); out meta qt;//['no longer existing brand (according to Wikidata) - and marked as active shop in OSM, with tagging referring to defunct one']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#no longer existing brand (according to Wikidata) - and marked as active shop in OSM"><h2 id="no longer existing brand (according to Wikidata) - and marked as active shop in OSM">no longer existing brand (according to Wikidata) - and marked as active shop in OSM</h2></a>
+			</br>
+			Wikidata claims that assigned brand object no longer exists. That means that either this shop is gone or it is rebranded. Or brand:wikidata tag is wrong. Historical, no longer existing object should not be mapped in OSM. REMEMBER TO VERIFY! WIKIDATA QUALITY MAY BE POOR! WIKIDATA MUST NOT BE USED AS SOURCE! ALWAYS VERIFY!
+				</br>
+				wikidata Q17141914 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/10571467854" target="_new">Scotch & Soda - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/10900432639" target="_new">Marktkauf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q2141800 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/1157803414" target="_new">Thomas Cook - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/1372521249" target="_new">Marktkauf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/1372706362" target="_new">MARKTKAUF - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q2141800 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/1510467834" target="_new">Thomas Cook - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q17141914 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/1642135859" target="_new">Scotch & Soda - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q696334, Q696334, Q696334, Q696334, Q696334 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/2001880505" target="_new">Smyths - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q2208025 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/2418097993" target="_new">STA Travel - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q17141914 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/2427897236" target="_new">Scotch & Soda - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q973060 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/2506340236" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q2141800 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/2656715695" target="_new">Thomas Cook - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/269212244" target="_new">Marktkauf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/288035927" target="_new">Marktkauf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1571798 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/289297042" target="_new">Hallo Pizza - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q17141914 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/3469039161" target="_new">Scotch & Soda - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q322598 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/3516738486" target="_new">Galeria Kaufhof an der Kö - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1571798 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/3572609900" target="_new">Hallo Pizza - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q2176418 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/3799180532" target="_new">Runners Point - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q2141800 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/3927503128" target="_new">Thomas Cook - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1571798 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/4204733130" target="_new">Hallo Pizza - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/4367785098" target="_new">MARKTKAUF - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q322598 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/4594295514" target="_new">Galeria Kaufhof - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q182910 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/4844242747" target="_new">Karstadt - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/4857051998" target="_new">Marktkauf Getränkemarkt - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/5041438330" target="_new">Marktkauf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q17141914 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/577271436" target="_new">Scotch & Soda - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q7072246 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/6172099649" target="_new">O2 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q2208025 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/635736880" target="_new">STA Travel - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/6384057592" target="_new">MARKTKAUF - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1718002 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/6661608912" target="_new">K&M Elektronik - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1571798 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/6680970957" target="_new">Dominos Pizza - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q17141914 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/7655993117" target="_new">Scotch & Soda - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1571798 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/778141283" target="_new">Hallo Pizza - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q27564 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/7886828691" target="_new">Gödde - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/8531244551" target="_new">MARKTKAUF - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q17300280 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/node/924252061" target="_new">Reisebüro Neckermann - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q182910 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/1016915867" target="_new">Karstadt - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/107862346" target="_new">Marktkauf Speicher - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1571798 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/115792704" target="_new">Hallo Pizza - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1571798 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/131554175" target="_new">Hallo Pizza - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/136074235" target="_new">MARKTKAUF - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q182910 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/23445658" target="_new">Karstadt - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q322598 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/23691996" target="_new">Galeria Kaufhof - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/248716011" target="_new">Marktkauf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/24901403" target="_new">MARKTKAUF - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/25131375" target="_new">MARKTKAUF - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/25210921" target="_new">MARKTKAUF - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/25210985" target="_new">MARKTKAUF - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/254259024" target="_new">MARKTKAUF - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/25583118" target="_new">MARKTKAUF - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/25882655" target="_new">MARKTKAUF - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/25902012" target="_new">Marktkauf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1571798 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/260916250" target="_new">Hallo Pizza - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/264757820" target="_new">Marktkauf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/26708467" target="_new">Marktkauf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/275308358" target="_new">Marktkauf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/27765353" target="_new">Marktkauf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/28918746" target="_new">Marktkauf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q322598 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/29144530" target="_new">Galeria Kaufhof - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/296734176" target="_new">MARKTKAUF - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q322598 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/33747173" target="_new">Galeria Euskirchen - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/40220531" target="_new">Marktkauf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/40221561" target="_new">MARKTKAUF - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/40977015" target="_new">Marktkauf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/41651769" target="_new">Marktkauf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/44491634" target="_new">MARKTKAUF - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/44732989" target="_new">MARKTKAUF - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q182910 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/53293001" target="_new">Karstadt - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q182910 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/608702746" target="_new">Karstadt - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q182910 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/609276234" target="_new">Karstadt - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q182910 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/609276263" target="_new">Karstadt - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/71121265" target="_new">Marktkauf Loddenheide - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/77708005" target="_new">MARKTKAUF - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q2208025 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/83734726" target="_new">STA Travel - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q182910 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/85873987" target="_new">Karstadt - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q322598 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/88659137" target="_new">Galeria Kaufhof - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/92223141" target="_new">Marktkauf Kosche - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q182910 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/96435901" target="_new">Karstadt - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q322598 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/97541714" target="_new">Galeria Kaufhof - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1571798 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/98435074" target="_new">Hallo Pizza - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/98700617" target="_new">Marktkauf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/98941339" target="_new">Marktkauf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata Q1533254 is marked as dissolved
+				</br>
+				<a href="https://openstreetmap.org/way/99206710" target="_new">Marktkauf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(10571467854)['wikidata'='Q17141914'];
+node(10900432639)['wikidata'='Q1533254'];
+node(1157803414)['wikidata'='Q2141800'];
+node(1372521249)['wikidata'='Q1533254'];
+node(1372706362)['wikidata'='Q1533254'];
+node(1510467834)['wikidata'='Q2141800'];
+node(1642135859)['wikidata'='Q17141914'];
+node(2001880505)['wikidata'='Q696334'];
+node(2418097993)['wikidata'='Q2208025'];
+node(2427897236)['wikidata'='Q17141914'];
+node(2506340236)['wikidata'='Q973060'];
+node(2656715695)['wikidata'='Q2141800'];
+node(269212244)['wikidata'='Q1533254'];
+node(288035927)['wikidata'='Q1533254'];
+node(289297042)['wikidata'='Q1571798'];
+node(3469039161)['wikidata'='Q17141914'];
+node(3516738486)['wikidata'='Q322598'];
+node(3572609900)['wikidata'='Q1571798'];
+node(3799180532)['wikidata'='Q2176418'];
+node(3927503128)['wikidata'='Q2141800'];
+node(4204733130)['wikidata'='Q1571798'];
+node(4367785098)['wikidata'='Q1533254'];
+node(4594295514)['wikidata'='Q322598'];
+node(4844242747)['wikidata'='Q182910'];
+node(4857051998)['wikidata'='Q1533254'];
+node(5041438330)['wikidata'='Q1533254'];
+node(577271436)['wikidata'='Q17141914'];
+node(6172099649)['wikidata'='Q7072246'];
+node(635736880)['wikidata'='Q2208025'];
+node(6384057592)['wikidata'='Q1533254'];
+node(6661608912)['wikidata'='Q1718002'];
+node(6680970957)['wikidata'='Q1571798'];
+node(7655993117)['wikidata'='Q17141914'];
+node(778141283)['wikidata'='Q1571798'];
+node(7886828691)['wikidata'='Q27564'];
+node(8531244551)['wikidata'='Q1533254'];
+node(924252061)['wikidata'='Q17300280'];
+way(1016915867)['wikidata'='Q182910'];
+way(107862346)['wikidata'='Q1533254'];
+way(115792704)['wikidata'='Q1571798'];
+way(131554175)['wikidata'='Q1571798'];
+way(136074235)['wikidata'='Q1533254'];
+way(23445658)['wikidata'='Q182910'];
+way(23691996)['wikidata'='Q322598'];
+way(248716011)['wikidata'='Q1533254'];
+way(24901403)['wikidata'='Q1533254'];
+way(25131375)['wikidata'='Q1533254'];
+way(25210921)['wikidata'='Q1533254'];
+way(25210985)['wikidata'='Q1533254'];
+way(254259024)['wikidata'='Q1533254'];
+way(25583118)['wikidata'='Q1533254'];
+way(25882655)['wikidata'='Q1533254'];
+way(25902012)['wikidata'='Q1533254'];
+way(260916250)['wikidata'='Q1571798'];
+way(264757820)['wikidata'='Q1533254'];
+way(26708467)['wikidata'='Q1533254'];
+way(275308358)['wikidata'='Q1533254'];
+way(27765353)['wikidata'='Q1533254'];
+way(28918746)['wikidata'='Q1533254'];
+way(29144530)['wikidata'='Q322598'];
+way(296734176)['wikidata'='Q1533254'];
+way(33747173)['wikidata'='Q322598'];
+way(40220531)['wikidata'='Q1533254'];
+way(40221561)['wikidata'='Q1533254'];
+way(40977015)['wikidata'='Q1533254'];
+way(41651769)['wikidata'='Q1533254'];
+way(44491634)['wikidata'='Q1533254'];
+way(44732989)['wikidata'='Q1533254'];
+way(53293001)['wikidata'='Q182910'];
+way(608702746)['wikidata'='Q182910'];
+way(609276234)['wikidata'='Q182910'];
+way(609276263)['wikidata'='Q182910'];
+way(71121265)['wikidata'='Q1533254'];
+way(77708005)['wikidata'='Q1533254'];
+way(83734726)['wikidata'='Q2208025'];
+way(85873987)['wikidata'='Q182910'];
+way(88659137)['wikidata'='Q322598'];
+way(92223141)['wikidata'='Q1533254'];
+way(96435901)['wikidata'='Q182910'];
+way(97541714)['wikidata'='Q322598'];
+way(98435074)['wikidata'='Q1571798'];
+way(98700617)['wikidata'='Q1533254'];
+way(98941339)['wikidata'='Q1533254'];
+way(99206710)['wikidata'='Q1533254'];
+); (._;>;); out meta qt;//['no longer existing brand (according to Wikidata) - and marked as active shop in OSM']</blockquote>
+			</br>
+			<hr>
+<h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
+<p class="small">Note to self: online version hosted at <a href="https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports">https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports</a>, files are stored at <a href="https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports">https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports</a>.		</div>
+	</body>
+</html>

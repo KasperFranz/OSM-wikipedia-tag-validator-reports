@@ -1,0 +1,368 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://mapsaregreat.com/style.css" /> <!-- GPLv3 licensed -->
+	</head>
+<body>
+	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
+This page was generated using data obtained on 2024-01-31. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+<br />
+<br />
+			</br>
+			<hr>
+			</br>
+			Proposed edits at this page are so obvious that automatic edit makes sense.
+			</br>
+			<hr>
+<ul><li><a href="#wikipedia tag unexpected language">wikipedia tag unexpected language</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikipedia from wikidata tag, unexpected language">wikipedia from wikidata tag, unexpected language</a></li><li><a href="#wikipedia tag in an outdated form for removal">wikipedia tag in an outdated form for removal</a></li><li><a href="#wikipedia wikidata mismatch - follow wikidata redirect">wikipedia wikidata mismatch - follow wikidata redirect</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for species prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for species prefixed tags</a></li></ul>			</br>
+			<a href="#wikipedia tag unexpected language"><h2 id="wikipedia tag unexpected language">wikipedia tag unexpected language</h2></a>
+				</br>
+				wikipedia page in unexpected language - de was expected:
+				</br>
+				<a href="https://openstreetmap.org/way/10507657" target="_new">Robinson Barracks - an affected OSM element that may be improved</a>
+				</br>
+				en:Robinson Barracks -> de:Robinson Barracks
+				</br>
+				Robinson Barracks
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - de was expected:
+				</br>
+				<a href="https://openstreetmap.org/way/11408642" target="_new">Staatsgalerie - an affected OSM element that may be improved</a>
+				</br>
+				en:Staatsgalerie Stuttgart -> de:Staatsgalerie Stuttgart
+				</br>
+				Staatsgalerie Stuttgart
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - de was expected:
+				</br>
+				<a href="https://openstreetmap.org/way/24317575" target="_new">Patch Barracks - an affected OSM element that may be improved</a>
+				</br>
+				en:Patch Barracks -> de:Patch Barracks
+				</br>
+				Patch Barracks
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - de was expected:
+				</br>
+				<a href="https://openstreetmap.org/way/77096076" target="_new">Grabkapelle auf dem Württemberg - an affected OSM element that may be improved</a>
+				</br>
+				en:Württemberg Mausoleum -> de:Grabkapelle auf dem Württemberg
+				</br>
+				Grabkapelle auf dem W&#252;rttemberg
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(10507657)['wikidata'='Q1471920']['wikipedia'='en:Robinson Barracks'];
+way(11408642)['wikidata'='Q14917275']['wikipedia'='en:Staatsgalerie Stuttgart'];
+way(24317575)['wikidata'='Q2056645']['wikipedia'='en:Patch Barracks'];
+way(77096076)['wikidata'='Q1540851']['wikipedia'='en:W&#252;rttemberg Mausoleum'];
+); (._;>;); out meta qt;//['wikipedia tag unexpected language']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</h2></a>
+			</br>
+			wikidata and wikipedia tags link to a different objects, because wikipedia tag points to a redirect that should be followed
+				</br>
+				Q801483 vs (missing) article redirects from de:Bahnhof Stuttgart-&#214;sterfeld to de:Haltepunkt Stuttgart &#214;sterfeld
+				</br>
+				<a href="https://openstreetmap.org/node/1584950937" target="_new">Stuttgart Österfeld - an affected OSM element that may be improved</a>
+				</br>
+				de:Bahnhof Stuttgart-Österfeld -> de:Haltepunkt Stuttgart Österfeld
+				</br>
+				Haltepunkt Stuttgart &#214;sterfeld
+				</br>
+				<hr>
+				</br>
+				Q15428295 vs (missing) article redirects from de:Hilfe f&#252;r Br&#252;der to de:Coworkers
+				</br>
+				<a href="https://openstreetmap.org/node/3112721279" target="_new">Christliche Fachkräfte International e.V. - an affected OSM element that may be improved</a>
+				</br>
+				de:Hilfe für Brüder -> de:Coworkers
+				</br>
+				Coworkers
+				</br>
+				<hr>
+				</br>
+				Q15428295 vs (missing) article redirects from de:Hilfe f&#252;r Br&#252;der to de:Coworkers
+				</br>
+				<a href="https://openstreetmap.org/node/3656827228" target="_new">Co-Workers International - an affected OSM element that may be improved</a>
+				</br>
+				de:Hilfe für Brüder -> de:Coworkers
+				</br>
+				Coworkers
+				</br>
+				<hr>
+				</br>
+				Q15428295 vs (missing) article redirects from de:Hilfe f&#252;r Br&#252;der to de:Coworkers
+				</br>
+				<a href="https://openstreetmap.org/node/3656827229" target="_new">Hilfe für Brüder International e. V. - an affected OSM element that may be improved</a>
+				</br>
+				de:Hilfe für Brüder -> de:Coworkers
+				</br>
+				Coworkers
+				</br>
+				<hr>
+				</br>
+				Q1416524 vs (missing) article redirects from de:Finanzministerium Baden-W&#252;rttemberg to de:Ministerium f&#252;r Finanzen Baden-W&#252;rttemberg
+				</br>
+				<a href="https://openstreetmap.org/node/3781902158" target="_new">Ministerium für Finanzen Baden-Württemberg - an affected OSM element that may be improved</a>
+				</br>
+				de:Finanzministerium Baden-Württemberg -> de:Ministerium für Finanzen Baden-Württemberg
+				</br>
+				Ministerium f&#252;r Finanzen Baden-W&#252;rttemberg
+				</br>
+				<hr>
+				</br>
+				Q1714333 vs (missing) article redirects from de:Ministerium der Justiz und f&#252;r Europa Baden-W&#252;rttemberg to de:Ministerium der Justiz und f&#252;r Migration Baden-W&#252;rttemberg
+				</br>
+				<a href="https://openstreetmap.org/node/3781907157" target="_new">Ministerium der Justiz und für Europa
+Baden-Württemberg - an affected OSM element that may be improved</a>
+				</br>
+				de:Ministerium der Justiz und für Europa Baden-Württemberg -> de:Ministerium der Justiz und für Migration Baden-Württemberg
+				</br>
+				Ministerium der Justiz und f&#252;r Migration Baden-W&#252;rttemberg
+				</br>
+				<hr>
+				</br>
+				Q2585918 vs (missing) article redirects from de:Ministerium f&#252;r Wirtschaft, Arbeit und Wohnungsbau Baden-W&#252;rttemberg to de:Ministerium f&#252;r Wirtschaft, Arbeit und Tourismus Baden-W&#252;rttemberg
+				</br>
+				<a href="https://openstreetmap.org/node/6952191866" target="_new">Ministerium für Wirtschaft, Arbeit und Wohnungsbau Baden-Württemberg - an affected OSM element that may be improved</a>
+				</br>
+				de:Ministerium für Wirtschaft, Arbeit und Wohnungsbau Baden-Württemberg -> de:Ministerium für Wirtschaft, Arbeit und Tourismus Baden-Württemberg
+				</br>
+				Ministerium f&#252;r Wirtschaft, Arbeit und Tourismus Baden-W&#252;rttemberg
+				</br>
+				<hr>
+				</br>
+				Q1416524 vs (missing) article redirects from de:Finanzministerium Baden-W&#252;rttemberg to de:Ministerium f&#252;r Finanzen Baden-W&#252;rttemberg
+				</br>
+				<a href="https://openstreetmap.org/node/6953918505" target="_new">Ministerium für Finanzen Baden-Württemberg - an affected OSM element that may be improved</a>
+				</br>
+				de:Finanzministerium Baden-Württemberg -> de:Ministerium für Finanzen Baden-Württemberg
+				</br>
+				Ministerium f&#252;r Finanzen Baden-W&#252;rttemberg
+				</br>
+				<hr>
+				</br>
+				Q1360830 vs (missing) article redirects from de:Stuttgarter Rathaus to de:Rathaus Stuttgart
+				</br>
+				<a href="https://openstreetmap.org/relation/365948" target="_new">Stuttgarter Rathaus - an affected OSM element that may be improved</a>
+				</br>
+				de:Stuttgarter Rathaus -> de:Rathaus Stuttgart
+				</br>
+				Rathaus Stuttgart
+				</br>
+				<hr>
+				</br>
+				Q2585918 vs (missing) article redirects from de:Ministerium f&#252;r Wirtschaft, Arbeit und Wohnungsbau Baden-W&#252;rttemberg to de:Ministerium f&#252;r Wirtschaft, Arbeit und Tourismus Baden-W&#252;rttemberg
+				</br>
+				<a href="https://openstreetmap.org/way/100292388" target="_new">Ministerium für Wirtschaft, Arbeit und Wohnungsbau Baden-Württemberg - an affected OSM element that may be improved</a>
+				</br>
+				de:Ministerium für Wirtschaft, Arbeit und Wohnungsbau Baden-Württemberg -> de:Ministerium für Wirtschaft, Arbeit und Tourismus Baden-Württemberg
+				</br>
+				Ministerium f&#252;r Wirtschaft, Arbeit und Tourismus Baden-W&#252;rttemberg
+				</br>
+				<hr>
+				</br>
+				Q1741371 vs (missing) article redirects from de:Killesbergbahn Stuttgart to de:Killesbergbahn
+				</br>
+				<a href="https://openstreetmap.org/way/25950727" target="_new">Killesbergbahn - an affected OSM element that may be improved</a>
+				</br>
+				de:Killesbergbahn Stuttgart -> de:Killesbergbahn
+				</br>
+				Killesbergbahn
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(1584950937)['wikidata'='Q801483']['wikipedia'='de:Bahnhof Stuttgart-&#214;sterfeld'];
+node(3112721279)['wikidata'='Q15428295']['wikipedia'='de:Hilfe f&#252;r Br&#252;der'];
+node(3656827228)['wikidata'='Q15428295']['wikipedia'='de:Hilfe f&#252;r Br&#252;der'];
+node(3656827229)['wikidata'='Q15428295']['wikipedia'='de:Hilfe f&#252;r Br&#252;der'];
+node(3781902158)['wikidata'='Q1416524']['wikipedia'='de:Finanzministerium Baden-W&#252;rttemberg'];
+node(3781907157)['wikidata'='Q1714333']['wikipedia'='de:Ministerium der Justiz und f&#252;r Europa Baden-W&#252;rttemberg'];
+node(6952191866)['wikidata'='Q2585918']['wikipedia'='de:Ministerium f&#252;r Wirtschaft, Arbeit und Wohnungsbau Baden-W&#252;rttemberg'];
+node(6953918505)['wikidata'='Q1416524']['wikipedia'='de:Finanzministerium Baden-W&#252;rttemberg'];
+relation(365948)['wikidata'='Q1360830']['wikipedia'='de:Stuttgarter Rathaus'];
+way(100292388)['wikidata'='Q2585918']['wikipedia'='de:Ministerium f&#252;r Wirtschaft, Arbeit und Wohnungsbau Baden-W&#252;rttemberg'];
+way(25950727)['wikidata'='Q1741371']['wikipedia'='de:Killesbergbahn Stuttgart'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia from wikidata tag, unexpected language"><h2 id="wikipedia from wikidata tag, unexpected language">wikipedia from wikidata tag, unexpected language</h2></a>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article
+				</br>
+				<a href="https://openstreetmap.org/node/4442860776" target="_new">Gottlieb-Daimler-Gedächtnisstätte - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'fr:Musée Daimler de Stuttgart'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'fr:Musée Daimler de Stuttgart'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article
+				</br>
+				<a href="https://openstreetmap.org/node/4783121021" target="_new">shackspace - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'en:Shackspace'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'en:Shackspace'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article
+				</br>
+				<a href="https://openstreetmap.org/node/85555153" target="_new">SchwabenQuellen - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'en:SchwabenQuellen'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'en:SchwabenQuellen'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article
+				</br>
+				<a href="https://openstreetmap.org/relation/6699110" target="_new">Neue Staatsgalerie - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'en:Neue Staatsgalerie'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'en:Neue Staatsgalerie'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article
+				</br>
+				<a href="https://openstreetmap.org/way/43733682" target="_new">Friedenskirche - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'en:Friedenskirche, Stuttgart'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'en:Friedenskirche, Stuttgart'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article
+				</br>
+				<a href="https://openstreetmap.org/way/67888211" target="_new">Citröhan Haus - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'it:Casa Citrohan'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'it:Casa Citrohan'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article
+				</br>
+				<a href="https://openstreetmap.org/way/97719478" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'en:House R 128'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'en:House R 128'}}]
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(4442860776)['wikidata'='Q26706753']['wikipedia'!~'.*'];
+node(4783121021)['wikidata'='Q15276608']['wikipedia'!~'.*'];
+node(85555153)['wikidata'='Q19269854']['wikipedia'!~'.*'];
+relation(6699110)['wikidata'='Q316242']['wikipedia'!~'.*'];
+way(43733682)['wikidata'='Q107501877']['wikipedia'!~'.*'];
+way(67888211)['wikidata'='Q62843101']['wikipedia'!~'.*'];
+way(97719478)['wikidata'='Q5913761']['wikipedia'!~'.*'];
+); (._;>;); out meta qt;//['wikipedia from wikidata tag, unexpected language']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia tag in an outdated form for removal"><h2 id="wikipedia tag in an outdated form for removal">wikipedia tag in an outdated form for removal</h2></a>
+				</br>
+				wikipedia tag in outdated form ([&#x27;wikipedia:en&#x27;]), with wikipedia and wikidata tag present and may be safely removed
+				</br>
+				<a href="https://openstreetmap.org/node/27527306" target="_new">Weilimdorf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikipedia tag in outdated form ([&#x27;wikipedia:en&#x27;]), with wikipedia and wikidata tag present and may be safely removed
+				</br>
+				<a href="https://openstreetmap.org/relation/14292942" target="_new">Mercedes-Benz Museum - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(27527306)['wikidata'='Q322559']['wikipedia'='de:Weilimdorf']['wikipedia:en'='Weilimdorf'];
+relation(14292942)['wikidata'='Q707377']['wikipedia'='de:Mercedes-Benz_Museum']['wikipedia:en'='Mercedes-Benz_Museum'];
+); (._;>;); out meta qt;//['wikipedia tag in an outdated form for removal']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikidata redirect"><h2 id="wikipedia wikidata mismatch - follow wikidata redirect">wikipedia wikidata mismatch - follow wikidata redirect</h2></a>
+			</br>
+			wikidata and wikipedia tags link to a different objects, because wikidata tag points to a redirect that should be followed
+				</br>
+				Q111333763 vs Q111915311
+				</br>
+				<a href="https://openstreetmap.org/node/9695154263" target="_new">Flink SE - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(9695154263)['wikidata'='Q111333763']['wikipedia'='de:Flink SE'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikidata redirect']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags</h2></a>
+			</br>
+			operator:wikidata and operator:wikipedia tags link to a different objects, because operator:wikipedia tag points to a redirect that should be followed
+				</br>
+				Q1613532 vs (missing) article redirects from en:Hermes Group to en:Hermes Europe
+				</br>
+				<a href="https://openstreetmap.org/node/4418144984" target="_new">Textilreinigung am Schwabtunnel - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(4418144984)['operator:wikidata'='Q1613532']['operator:wikipedia'='en:Hermes Group'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect - for operator prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for species prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect - for species prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for species prefixed tags</h2></a>
+			</br>
+			species:wikidata and species:wikipedia tags link to a different objects, because species:wikipedia tag points to a redirect that should be followed
+				</br>
+				Q165137 vs (missing) article redirects from de:Vogel-Kirsche to de:Vogelkirsche (Baum)
+				</br>
+				<a href="https://openstreetmap.org/node/8291777486" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				Q165137 vs (missing) article redirects from de:Vogel-Kirsche to de:Vogelkirsche (Baum)
+				</br>
+				<a href="https://openstreetmap.org/node/8291777488" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(8291777486)['species:wikidata'='Q165137']['species:wikipedia'='de:Vogel-Kirsche'];
+node(8291777488)['species:wikidata'='Q165137']['species:wikipedia'='de:Vogel-Kirsche'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect - for species prefixed tags']</blockquote>
+			</br>
+			<hr>
+<h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
+<p class="small">Note to self: online version hosted at <a href="https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports">https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports</a>, files are stored at <a href="https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports">https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports</a>.		</div>
+	</body>
+</html>

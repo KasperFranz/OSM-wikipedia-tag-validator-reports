@@ -1,0 +1,198 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://mapsaregreat.com/style.css" /> <!-- GPLv3 licensed -->
+	</head>
+<body>
+	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
+This page was generated using data obtained on 2024-01-31. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+<br />
+<br />
+			</br>
+			<hr>
+			</br>
+			Proposed edits at this page are so obvious that automatic edit makes sense.
+			</br>
+			<hr>
+<ul><li><a href="#wikipedia tag unexpected language">wikipedia tag unexpected language</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li><li><a href="#wikipedia from wikidata tag, unexpected language">wikipedia from wikidata tag, unexpected language</a></li><li><a href="#wikipedia wikidata mismatch - follow wikidata redirect">wikipedia wikidata mismatch - follow wikidata redirect</a></li></ul>			</br>
+			<a href="#wikipedia tag unexpected language"><h2 id="wikipedia tag unexpected language">wikipedia tag unexpected language</h2></a>
+				</br>
+				wikipedia page in unexpected language - de was expected:
+				</br>
+				<a href="https://openstreetmap.org/node/292106128" target="_new">Rindalphorn - an affected OSM element that may be improved</a>
+				</br>
+				en:Rindalphorn -> de:Rindalphorn
+				</br>
+				Rindalphorn
+				</br>
+				<hr>
+				</br>
+				wikipedia page in unexpected language - de was expected:
+				</br>
+				<a href="https://openstreetmap.org/node/5793904554" target="_new">Toreck - an affected OSM element that may be improved</a>
+				</br>
+				en:Toreck -> de:Toreck
+				</br>
+				Toreck
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(292106128)['wikidata'='Q2153363']['wikipedia'='en:Rindalphorn'];
+node(5793904554)['wikidata'='Q8532420']['wikipedia'='en:Toreck'];
+); (._;>;); out meta qt;//['wikipedia tag unexpected language']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</h2></a>
+			</br>
+			wikidata and wikipedia tags link to a different objects, because wikipedia tag points to a redirect that should be followed
+				</br>
+				Q2162381 vs (missing) article redirects from de:Rohrmoos (Oberallg&#228;u) to de:Rohrmoos (Oberstdorf)
+				</br>
+				<a href="https://openstreetmap.org/node/472997686" target="_new">Rohrmoos - an affected OSM element that may be improved</a>
+				</br>
+				de:Rohrmoos (Oberallgäu) -> de:Rohrmoos (Oberstdorf)
+				</br>
+				Rohrmoos (Oberstdorf)
+				</br>
+				<hr>
+				</br>
+				Q1681659 vs (missing) article redirects from de:Landesbund f&#252;r Vogelschutz in Bayern to de:Landesbund f&#252;r Vogel- und Naturschutz in Bayern
+				</br>
+				<a href="https://openstreetmap.org/node/8777454211" target="_new">LBV Allgäuer Hochalpen - an affected OSM element that may be improved</a>
+				</br>
+				de:Landesbund für Vogelschutz in Bayern -> de:Landesbund für Vogel- und Naturschutz in Bayern
+				</br>
+				Landesbund f&#252;r Vogel- und Naturschutz in Bayern
+				</br>
+				<hr>
+				</br>
+				Q1251739 vs (missing) article redirects from de:Kapelle St. Jakob (Oberjoch) to de:St. Jakob (Oberjoch)
+				</br>
+				<a href="https://openstreetmap.org/node/9480599944" target="_new">Kapelle St. Jakob - an affected OSM element that may be improved</a>
+				</br>
+				de:Kapelle St. Jakob (Oberjoch) -> de:St. Jakob (Oberjoch)
+				</br>
+				St. Jakob (Oberjoch)
+				</br>
+				<hr>
+				</br>
+				Q246939 vs (missing) article redirects from de:Lauben (Oberallg&#228;u) to de:Lauben (Landkreis Oberallg&#228;u)
+				</br>
+				<a href="https://openstreetmap.org/relation/957647" target="_new">Lauben - an affected OSM element that may be improved</a>
+				</br>
+				de:Lauben (Oberallgäu) -> de:Lauben (Landkreis Oberallgäu)
+				</br>
+				Lauben (Landkreis Oberallg&#228;u)
+				</br>
+				<hr>
+				</br>
+				Q566563 vs (missing) article redirects from de:Haldenwang (Allg&#228;u) to de:Haldenwang (Landkreis Oberallg&#228;u)
+				</br>
+				<a href="https://openstreetmap.org/relation/957701" target="_new">Haldenwang - an affected OSM element that may be improved</a>
+				</br>
+				de:Haldenwang (Allgäu) -> de:Haldenwang (Landkreis Oberallgäu)
+				</br>
+				Haldenwang (Landkreis Oberallg&#228;u)
+				</br>
+				<hr>
+				</br>
+				Q552104 vs (missing) article redirects from de:Sulzberg (Oberallg&#228;u) to de:Sulzberg (Landkreis Oberallg&#228;u)
+				</br>
+				<a href="https://openstreetmap.org/relation/957730" target="_new">Sulzberg - an affected OSM element that may be improved</a>
+				</br>
+				de:Sulzberg (Oberallgäu) -> de:Sulzberg (Landkreis Oberallgäu)
+				</br>
+				Sulzberg (Landkreis Oberallg&#228;u)
+				</br>
+				<hr>
+				</br>
+				Q704787 vs (missing) article redirects from de:Audi Arena Oberstdorf to de:Orlen Arena Oberstdorf Allg&#228;u
+				</br>
+				<a href="https://openstreetmap.org/way/233316044" target="_new">Schattenbergschanze - an affected OSM element that may be improved</a>
+				</br>
+				de:Audi Arena Oberstdorf -> de:Orlen Arena Oberstdorf Allgäu
+				</br>
+				Orlen Arena Oberstdorf Allg&#228;u
+				</br>
+				<hr>
+				</br>
+				Q704787 vs (missing) article redirects from de:WM-Skisprung Arena Oberstdorf to de:Orlen Arena Oberstdorf Allg&#228;u
+				</br>
+				<a href="https://openstreetmap.org/way/25094717" target="_new">Orlen Arena Oberstdorf Allgäu - an affected OSM element that may be improved</a>
+				</br>
+				de:WM-Skisprung Arena Oberstdorf -> de:Orlen Arena Oberstdorf Allgäu
+				</br>
+				Orlen Arena Oberstdorf Allg&#228;u
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(472997686)['wikidata'='Q2162381']['wikipedia'='de:Rohrmoos (Oberallg&#228;u)'];
+node(8777454211)['wikidata'='Q1681659']['wikipedia'='de:Landesbund f&#252;r Vogelschutz in Bayern'];
+node(9480599944)['wikidata'='Q1251739']['wikipedia'='de:Kapelle St. Jakob (Oberjoch)'];
+relation(957647)['wikidata'='Q246939']['wikipedia'='de:Lauben (Oberallg&#228;u)'];
+relation(957701)['wikidata'='Q566563']['wikipedia'='de:Haldenwang (Allg&#228;u)'];
+relation(957730)['wikidata'='Q552104']['wikipedia'='de:Sulzberg (Oberallg&#228;u)'];
+way(233316044)['wikidata'='Q704787']['wikipedia'='de:Audi Arena Oberstdorf'];
+way(25094717)['wikidata'='Q704787']['wikipedia'='de:WM-Skisprung Arena Oberstdorf'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia from wikidata tag, unexpected language"><h2 id="wikipedia from wikidata tag, unexpected language">wikipedia from wikidata tag, unexpected language</h2></a>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article
+				</br>
+				<a href="https://openstreetmap.org/way/25827788" target="_new">Laufbichelsee - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'arz:بحيره لاوفبيتشيل سى'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'arz:بحيره لاوفبيتشيل سى'}}]
+				</br>
+				<hr>
+				</br>
+				without wikipedia tag, without wikipedia:language tags, with wikidata tag present that provides article
+				</br>
+				<a href="https://openstreetmap.org/way/94579739" target="_new">Hörnlesee - an affected OSM element that may be improved</a>
+				</br>
+				failed to describe proposed relinking here (was: {'current': None, 'to': 'arz:بحيره هورنل سى'}), dump of raw proposed_tagging_changes: [{'from': {'wikipedia': None}, 'to': {'wikipedia': 'arz:بحيره هورنل سى'}}]
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(25827788)['wikidata'='Q32089342']['wikipedia'!~'.*'];
+way(94579739)['wikidata'='Q32546585']['wikipedia'!~'.*'];
+); (._;>;); out meta qt;//['wikipedia from wikidata tag, unexpected language']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - follow wikidata redirect"><h2 id="wikipedia wikidata mismatch - follow wikidata redirect">wikipedia wikidata mismatch - follow wikidata redirect</h2></a>
+			</br>
+			wikidata and wikipedia tags link to a different objects, because wikidata tag points to a redirect that should be followed
+				</br>
+				Q105824557 vs Q31517513
+				</br>
+				<a href="https://openstreetmap.org/node/320522570" target="_new">Thaler Höhe - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(320522570)['wikidata'='Q105824557']['wikipedia'='de:Thaler H&#246;he'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikidata redirect']</blockquote>
+			</br>
+			<hr>
+<h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
+<p class="small">Note to self: online version hosted at <a href="https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports">https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports</a>, files are stored at <a href="https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports">https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports</a>.		</div>
+	</body>
+</html>

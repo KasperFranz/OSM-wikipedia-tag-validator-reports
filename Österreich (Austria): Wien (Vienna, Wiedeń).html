@@ -1,0 +1,578 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://mapsaregreat.com/style.css" /> <!-- GPLv3 licensed -->
+	</head>
+<body>
+	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
+This page was generated using data obtained on 2024-01-31. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+<br />
+<br />
+			</br>
+			<hr>
+			</br>
+			Remember to check whether edits make sense! All reports are on this page because these tasks require human judgment to verify whether the proposed edit makes sense. Some proposed edits will be wrong, in such case they should be not done and problem reported
+			</br>
+			<hr>
+<ul><li><a href="#wikipedia tag links to 404">wikipedia tag links to 404</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to an object that exists outside physical reality">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to an object that exists outside physical reality</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a sports competition">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a sports competition</a></li><li><a href="#should use a secondary wikipedia tag - linking from wikidata tag to a food">should use a secondary wikipedia tag - linking from wikidata tag to a food</a></li><li><a href="#wikipedia wikidata mismatch">wikipedia wikidata mismatch</a></li><li><a href="#wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not">wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not</a></li><li><a href="#malformed secondary wikipedia tag - for operator prefixed tags">malformed secondary wikipedia tag - for operator prefixed tags</a></li><li><a href="#malformed secondary wikipedia tag - for subject prefixed tags">malformed secondary wikipedia tag - for subject prefixed tags</a></li><li><a href="#malformed secondary wikipedia tag - for artist prefixed tags">malformed secondary wikipedia tag - for artist prefixed tags</a></li><li><a href="#malformed secondary wikipedia tag - for name prefixed tags">malformed secondary wikipedia tag - for name prefixed tags</a></li><li><a href="#malformed secondary wikipedia tag - for name:etymology prefixed tags">malformed secondary wikipedia tag - for name:etymology prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not - for architect prefixed tags">wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not - for architect prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - for operator prefixed tags">wikipedia wikidata mismatch - for operator prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - for subject prefixed tags">wikipedia wikidata mismatch - for subject prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - for name:etymology prefixed tags">wikipedia wikidata mismatch - for name:etymology prefixed tags</a></li><li><a href="#malformed secondary wikidata tag - for subject prefixed tags">malformed secondary wikidata tag - for subject prefixed tags</a></li></ul>			</br>
+			<a href="#wikipedia tag links to 404"><h2 id="wikipedia tag links to 404">wikipedia tag links to 404</h2></a>
+			</br>
+			Wikipedia article linked from OSM object using wikipedia tag is missing.<br />Often article was moved without leaving redirect and wikipedia tag should be edited to point to the new one.<br />Article may be deleted and no longer existing, or link was never valid. In such cases wikipedia tag should be deleted.
+				</br>
+				
+				</br>
+				<a href="https://openstreetmap.org/relation/1548448" target="_new">Dominikanerkonvent St. Maria Rotunda - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+relation(1548448)['wikipedia'='de:Dominikanerkonvent (Wien)'];
+); (._;>;); out meta qt;//['wikipedia tag links to 404']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to an object that exists outside physical reality"><h2 id="should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to an object that exists outside physical reality">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to an object that exists outside physical reality</h2></a>
+				</br>
+				linked wikidata entry (Q1329518) is about an object that exists outside physical reality, so it is very unlikely to be correct <br />        subject:wikipedia=*  tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/relation/11732431" target="_new">U5 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+relation(11732431)['wikidata'='Q1329518'];
+); (._;>;); out meta qt;//['should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to an object that exists outside physical reality']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human"><h2 id="should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human</h2></a>
+				</br>
+				linked wikidata entry (Q78884) is about a human, so it is very unlikely to be correct <br />        subject:wikipedia=* or name:wikipedia tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/node/10577325215" target="_new">Retti - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				linked wikidata entry (Q78884) is about a human, so it is very unlikely to be correct <br />        subject:wikipedia=* or name:wikipedia tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/node/10577378794" target="_new">Schullin I - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				linked wikidata entry (Q78884) is about a human, so it is very unlikely to be correct <br />        subject:wikipedia=* or name:wikipedia tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/node/10577378795" target="_new">Schullin II - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				linked wikidata entry (Q5809) is about a human, so it is very unlikely to be correct <br />        subject:wikipedia=* or name:wikipedia tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/node/2144264136" target="_new">Ernesto "Che" Guevara - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(10577325215)['wikidata'='Q78884'];
+node(10577378794)['wikidata'='Q78884'];
+node(10577378795)['wikidata'='Q78884'];
+node(2144264136)['wikidata'='Q5809'];
+); (._;>;); out meta qt;//['should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a human']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a sports competition"><h2 id="should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a sports competition">should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a sports competition</h2></a>
+				</br>
+				linked wikidata entry (Q696031) is about a sports competition, so it is very unlikely to be correct <br />        subject:wikipedia=*  tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/relation/13196961" target="_new">Vienna City Marathon - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+relation(13196961)['wikidata'='Q696031'];
+); (._;>;); out meta qt;//['should use a secondary wikipedia tag - linking from wikipedia and wikidata tag to a sports competition']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#should use a secondary wikipedia tag - linking from wikidata tag to a food"><h2 id="should use a secondary wikipedia tag - linking from wikidata tag to a food">should use a secondary wikipedia tag - linking from wikidata tag to a food</h2></a>
+				</br>
+				linked wikidata entry (Q18889101) is about a food, so it is very unlikely to be correct <br />        subject:wikipedia=*  tag would be probably better         (see https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links for full list of what else may be applicable) <br />        in case of change remember to remove wikidata tag if it is present <br />        object categorised by Wikidata - wrong classification may be caused by wrong data on Wikidata
+				</br>
+				<a href="https://openstreetmap.org/way/175515977" target="_new">Würstelstand LEO - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(175515977)['wikidata'='Q18889101'];
+); (._;>;); out meta qt;//['should use a secondary wikipedia tag - linking from wikidata tag to a food']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch"><h2 id="wikipedia wikidata mismatch">wikipedia wikidata mismatch</h2></a>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q108823236 vs Q1624214 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/11035868212" target="_new">Bibliothekszentrum - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q18762414 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has wikipedia tag that links redirect (&#x27;Bahnhof Wien Nu&#223;dorf&#x27; to &#x27;Bahnhof Wien Nussdorf&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/node/3488369063" target="_new">Wien Nußdorf - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q1531553 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has wikipedia tag that links redirect (&#x27;GLOBAL 2000&#x27; to &#x27;Global 2000&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/node/4382310667" target="_new">GLOBAL 2000 - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q116159996 vs Q116213043 wikidata id assigned to linked Wikipedia article) Note that this OSM object has wikidata tag links a redirect (Q116159996 to Q38026732).
+				</br>
+				<a href="https://openstreetmap.org/relation/151156" target="_new">Vienna Business School Akademiestraße - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q38176393 vs Q15822457 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/relation/2030638" target="_new">Jubiläums-Werkstättenhof - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q115983294 vs Q668545 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/way/108526992" target="_new">Palais Dorotheum - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q108823236 vs Q1624214 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/way/147025685" target="_new">Hauptbibliothek - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q53938177 vs Q2465705 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/way/162819245" target="_new">Hofpavillon - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q2005516 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has wikipedia tag that links redirect (&#x27;Nussdorfer AC&#x27; to &#x27;Nu&#223;dorfer AC&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/way/459350869" target="_new">NAC - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q886230 vs Q119225159 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/way/46608961" target="_new">Blumengärten Hirschstetten - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q1784156 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has wikipedia tag that links redirect (&#x27;Koptische Kirche der Heiligen Jungfrau von Zeitoun&#x27; to &#x27;Koptische Kirche der heiligen Jungfrau von Zeitoun&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/way/59276159" target="_new">koptische Kirche der Heiligen Jungfrau von Zeitoun - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				wikidata and wikipedia tags link to a different objects (Q53704098 vs Q1020347 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/way/9888241" target="_new">Hauptbücherei der Stadt Wien - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(11035868212)['wikidata'='Q108823236']['wikipedia'='de:Universit&#228;tsbibliothek der Wirtschaftsuniversit&#228;t Wien'];
+node(3488369063)['wikidata'='Q18762414']['wikipedia'='de:Bahnhof Wien Nu&#223;dorf'];
+node(4382310667)['wikidata'='Q1531553']['wikipedia'='de:GLOBAL 2000'];
+relation(151156)['wikidata'='Q116159996']['wikipedia'='de:Vienna Business School'];
+relation(2030638)['wikidata'='Q38176393']['wikipedia'='de:Kaiser Franz Joseph I. Jubil&#228;umsfonds f&#252;r Werkst&#228;ttengeb&#228;ude und Volkswohnungen'];
+way(108526992)['wikidata'='Q115983294']['wikipedia'='de:Dorotheum'];
+way(147025685)['wikidata'='Q108823236']['wikipedia'='de:Universit&#228;tsbibliothek der Wirtschaftsuniversit&#228;t Wien'];
+way(162819245)['wikidata'='Q53938177']['wikipedia'='de:U-Bahn-Station Hietzing'];
+way(459350869)['wikidata'='Q2005516']['wikipedia'='de:Nussdorfer AC'];
+way(46608961)['wikidata'='Q886230']['wikipedia'='de:Blumeng&#228;rten Hirschstetten'];
+way(59276159)['wikidata'='Q1784156']['wikipedia'='de:Koptische Kirche der Heiligen Jungfrau von Zeitoun'];
+way(9888241)['wikidata'='Q53704098']['wikipedia'='de:B&#252;chereien Wien'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not"><h2 id="wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not">wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not</h2></a>
+			</br>
+			wikidata and wikipedia tags link to a different objects, because wikidata tag points to a redirect that should be followed
+				</br>
+				article claims to point to disambig, wikidata does not. wikidata tag is likely to be correct, wikipedia tag almost certainly is not
+				</br>
+				<a href="https://openstreetmap.org/relation/5372196" target="_new">Judenplatz - an affected OSM element that may be improved</a>
+				</br>
+				de:Judenplatz -> de:Judenplatz (Wien)
+				</br>
+				Judenplatz (Wien)
+				</br>
+				<hr>
+				</br>
+				article claims to point to disambig, wikidata does not. wikidata tag is likely to be correct, wikipedia tag almost certainly is not
+				</br>
+				<a href="https://openstreetmap.org/relation/5881429" target="_new">KG Weinhaus - an affected OSM element that may be improved</a>
+				</br>
+				de:Weinhaus -> de:Weinhaus (Wien)
+				</br>
+				Weinhaus (Wien)
+				</br>
+				<hr>
+				</br>
+				article claims to point to disambig, wikidata does not. wikidata tag is likely to be correct, wikipedia tag almost certainly is not
+				</br>
+				<a href="https://openstreetmap.org/way/625737122" target="_new">Judenplatz - an affected OSM element that may be improved</a>
+				</br>
+				de:Judenplatz -> de:Judenplatz (Wien)
+				</br>
+				Judenplatz (Wien)
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+relation(5372196)['wikidata'='Q390730']['wikipedia'='de:Judenplatz'];
+relation(5881429)['wikidata'='Q2556149']['wikipedia'='de:Weinhaus'];
+way(625737122)['wikidata'='Q390730']['wikipedia'='de:Judenplatz'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#malformed secondary wikipedia tag - for operator prefixed tags"><h2 id="malformed secondary wikipedia tag - for operator prefixed tags">malformed secondary wikipedia tag - for operator prefixed tags</h2></a>
+				</br>
+				malformed value in operator:wikipedia tag (Q112181206)
+				</br>
+				<a href="https://openstreetmap.org/node/9784220815" target="_new">Liechtensteinstraße 4 Parkgarage - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(9784220815)['operator:wikipedia'='Q112181206'];
+); (._;>;); out meta qt;//['malformed secondary wikipedia tag - for operator prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#malformed secondary wikipedia tag - for subject prefixed tags"><h2 id="malformed secondary wikipedia tag - for subject prefixed tags">malformed secondary wikipedia tag - for subject prefixed tags</h2></a>
+				</br>
+				malformed value in subject:wikipedia tag (Fall Hilsner)
+				</br>
+				<a href="https://openstreetmap.org/node/11105740399" target="_new">Leopold Hilsner - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in subject:wikipedia tag (Q81752)
+				</br>
+				<a href="https://openstreetmap.org/node/8416637514" target="_new">Anton Bruckner - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in subject:wikipedia tag (Q159491)
+				</br>
+				<a href="https://openstreetmap.org/node/8416690895" target="_new">Fürst Nikolai Sergejewitsch Trubetzkoy - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in subject:wikipedia tag (Constantin von Economo)
+				</br>
+				<a href="https://openstreetmap.org/node/9121051261" target="_new">Constantin von Economo - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in subject:wikipedia tag (Karl Sch&#246;nherr)
+				</br>
+				<a href="https://openstreetmap.org/node/9126825356" target="_new">Karl Schönherr - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in subject:wikipedia tag (Fu&#223;ball (Sportger&#228;t))
+				</br>
+				<a href="https://openstreetmap.org/way/226888213" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(11105740399)['subject:wikipedia'='Fall Hilsner'];
+node(8416637514)['subject:wikipedia'='Q81752'];
+node(8416690895)['subject:wikipedia'='Q159491'];
+node(9121051261)['subject:wikipedia'='Constantin von Economo'];
+node(9126825356)['subject:wikipedia'='Karl Sch&#246;nherr'];
+way(226888213)['subject:wikipedia'='Fu&#223;ball (Sportger&#228;t)'];
+); (._;>;); out meta qt;//['malformed secondary wikipedia tag - for subject prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#malformed secondary wikipedia tag - for artist prefixed tags"><h2 id="malformed secondary wikipedia tag - for artist prefixed tags">malformed secondary wikipedia tag - for artist prefixed tags</h2></a>
+				</br>
+				malformed value in artist:wikipedia tag (Hugo Daini)
+				</br>
+				<a href="https://openstreetmap.org/node/2144264138" target="_new">Simon Bolivar - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in artist:wikipedia tag (https://en.wikipedia.org/wiki/Oscar_Nemon)
+				</br>
+				<a href="https://openstreetmap.org/node/6046755116" target="_new">Sigmund Freud - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(2144264138)['artist:wikipedia'='Hugo Daini'];
+node(6046755116)['artist:wikipedia'='https://en.wikipedia.org/wiki/Oscar_Nemon'];
+); (._;>;); out meta qt;//['malformed secondary wikipedia tag - for artist prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#malformed secondary wikipedia tag - for name prefixed tags"><h2 id="malformed secondary wikipedia tag - for name prefixed tags">malformed secondary wikipedia tag - for name prefixed tags</h2></a>
+				</br>
+				malformed value in name:wikipedia tag (Kabelwerk_Wien-Meidling)
+				</br>
+				<a href="https://openstreetmap.org/way/59781679" target="_new">Am Kabelwerk - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(59781679)['name:wikipedia'='Kabelwerk_Wien-Meidling'];
+); (._;>;); out meta qt;//['malformed secondary wikipedia tag - for name prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#malformed secondary wikipedia tag - for name:etymology prefixed tags"><h2 id="malformed secondary wikipedia tag - for name:etymology prefixed tags">malformed secondary wikipedia tag - for name:etymology prefixed tags</h2></a>
+				</br>
+				malformed value in name:etymology:wikipedia tag (Bellariastra&#223;e)
+				</br>
+				<a href="https://openstreetmap.org/node/2447262106" target="_new">Bellariastraße - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in name:etymology:wikipedia tag (Auerspergstra&#223;e)
+				</br>
+				<a href="https://openstreetmap.org/relation/7496955" target="_new">Auerspergstraße - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				malformed value in name:etymology:wikipedia tag (EN:Heinz Heger)
+				</br>
+				<a href="https://openstreetmap.org/way/80886922" target="_new">Heinz-Heger-Park - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(2447262106)['name:etymology:wikipedia'='Bellariastra&#223;e'];
+relation(7496955)['name:etymology:wikipedia'='Auerspergstra&#223;e'];
+way(80886922)['name:etymology:wikipedia'='EN:Heinz Heger'];
+); (._;>;); out meta qt;//['malformed secondary wikipedia tag - for name:etymology prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not - for architect prefixed tags"><h2 id="wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not - for architect prefixed tags">wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not - for architect prefixed tags</h2></a>
+			</br>
+			architect:wikidata and architect:wikipedia tags link to a different objects, because architect:wikidata tag points to a redirect that should be followed
+				</br>
+				article claims to point to disambig, architect:wikidata does not. architect:wikidata tag is likely to be correct, architect:wikipedia tag almost certainly is not
+				</br>
+				<a href="https://openstreetmap.org/relation/2752956" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+relation(2752956)['architect:wikidata'='Q1929060']['architect:wikipedia'='de:Michael Rosenauer'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - wikipedia points to disambiguation page and wikidata does not - for architect prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - for operator prefixed tags"><h2 id="wikipedia wikidata mismatch - for operator prefixed tags">wikipedia wikidata mismatch - for operator prefixed tags</h2></a>
+				</br>
+				operator:wikidata and operator:wikipedia tags link to a different objects (Q28172489 vs Q594721 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/4584003417" target="_new">ONLY - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				operator:wikidata and operator:wikipedia tags link to a different objects (Q87212466 vs (missing) wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/5816218568" target="_new">Schnellladestation MERKUR, 1130 Wien - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				operator:wikidata and operator:wikipedia tags link to a different objects (Q87212466 vs (missing) wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/5993592536" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				operator:wikidata and operator:wikipedia tags link to a different objects (Q87212466 vs (missing) wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/7556855091" target="_new">Charger MERKUR, 1110 Wien - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				operator:wikidata and operator:wikipedia tags link to a different objects (Q87212466 vs (missing) wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/7557171772" target="_new">Schnellladestation McDonald's, 1050 Wien - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				operator:wikidata and operator:wikipedia tags link to a different objects (Q87212466 vs (missing) wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/7557171773" target="_new">Schnellladestation Billa Plus, 1100 Wien - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				operator:wikidata and operator:wikipedia tags link to a different objects (Q87212466 vs (missing) wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/7557171774" target="_new">Ladestation APCOA, 1120 Wien - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				operator:wikidata and operator:wikipedia tags link to a different objects (Q87212466 vs (missing) wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/8790088921" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				operator:wikidata and operator:wikipedia tags link to a different objects (Q151954 vs Q57018091 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/9258372062" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				operator:wikidata and operator:wikipedia tags link to a different objects (Q28172489 vs Q594721 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/way/370577083" target="_new">ONLY - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(4584003417)['operator:wikidata'='Q28172489']['operator:wikipedia'='en:Bestseller (company)'];
+node(5816218568)['operator:wikidata'='Q87212466']['operator:wikipedia'='de:SMATRICS'];
+node(5993592536)['operator:wikidata'='Q87212466']['operator:wikipedia'='de:SMATRICS'];
+node(7556855091)['operator:wikidata'='Q87212466']['operator:wikipedia'='de:SMATRICS'];
+node(7557171772)['operator:wikidata'='Q87212466']['operator:wikipedia'='de:SMATRICS'];
+node(7557171773)['operator:wikidata'='Q87212466']['operator:wikipedia'='de:SMATRICS'];
+node(7557171774)['operator:wikidata'='Q87212466']['operator:wikipedia'='de:SMATRICS'];
+node(8790088921)['operator:wikidata'='Q87212466']['operator:wikipedia'='de:SMATRICS'];
+node(9258372062)['operator:wikidata'='Q151954']['operator:wikipedia'='de:Lidl &#214;sterreich'];
+way(370577083)['operator:wikidata'='Q28172489']['operator:wikipedia'='en:Bestseller (company)'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - for operator prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - for subject prefixed tags"><h2 id="wikipedia wikidata mismatch - for subject prefixed tags">wikipedia wikidata mismatch - for subject prefixed tags</h2></a>
+				</br>
+				subject:wikidata and subject:wikipedia tags link to a different objects (Q168542 vs Q347224 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/417610972" target="_new">Adalbert-Stifter-Denkmal - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				subject:wikidata and subject:wikipedia tags link to a different objects (Q1394678 vs Q1583828 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/417610978" target="_new">Hansi-Schmid-Denkmal - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				subject:wikidata and subject:wikipedia tags link to a different objects (Q113652 vs Q12706 wikidata id assigned to linked Wikipedia article)
+				</br>
+				<a href="https://openstreetmap.org/node/9585469314" target="_new">Dr. Richard Frey - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(417610972)['subject:wikidata'='Q168542']['subject:wikipedia'='de:Adalbert-Stifter-Denkmal'];
+node(417610978)['subject:wikidata'='Q1394678']['subject:wikipedia'='de:Hansi Schmidt'];
+node(9585469314)['subject:wikidata'='Q113652']['subject:wikipedia'='ru:&#1052;&#1072;&#1082;&#1089;&#1080;&#1084; &#1043;&#1086;&#1088;&#1100;&#1082;&#1080;&#1081;'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - for subject prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#wikipedia wikidata mismatch - for name:etymology prefixed tags"><h2 id="wikipedia wikidata mismatch - for name:etymology prefixed tags">wikipedia wikidata mismatch - for name:etymology prefixed tags</h2></a>
+				</br>
+				name:etymology:wikidata and name:etymology:wikipedia tags link to a different objects (Q79021 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has name:etymology:wikipedia tag that links redirect (&#x27;Oscar Baumann&#x27; to &#x27;Oskar Baumann&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/way/13437195" target="_new">Baumannstraße - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+				</br>
+				name:etymology:wikidata and name:etymology:wikipedia tags link to a different objects (Q268166 vs (missing) wikidata id assigned to linked Wikipedia article) Note that this OSM object has name:etymology:wikipedia tag that links redirect (&#x27;Lorenzo da Ponte&#x27; to &#x27;Lorenzo Da Ponte&#x27;).
+				</br>
+				<a href="https://openstreetmap.org/way/5889613" target="_new">Dapontegasse - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(13437195)['name:etymology:wikidata'='Q79021']['name:etymology:wikipedia'='de:Oscar Baumann'];
+way(5889613)['name:etymology:wikidata'='Q268166']['name:etymology:wikipedia'='de:Lorenzo da Ponte'];
+); (._;>;); out meta qt;//['wikipedia wikidata mismatch - for name:etymology prefixed tags']</blockquote>
+			</br>
+			<hr>
+			</br>
+			<a href="#malformed secondary wikidata tag - for subject prefixed tags"><h2 id="malformed secondary wikidata tag - for subject prefixed tags">malformed secondary wikidata tag - for subject prefixed tags</h2></a>
+				</br>
+				malformed value in subject:wikidata tag (Q994929;)
+				</br>
+				<a href="https://openstreetmap.org/node/6698774605" target="_new">Brutus und Lukretia - an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+node(6698774605)['subject:wikidata'='Q994929;'];
+); (._;>;); out meta qt;//['malformed secondary wikidata tag - for subject prefixed tags']</blockquote>
+			</br>
+			<hr>
+<h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
+<p class="small">Note to self: online version hosted at <a href="https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports">https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports</a>, files are stored at <a href="https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports">https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports</a>.		</div>
+	</body>
+</html>
