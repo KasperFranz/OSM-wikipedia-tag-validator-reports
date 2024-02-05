@@ -13,63 +13,7 @@ This page was generated using data obtained on 2024-02-05. Please, <a href="http
 			Proposed edits at this page are so obvious that automatic edit makes sense.
 			</br>
 			<hr>
-<ul><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</a></li></ul>			</br>
-			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect">wikipedia wikidata mismatch - follow wikipedia redirect</h2></a>
-			</br>
-			wikidata and wikipedia tags link to a different objects, because wikipedia tag points to a redirect that should be followed
-				</br>
-				Q2717368 vs (missing) article redirects from ca:Montmal&#250;s to ca:Pic de Montmal&#250;s
-				</br>
-				<a href="https://openstreetmap.org/node/1894423590" target="_new">Montmalús - an affected OSM element that may be improved</a>
-				</br>
-				ca:Montmalús -> ca:Pic de Montmalús
-				</br>
-				Pic de Montmal&#250;s
-				</br>
-				<hr>
-				</br>
-				Q2522163 vs (missing) article redirects from pt:Andorra la Vella (par&#243;quia) to pt:Andorra-a-Velha (par&#243;quia)
-				</br>
-				<a href="https://openstreetmap.org/relation/2804753" target="_new">Andorra la Vella - an affected OSM element that may be improved</a>
-				</br>
-				pt:Andorra la Vella (paróquia) -> pt:Andorra-a-Velha (paróquia)
-				</br>
-				Andorra-a-Velha (par&#243;quia)
-				</br>
-				<hr>
-				</br>
-				Q5397737 vs (missing) article redirects from ca:Sant Pere M&#224;rtir d&#x27;Escaldes-Engordany to ca:Sant Pere M&#224;rtir (Escaldes)
-				</br>
-				<a href="https://openstreetmap.org/way/202606880" target="_new">Sant Pere Màrtir - an affected OSM element that may be improved</a>
-				</br>
-				ca:Sant Pere Màrtir d'Escaldes-Engordany -> ca:Sant Pere Màrtir (Escaldes)
-				</br>
-				Sant Pere M&#224;rtir (Escaldes)
-				</br>
-				<hr>
-				</br>
-				Q24650 vs (missing) article redirects from ca:Aubiny&#224; to ca:Auviny&#224;
-				</br>
-				<a href="https://openstreetmap.org/way/210428164" target="_new">an affected OSM element that may be improved</a>
-				</br>
-				ca:Aubinyà -> ca:Auvinyà
-				</br>
-				Auviny&#224;
-				</br>
-				<hr>
-			</br>
-			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
-			</br>
-			<blockquote>[out:xml][timeout:3600];
-(
-node(1894423590)['wikidata'='Q2717368']['wikipedia'='ca:Montmal&#250;s'];
-relation(2804753)['wikidata'='Q2522163']['wikipedia'='pt:Andorra la Vella (par&#243;quia)'];
-way(202606880)['wikidata'='Q5397737']['wikipedia'='ca:Sant Pere M&#224;rtir d\'Escaldes-Engordany'];
-way(210428164)['wikidata'='Q24650']['wikipedia'='ca:Aubiny&#224;'];
-); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect']</blockquote>
-			</br>
-			<hr>
-<h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
+<ul></ul><h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
 <p class="small">Note to self: online version hosted at <a href="https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports">https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports</a>, files are stored at <a href="https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports">https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports</a>.		</div>
 	</body>
 </html>
