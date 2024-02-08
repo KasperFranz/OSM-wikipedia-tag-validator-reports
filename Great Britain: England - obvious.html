@@ -4,7 +4,7 @@
 	</head>
 <body>
 	<div class="inner">Feedback? Ideas? Complaints? Suggestions? Request for report about other area? <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a>!<br />
-This page was generated using data obtained on 2024-02-07. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
+This page was generated using data obtained on 2024-02-08. Please, <a href="https://www.openstreetmap.org/message/new/Mateusz%20Konieczny">send me a message</a> if you want it updated!<br />
 <br />
 <br />
 			</br>
@@ -13,14 +13,12 @@ This page was generated using data obtained on 2024-02-07. Please, <a href="http
 			Proposed edits at this page are so obvious that automatic edit makes sense.
 			</br>
 			<hr>
-<ul><li><a href="#wikipedia wikidata mismatch - follow wikidata redirect - for name:etymology prefixed tags">wikipedia wikidata mismatch - follow wikidata redirect - for name:etymology prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for subject prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for subject prefixed tags</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</a></li></ul>			</br>
-			<a href="#wikipedia wikidata mismatch - follow wikidata redirect - for name:etymology prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikidata redirect - for name:etymology prefixed tags">wikipedia wikidata mismatch - follow wikidata redirect - for name:etymology prefixed tags</h2></a>
-			</br>
-			name:etymology:wikidata and name:etymology:wikipedia tags link to a different objects, because name:etymology:wikidata tag points to a redirect that should be followed
+<ul><li><a href="#wikidata from wikipedia tag">wikidata from wikipedia tag</a></li><li><a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for network prefixed tags</a></li></ul>			</br>
+			<a href="#wikidata from wikipedia tag"><h2 id="wikidata from wikipedia tag">wikidata from wikipedia tag</h2></a>
 				</br>
-				Q106763042 vs Q7287910
+				Q5118180 may be added as wikidata tag based on wikipedia tag
 				</br>
-				<a href="https://openstreetmap.org/node/10596734639" target="_new">Neville Bridge - an affected OSM element that may be improved</a>
+				<a href="https://openstreetmap.org/way/982213200" target="_new">Churchill Gardens Estate - an affected OSM element that may be improved</a>
 				</br>
 				<hr>
 			</br>
@@ -28,48 +26,8 @@ This page was generated using data obtained on 2024-02-07. Please, <a href="http
 			</br>
 			<blockquote>[out:xml][timeout:3600];
 (
-node(10596734639)['name:etymology:wikidata'='Q106763042']['name:etymology:wikipedia'='en:Ralph Neville (judge)'];
-); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikidata redirect - for name:etymology prefixed tags']</blockquote>
-			</br>
-			<hr>
-			</br>
-			<a href="#wikipedia wikidata mismatch - follow wikipedia redirect - for subject prefixed tags"><h2 id="wikipedia wikidata mismatch - follow wikipedia redirect - for subject prefixed tags">wikipedia wikidata mismatch - follow wikipedia redirect - for subject prefixed tags</h2></a>
-			</br>
-			subject:wikidata and subject:wikipedia tags link to a different objects, because subject:wikipedia tag points to a redirect that should be followed
-				</br>
-				Q741817 vs (missing) article redirects from en:Samuel Galton, Jr. to en:Samuel Galton Jr.
-				</br>
-				<a href="https://openstreetmap.org/node/2501118664" target="_new">Moonstones: Samuel Galton - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q372052 vs (missing) article redirects from en:Sir Arthur Harris, 1st Baronet to en:Arthur Harris
-				</br>
-				<a href="https://openstreetmap.org/node/461281900" target="_new">Arthur Harris - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q4391979 vs (missing) article redirects from en:NUTS of the United Kingdom to en:International Territorial Level
-				</br>
-				<a href="https://openstreetmap.org/relation/3746024" target="_new">Hampshire and Isle of Wight - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-				</br>
-				Q4391979 vs (missing) article redirects from en:NUTS of the United Kingdom to en:International Territorial Level
-				</br>
-				<a href="https://openstreetmap.org/relation/3820628" target="_new">Berkshire, Buckinghamshire and Oxfordshire - an affected OSM element that may be improved</a>
-				</br>
-				<hr>
-			</br>
-			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
-			</br>
-			<blockquote>[out:xml][timeout:3600];
-(
-node(2501118664)['subject:wikidata'='Q741817']['subject:wikipedia'='en:Samuel Galton, Jr.'];
-node(461281900)['subject:wikidata'='Q372052']['subject:wikipedia'='en:Sir Arthur Harris, 1st Baronet'];
-relation(3746024)['subject:wikidata'='Q4391979']['subject:wikipedia'='en:NUTS of the United Kingdom'];
-relation(3820628)['subject:wikidata'='Q4391979']['subject:wikipedia'='en:NUTS of the United Kingdom'];
-); (._;>;); out meta qt;//['wikipedia wikidata mismatch - follow wikipedia redirect - for subject prefixed tags']</blockquote>
+way(982213200)['wikidata'!~'.*']['wikipedia'='en:Churchill Gardens'];
+); (._;>;); out meta qt;//['wikidata from wikipedia tag']</blockquote>
 			</br>
 			<hr>
 			</br>
