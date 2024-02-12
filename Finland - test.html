@@ -13,7 +13,24 @@ This page was generated using data obtained on 2024-02-12. Please, <a href="http
 			This page contains reports that are tested or are known to produce false positives. Be careful with using this data.
 			</br>
 			<hr>
-<ul></ul><h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
+<ul><li><a href="#malformed secondary wikipedia tag - for bridge prefixed tags">malformed secondary wikipedia tag - for bridge prefixed tags</a></li></ul>			</br>
+			<a href="#malformed secondary wikipedia tag - for bridge prefixed tags"><h2 id="malformed secondary wikipedia tag - for bridge prefixed tags">malformed secondary wikipedia tag - for bridge prefixed tags</h2></a>
+				</br>
+				malformed value in bridge:wikipedia tag (Fi:Korian rautatiesilta (1870))
+				</br>
+				<a href="https://openstreetmap.org/way/42443552" target="_new">an affected OSM element that may be improved</a>
+				</br>
+				<hr>
+			</br>
+			<a href="https://overpass-turbo.eu/">overpass query</a> usable in JOSM that will load all objects where this specific error is present:
+			</br>
+			<blockquote>[out:xml][timeout:3600];
+(
+way(42443552)['bridge:wikipedia'='Fi:Korian rautatiesilta (1870)'];
+); (._;>;); out meta qt;//['malformed secondary wikipedia tag - for bridge prefixed tags']</blockquote>
+			</br>
+			<hr>
+<h1>Other useful resources</h1><p>JOSM <a href="https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia">Wikipedia plugin</a></p><br />
 <p class="small">Note to self: online version hosted at <a href="https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports">https://matkoniecz.github.io/OSM-wikipedia-tag-validator-reports</a>, files are stored at <a href="https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports">https://github.com/matkoniecz/OSM-wikipedia-tag-validator-reports</a>.		</div>
 	</body>
 </html>
